@@ -121,6 +121,12 @@
                 }
             }
         });
+        bannerImageFadeInFadeOutHandler();
     });
+
+    function bannerImageFadeInFadeOutHandler(){
+        // banner_img
+
+    }
 
 </script>
