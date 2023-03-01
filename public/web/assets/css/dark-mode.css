@@ -1,0 +1,83 @@
+.dark-mode{
+    color: rgb(255, 255, 255);
+    background: #000000;
+}
+
+/* Logo */
+
+/* .dark-mode .light-mode-logo{
+    display: none;
+}
+.dark-mode .dark-mode-logo{
+    display: block;
+} */
+/* Side Bar */
+
+/* background: #020B0F no-repeat center; background-size: cover; */
+.dark-mode .offcanvas-sideBar{
+    background: #020B0F no-repeat center; background-size: cover;
+}
+
+.dark-mode .main_menu li.nav-item a.nav-link{
+    color: rgb(255, 255, 255)!important;
+}
+.dark-mode .course_cat_heading h1, .section_heading h2, .section_heading3 h2 {
+    color: rgb(255, 255, 255)!important;
+}
+.dark-mode .course_heading h3 {
+    color: rgb(255, 255, 255)!important;
+}
+.dark-mode .tile h3 {
+    color: rgb(255, 255, 255)!important;
+}
+.dark-mode .milestone_slider_bg {
+    background-color: #111111;
+}
+.dark-mode .milestone_slider_bg .card-text {
+    color: #605F62;
+}
+.dark-mode .course_single_item {
+    color: #605F62;
+    background-color: #111111;
+}
+.dark-mode .course_single_item .card_text h3{
+    color: #ffffff;
+}
+.dark-mode .course_single_item .card_text p{
+    color: #605F62;
+}
+
+.dark-mode .main_menu li.nav-item a.nav-link{
+    color: #26A9E0!important;
+}
+.dark-mode .title h3 {
+    color: #ffffff;
+}
+
+.dark-mode .serviceTab .nav-link{
+    color: #ffffff!important;
+    background-color:#111111!important;
+}
+.dark-mode .sideBarIcon{
+    color: #33AADB!important;
+}
+.dark-mode #iso{
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.dark-mode .input-icons{
+    color: #25A9E0;
+}
+.dark-mode .daterangepicker .calendar-table {
+    background-color: #111111!important;
+}
+.dark-mode .course_single_item .card_text p {
+    color: #ffffff;
+}
+.dark-mode .before_text {
+    color: #ffffff;
+}
+
+
+

@@ -1,0 +1,18 @@
+.swal2-close{
+    background-color: transparent!important;
+    cursor: pointer!important;
+}
+.swal2-close:hover{
+    color: white!important;
+}
+@media (min-width: 576px)
+{
+    #readMoreAboutUs .modal-dialog {
+        width: 100%;
+        max-width: 1200px;
+        margin: 1.75rem auto;
+    }
+    #readMoreAboutUs .swal2-popup {
+        width: 100% !important;
+    }
+}

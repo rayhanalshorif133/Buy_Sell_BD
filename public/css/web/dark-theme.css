@@ -1,0 +1,56 @@
+
+.body-dark {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+}
+
+.body-dark .title {
+    color: #fff !important;
+}
+
+.body-dark .bg-light {
+    background-color: #1a1a1a !important;
+}
+
+.body-dark .readMoreAbout:hover,
+.body-dark .contactSubmitBtn:hover {
+    color: #ffffff !important;
+}
+.body-dark .noServiceAvailable {
+    color: #ffffff !important;
+}
+
+.body-dark .site-nav-wrap .nav-link{
+    color: #ffffff !important;
+}
+.body-dark .site-nav-wrap .active{
+    font-weight: bold !important;
+    color: #ff5733!important;
+}
+.body-dark .site-mobile-menu{
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+.body-dark .site-mobile-menu .sunAndMoonIcon{
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+.body-dark .owl-prev,
+.body-dark .owl-next {
+    color: #ffffff !important;
+}
+
+.body-dark .owl-prev:hover,
+.body-dark .owl-next:hover {
+    color: #ffffff !important;
+}
+.body-dark>h5{
+    color: #ffffff !important;
+}
+.body-dark>.MsoNormal>span{
+    color: #ffffff !important;
+}
+.body-dark>.riz_events{
+    color: #505050 !important;
+}

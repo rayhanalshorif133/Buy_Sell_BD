@@ -1,0 +1,227 @@
+.setting-button {
+    background-color: #181818;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 99;
+    font-size: 22px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    animation: setting 5s infinite linear;
+}
+
+@keyframes setting {
+    0% {
+        background-color: #181818;
+    }
+
+    10% {
+        background-color: #861600;
+    }
+
+    20% {
+        background-color: #7b8600;
+    }
+
+    30% {
+        background-color: #008600;
+    }
+
+    40% {
+        background-color: #00867b;
+    }
+
+    50% {
+        background-color: #00358b;
+    }
+
+    60% {
+        background-color: #0c008b;
+    }
+
+    70% {
+        background-color: #7b0086;
+    }
+
+    80% {
+        background-color: #900020;
+    }
+
+    90% {
+        background-color: #4d0090;
+    }
+
+    100% {
+        background-color: #181818;
+    }
+}
+
+.fa-solid {
+    font-size: 18px !important;
+}
+
+.setting-button:hover {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+/* The popup form - hidden by default */
+.card-popup {
+    width: 25%;
+    background: #343a40;
+    display: none;
+    position: fixed;
+    bottom: 76px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    animation: cardPopup 5s infinite linear;
+}
+
+@keyframes cardPopup {
+    0% {
+        border-color: #181818;
+    }
+
+    10% {
+        border-color: #861600;
+    }
+
+    20% {
+        border-color: #7b8600;
+    }
+
+    30% {
+        border-color: #008600;
+    }
+
+    40% {
+        border-color: #00867b;
+    }
+
+    50% {
+        border-color: #00358b;
+    }
+
+    60% {
+        border-color: #0c008b;
+    }
+
+    70% {
+        border-color: #7b0086;
+    }
+
+    80% {
+        border-color: #900020;
+    }
+
+    90% {
+        border-color: #4d0090;
+    }
+
+    100% {
+        border-color: #181818;
+    }
+}
+
+/* Add styles to the form container */
+.card-container {
+    max-width: 300px;
+    padding: 10px 10px 10px 20px;
+    background: #343a40;
+}
+
+/* Full-width input fields */
+.card-container hr {
+    border: 0.1rem solid #c5c5c5;
+    margin-bottom: 25px;
+}
+.card-container h6 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-container h3 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 20px;
+}
+.card-container .mb-2 span {
+    color: #dfdfdf;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Full-width input fields */
+.card-container input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0 22px 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.card-container .header-color {
+    cursor: pointer;
+}
+.card-container .header-color span {
+    margin: 0 10px 0 0;
+    display: block;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    transition: all 0.1s ease-in-out;
+}
+.card-container .header-color span:hover {
+    border: 2px solid #ffffff;
+}
+
+/* header-text-color:start */
+.card-container .header-text-color {
+    cursor: pointer;
+}
+.card-container .header-text-color span {
+    margin: 0 10px 0 0;
+    display: block;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    transition: all 0.1s ease-in-out;
+}
+.card-container .header-text-color span:nth-child(1):hover
+{
+    border: 2px solid #ffffff;
+}
+.card-container .header-text-color span:nth-child(2):hover {
+    border: 2px solid #000000;
+}
+
+/* header-text-color:end */
+
+.fa-gear {
+    animation: fa-gear 3s infinite linear;
+}
+
+/* fa-gear add key frames */
+@keyframes fa-gear {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

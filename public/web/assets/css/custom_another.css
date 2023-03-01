@@ -1,0 +1,57 @@
+.popup_container {
+    position: fixed;
+    background: #000000e0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.popup_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    max-width: 80vh;
+}
+.popup_button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+}
+.side_text_2 {
+    width: 300px;
+    position: fixed;
+    top: 40%;
+    left: -135px;
+    z-index: 999;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.side_text_2 a {
+    letter-spacing: .2px;
+}
+.side_text_2 a,
+.topbar_text a {
+    line-height: 27px;
+    color: #fff;
+}
+
+.side_text_2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 700%;
+    bottom: 165%;
+    right: 111px;
+    z-index: -1;
+    background-image: url(https://creativeitinstitute.com/assets/seminar_btn_bg.png);
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}

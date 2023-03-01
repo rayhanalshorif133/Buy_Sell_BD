@@ -1,0 +1,447 @@
+<div class="row p-3">
+    <ul class="nav nav-pills mb-3 ticket-nav" id="pills-tab" role="tablist" style="margin: 0 0 0 7px;">
+        <li class="nav-item" role="presentation">
+            <span class="btn btn-md btn-buy-sell active" id="pills-roundtrip-tab" data-bs-toggle="pill" data-bs-target="#pills-roundtrip"
+            type="button" role="tab" aria-controls="pills-roundtrip" aria-selected="true">Roundtrip</span>
+        </li>
+        <li class="nav-item" role="presentation">
+            <span class="btn btn-md btn-buy-sell" id="pills-one-way-tab" data-bs-toggle="pill" data-bs-target="#pills-one-way"
+            type="button" role="tab" aria-controls="pills-one-way" aria-selected="false">One-way</span>
+        </li>
+        <li class="nav-item" role="presentation">
+            <span class="btn btn-md btn-buy-sell" id="pills-multi-city-tab" data-bs-toggle="pill" data-bs-target="#pills-multi-city"
+            type="button" role="tab" aria-controls="pills-multi-city" aria-selected="false">Multi-city</span>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-roundtrip" role="tabpanel" aria-labelledby="pills-roundtrip-tab">
+            <div class="row">
+                <div class="col-md-8 mb-3">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label for="select-to" class="form-label">From</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <input type="text" for="select-from" class="form-control form-control-lg input-field location-from" placeholder="From">
+                                <span class="form-select d-none select-from">
+                                    <div class="text-center m-auto">
+                                        <div class="spinner-border text-ticket" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-1" style="margin-top: 3rem!important;">
+                            <div class="text-center">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="select-to" class="form-label">To</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <input type="text" for="select-to" class="form-control form-control-lg input-field location-to" placeholder="To">
+                                <span class="form-select d-none select-to">
+                                    <option value="0">
+                                        <div class="text-center m-auto">
+                                            <div class="spinner-border text-ticket" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                    </option>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="dates" class="form-label">Departing & Returning</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-calendar-alt icon"></i>
+                                <input type="text" name="dates" class="form-control form-control-lg input-field" />
+                            </div>
+                        </div>
+                        {{-- <div class="col-md-8">
+                            <input type="text" name="dates" class="form-control form-control-lg input-field" />
+                        </div> --}}
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="name" class="form-label">Name</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-user icon"></i>
+                                <input type="text" name="name" class="form-control form-control-lg input-field" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-envelope icon"></i>
+                                <input type="email" name="email" class="form-control form-control-lg input-field" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="phone" class="form-label">Phone</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-phone icon"></i>
+                                <input type="number" name="phone" class="form-control form-control-lg input-field" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- submit btn --}}
+                <div class="col-md-12 mb-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-md btn-buy-sell">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-one-way" role="tabpanel" aria-labelledby="pills-one-way-tab">
+           <div class="row">
+                <div class="col-md-8 mb-3">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label for="select-to" class="form-label">From</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <input type="text" for="select-from" class="form-control form-control-lg input-field location-from"
+                                    placeholder="From">
+                                <span class="form-select d-none select-from">
+                                    <div class="text-center m-auto">
+                                        <div class="spinner-border text-ticket" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-1" style="margin-top: 3rem!important;">
+                            <div class="text-center">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="select-to" class="form-label">To</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <input type="text" for="select-to" class="form-control form-control-lg input-field location-to" placeholder="To">
+                                <span class="form-select d-none select-to">
+                                    <option value="0">
+                                        <div class="text-center m-auto">
+                                            <div class="spinner-border text-ticket" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                    </option>
+                                </span>
+                            </div>
+                        </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="dates" class="form-label">Departing</label>
+                        <div class="input-icons">
+                            <i class="fa-solid fa-calendar-alt icon"></i>
+                            <input type="text" name="departing-dates" class="form-control form-control-lg input-field" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-icons">
+                            <i class="fa-solid fa-user icon"></i>
+                            <input type="text" name="name" class="form-control form-control-lg input-field" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-icons">
+                            <i class="fa-solid fa-envelope icon"></i>
+                            <input type="email" name="email" class="form-control form-control-lg input-field" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="phone" class="form-label">Phone</label>
+                        <div class="input-icons">
+                            <i class="fa-solid fa-phone icon"></i>
+                            <input type="number" name="phone" class="form-control form-control-lg input-field" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- submit btn --}}
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-md btn-buy-sell">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="tab-pane fade" id="pills-multi-city" role="tabpanel" aria-labelledby="pills-multi-city-tab">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="name" class="form-label">Name</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-user icon"></i>
+                                <input type="text" name="name" placeholder="Enter your name" class="form-control form-control-lg input-field" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-envelope icon"></i>
+                                <input type="email" name="email" placeholder="Enter your email" class="form-control form-control-lg input-field" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="phone" class="form-label">Phone</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-phone icon"></i>
+                                <input type="number" name="phone" placeholder="Enter Phone Number" class="form-control form-control-lg input-field" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mb-3">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label for="select-to" class="form-label">From</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <input type="text" for="select-from" class="form-control form-control-lg input-field location-from"
+                                    placeholder="From">
+                                <span class="form-select d-none select-from">
+                                    <div class="text-center m-auto">
+                                        <div class="spinner-border text-ticket" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-1" style="margin-top: 3rem!important;">
+                            <div class="text-center">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="select-to" class="form-label">To</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <input type="text" for="select-to" class="form-control form-control-lg input-field location-to" placeholder="To">
+                                <span class="form-select d-none select-to">
+                                    <option value="0">
+                                        <div class="text-center m-auto">
+                                            <div class="spinner-border text-ticket" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                    </option>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="dates" class="form-label">Departing</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-calendar-alt icon"></i>
+                                <input type="text" name="departing-dates" class="form-control form-control-lg input-field" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    {{-- add anothr btn --}}
+                    <div class="row">
+                        <div class="col-md-12 float-end m-auto">
+                            <button type="button" class="btn btn-md btn-buy-sell">Add Another</button>
+                        </div>
+                    </div>
+                </div>
+                {{-- submit btn --}}
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-md btn-buy-sell">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+        var loading = `
+                <div class="text-center m-auto">
+                    <div class="spinner-border text-ticket" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            `;
+
+        var time = 0;
+
+        $(function() {
+            $('input[name="dates"]').daterangepicker({
+            opens: 'left'
+            }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+
+            $('input[name="departing-dates"]').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true,
+                }, function(start, end, label) {
+                $('input[name="departing-dates"]').val(start.format('YYYY-MM-DD'));
+            });
+        });
+
+        // $('input[name="dates"]').daterangepicker();
+
+
+        $(document).on("click",".select-from option", function(event) {
+            let value = $(this).text();
+            $(".location-from").val(value);
+            $(".select-from").addClass("d-none");
+        });
+
+        $(document).on("click",".select-to option", function(event) {
+            let value = $(this).text();
+            $(".location-to").val(value);
+            $(".select-to").addClass("d-none");
+        });
+
+    $(document).ready(function() {
+        $(".location-from").on("focus", function() {
+            $(".select-from").removeClass("d-none");
+            $(".location-from").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                handleAirportSearch(value, ".select-from");
+                $(".select-from option").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+        // location to
+        $(".location-to").on("focus", function() {
+            $(".select-to").removeClass("d-none");
+            $(".location-to").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                handleAirportSearch(value, ".select-to");
+                $(".select-to option").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+
+        setInterval(() => {
+            $(".location-from").val() == "" ? $(".select-from").html("") : "";
+            $(".location-to").val() == "" ? $(".select-to").html("") : "";
+        }, 3000);
+
+        handleReset();
+    });
+
+
+
+
+    function handleReset(){
+
+        $("#pills-roundtrip-tab").on("click", function() {
+            handleReset();
+        });
+        $("#pills-one-way-tab").on("click", function() {
+            handleReset();
+        });
+
+        $("#pills-multi-city-tab").on("click", function() {
+            handleReset();
+        });
+
+
+
+        $(".location-from").val("");
+        $(".location-to").val("");
+        $(".select-from").html("");
+        $(".select-to").html("");
+    }
+
+
+
+    function handleAirportSearch(value, id){
+        if(value == ""){
+            return false;
+        }
+        $(id).html(loading);
+        clearTimeout(time);
+        time = setTimeout(() => {
+            axios.get(`/airport/${value}/get`)
+            .then(function (response) {
+                let data = response.data.data;
+                let html = "";
+                if(data.length == 0){
+                    html = `<option value="0" disabled>No data</option>`;
+                }else{
+                    data.forEach(element => {
+                        html += `<option value="${element.id}">${element.name}</option>`;
+                    });
+                }
+                $(id).html(html);
+            });
+        }, 2000);
+    }
+
+
+
+</script>
