@@ -33,10 +33,15 @@ a, a:hover {
 
 /* What we do */
 .what_we_do_image {
-    height: 20rem;
+    height: 12rem;
 }
 .what_we_do_text {
     padding: 2rem;
+}
+.what_we_do_text p{
+    color: #1f1e1e;
+    font-size: 16px;
+    font-family: "Noto Sans Bengali", sans-serif;
 }
 
 .banner_text h1 span, .blog_item .blog_text a, .counte_item2 h4, .counte_item3 h4, .pg_banner_text h4 {
