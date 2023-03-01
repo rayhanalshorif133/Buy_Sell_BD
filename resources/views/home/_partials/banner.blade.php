@@ -15,17 +15,17 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <div class="banner_img">
+                        <div class="banner_img membership_banner_images">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
                             src="{{asset('web/assets/images/banner image/membership/4503599660842134_d191.jpg')}}"
                                 alt="Home Banner| Icon">
                             {{-- <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
                             src="{{asset('web/assets/images/banner image/membership/golf club wine table.png')}}"
-                                alt="Home Banner| Icon"> --}}
-                            {{-- <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
+                                alt="Home Banner| Icon">
+                            <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
                             src="{{asset('web/assets/images/banner image/membership/incredible-wine-barrel-table-bobreuterstl_714373.jpg')}}"
-                                alt="Home Banner| Icon"> --}}
-                            {{-- <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
+                                alt="Home Banner| Icon">
+                           <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
                             src="{{asset('web/assets/images/banner image/membership/wine glass-02.png')}}"
                                 alt="Home Banner| Icon"> --}}
                         </div>
@@ -126,6 +126,28 @@
 
     function bannerImageFadeInFadeOutHandler(){
         // banner_img
+        var images = [
+            'web/assets/images/banner image/membership/golf club wine table.png',
+            'web/assets/images/banner image/membership/incredible-wine-barrel-table-bobreuterstl_714373.jpg',
+            'web/assets/images/banner image/membership/wine glass-02.png',
+            'web/assets/images/banner image/membership/4503599660842134_d191.jpg'
+        ]
+        var bannerImage = $(".membership_banner_images img");
+
+        var i = 0;
+        setInterval(function(){
+            bannerImage.fadeOut(1000, function(){
+                bannerImage.attr('src', images[i]);
+                bannerImage.fadeIn(1000);
+            });
+            i++;
+            if(i == images.length){
+                i = 0;
+            }
+        }, 5000);
+
+
+
 
     }
 
