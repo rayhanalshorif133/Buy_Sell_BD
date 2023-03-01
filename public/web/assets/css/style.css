@@ -31,6 +31,14 @@ a, a:hover {
 }
 
 
+/* What we do */
+.what_we_do_image {
+    height: 20rem;
+}
+.what_we_do_text {
+    padding: 2rem;
+}
+
 .banner_text h1 span, .blog_item .blog_text a, .counte_item2 h4, .counte_item3 h4, .pg_banner_text h4 {
     -webkit-text-fill-color: transparent;
 }
