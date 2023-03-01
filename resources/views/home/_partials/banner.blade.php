@@ -39,7 +39,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/license/getty_159626665_970552970450064_70176.jpg')}}"
+                            src="{{asset('web/assets/images/banner image/line for license.png')}}"
                                 alt="Home Banner| Icon">
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/property/AdobeStock_256528624.jpg')}}"
+                            src="{{asset('web/assets/images/banner image/home.png')}}"
                                 alt="Home Banner| Icon">
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/travel/ticket.jpg')}}"
+                            src="{{asset('web/assets/images/banner image/ticket.png')}}"
                                 alt="Home Banner| Icon">
                         </div>
                     </div>
