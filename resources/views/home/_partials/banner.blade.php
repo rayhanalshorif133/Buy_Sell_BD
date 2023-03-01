@@ -7,11 +7,12 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate">
-                                Unlock Exclusive Perks: <br />
-                                Join Our Membership Program Today!
+                            <h1 class="sal-animate text-uppercase" style="font-size:3.5rem;line-height: 4.4rem ">
+                                Want to
+                                <br />
+                                Join club
                             </h1>
-                            <a href="#contact_us" class="btn btn-md btn-buy-sell mt-3">Contact Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <a href="#contact_us" class="btn btn-md btn-buy-sell mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -27,12 +28,12 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate">
-                                License: <br />
-                                Streamline Your Licensing Process: Sell and Renew Licenses with Ease
+                            <h1 class="sal-animate text-uppercase" style="font-size:3.5rem;line-height: 4.4rem ">
+                                Want to hassle free license service
+                            <br />
                             </h1>
                             <p></p>
-                            <a href="#contact_us" class="btn-buy-sell mt-3">Contact Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <a href="#contact_us" class="btn-buy-sell mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -48,12 +49,12 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate">
-                                Property: <br />
-                                Stunning Property for Sale: Your Dream Home Awaits!
+                            <h1 class="sal-animate text-uppercase" style="font-size:3.5rem;line-height: 4.4rem ">
+                               Want to buy, sell and rent land, property, flats
+                                <br />
                             </h1>
                             <p></p>
-                            <a href="#contact_us" class="btn-buy-sell mt-3">Contact Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <a href="#contact_us" class="btn-buy-sell mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -74,7 +75,7 @@
                                 Get Your Ticket to the Ultimate Experience...!!!
                             </h1>
                             <p></p>
-                           <a href="#contact_us" class="btn-buy-sell mt-3">Contact Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                           <a href="#contact_us" class="btn-buy-sell mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -96,7 +97,7 @@
         $('.owl-carousel-banner').owlCarousel({
             loop:true,
             margin:10,
-            autoplay:true,
+            autoplay:false,
             autoplayTimeout:4500,
             autoplayHoverPause:true,
             dots: true,

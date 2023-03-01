@@ -13,8 +13,9 @@
                             src="{{asset('web/assets/images/what_we_do/membership.jpg')}}" alt="membership"
                             loading="lazy"></div>
                     <div class="card_text">
-                        <p>Exclusive Perks</p>
-                        <p>Join Our Membership Program Today!</p>
+                        <p>
+                            We provide an easy and convenient way to transfer your club membership
+                        </p>
                     </div>
                 </div>
             </a>
@@ -28,7 +29,7 @@
                             loading="lazy"></div>
                     <div class="card_text">
                         <h3></h3>
-                        <p>Streamline Your Licensing Process: Sell and Renew Licenses with Ease</p>
+                        <p>License and renewal services refer to the process of obtaining or renewing.</p>
                     </div>
                 </div>
             </a>
@@ -42,7 +43,7 @@
                             loading="lazy"></div>
                     <div class="card_text">
                         <h3></h3>
-                        <p>Stunning Property for Sale: Your Dream Home Awaits!</p>
+                        <p>Property sell or rent services refer to the process of buying, selling, or renting.</p>
                     </div>
                 </div>
             </a>
