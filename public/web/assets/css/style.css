@@ -1,7 +1,10 @@
-@charset "UTF-8";
-    .banner_text h1, .main_menu li.nav-item a.nav-link, .side_text a, .topbar_text a, h1, h2, h3, h4, h5, h6 {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.banner_text h1, .main_menu li.nav-item a.nav-link, .side_text a, .topbar_text a, h1, h2, h3, h4, h5, h6 {
     font-family: Hind Siliguri;
 }
+
+
+
 a, a:hover {
     text-decoration: none;
 }
@@ -40,8 +43,13 @@ a, a:hover {
 }
 .what_we_do_text p{
     color: #1f1e1e;
-    font-size: 16px;
-    font-family: "Noto Sans Bengali", sans-serif;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: justify;
 }
 
 .banner_text h1 span, .blog_item .blog_text a, .counte_item2 h4, .counte_item3 h4, .pg_banner_text h4 {
