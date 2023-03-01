@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-uppercase" style="font-size:3.5rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
                                 Want to
                                 <br />
                                 Join club
@@ -28,7 +28,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-uppercase" style="font-size:3.5rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
                                 Want to hassle free license service
                             <br />
                             </h1>
@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-uppercase" style="font-size:3.5rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
                                Want to buy, sell and rent land, property, flats
                                 <br />
                             </h1>
@@ -70,9 +70,10 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate">
-                                Ticket: <br />
-                                Get Your Ticket to the Ultimate Experience...!!!
+                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
+                                Want to Booking
+                                <br />
+                                Air Ticket
                             </h1>
                             <p></p>
                            <a href="#contact_us" class="btn-buy-sell mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
@@ -81,7 +82,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/property/AdobeStock_256528624.jpg')}}"
+                            src="{{asset('web/assets/images/banner image/travel/ticket.jpg')}}"
                                 alt="Home Banner| Icon">
                         </div>
                     </div>
