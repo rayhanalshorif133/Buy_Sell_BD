@@ -17,8 +17,17 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/Sliders/Membership.png')}}"
+                            src="{{asset('web/assets/images/banner image/membership/4503599660842134_d191.jpg')}}"
                                 alt="Home Banner| Icon">
+                            {{-- <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
+                            src="{{asset('web/assets/images/banner image/membership/golf club wine table.png')}}"
+                                alt="Home Banner| Icon"> --}}
+                            {{-- <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
+                            src="{{asset('web/assets/images/banner image/membership/incredible-wine-barrel-table-bobreuterstl_714373.jpg')}}"
+                                alt="Home Banner| Icon"> --}}
+                            {{-- <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
+                            src="{{asset('web/assets/images/banner image/membership/wine glass-02.png')}}"
+                                alt="Home Banner| Icon"> --}}
                         </div>
                     </div>
                 </div>
@@ -38,7 +47,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/Sliders/License.png')}}"
+                            src="{{asset('web/assets/images/banner image/license/getty_159626665_970552970450064_70176.jpg')}}"
                                 alt="Home Banner| Icon">
                         </div>
                     </div>
@@ -59,7 +68,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/Sliders/property.png')}}"
+                            src="{{asset('web/assets/images/banner image/property/AdobeStock_256528624.jpg')}}"
                                 alt="Home Banner| Icon">
                         </div>
                     </div>
@@ -80,7 +89,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/Sliders/ticket.png')}}"
+                            src="{{asset('web/assets/images/banner image/property/AdobeStock_256528624.jpg')}}"
                                 alt="Home Banner| Icon">
                         </div>
                     </div>
