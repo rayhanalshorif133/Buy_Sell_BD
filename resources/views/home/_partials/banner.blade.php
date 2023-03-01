@@ -17,17 +17,8 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img membership_banner_images">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/membership/4503599660842134_d191.jpg')}}"
+                            src="{{asset('web/assets/images/banner image/membership/CLUB.png')}}"
                                 alt="Home Banner| Icon">
-                            {{-- <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/membership/golf club wine table.png')}}"
-                                alt="Home Banner| Icon">
-                            <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/membership/incredible-wine-barrel-table-bobreuterstl_714373.jpg')}}"
-                                alt="Home Banner| Icon">
-                           <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/membership/wine glass-02.png')}}"
-                                alt="Home Banner| Icon"> --}}
                         </div>
                     </div>
                 </div>
@@ -105,8 +96,8 @@
         $('.owl-carousel-banner').owlCarousel({
             loop:true,
             margin:10,
-            autoplay:false,
-            autoplayTimeout:5000,
+            autoplay:true,
+            autoplayTimeout:4500,
             autoplayHoverPause:true,
             dots: true,
             responsive:{
@@ -126,25 +117,35 @@
 
     function bannerImageFadeInFadeOutHandler(){
         // banner_img
+        var is_active = $(".membership_banner_images").closest('.owl-item').hasClass('active');
         var images = [
-            'web/assets/images/banner image/membership/golf club wine table.png',
-            'web/assets/images/banner image/membership/incredible-wine-barrel-table-bobreuterstl_714373.jpg',
-            'web/assets/images/banner image/membership/wine glass-02.png',
-            'web/assets/images/banner image/membership/4503599660842134_d191.jpg'
+            'web/assets/images/banner image/membership/GOLF PLAYER.png',
+            'web/assets/images/banner image/membership/wine_glass.png',
+            'web/assets/images/banner image/membership/GOLF PLAYER.png',
+            'web/assets/images/banner image/membership/GOLF TABLE.png',
+            'web/assets/images/banner image/membership/CLUB.png',
         ]
         var bannerImage = $(".membership_banner_images img");
 
-        var i = 0;
         setInterval(function(){
-            bannerImage.fadeOut(1000, function(){
-                bannerImage.attr('src', images[i]);
-                bannerImage.fadeIn(1000);
-            });
-            i++;
-            if(i == images.length){
-                i = 0;
-            }
-        }, 5000);
+            is_active = $(".membership_banner_images").closest('.owl-item').hasClass('active');
+        }, 500);
+
+        // owl-item
+
+        if(is_active){
+            var i = 0;
+            setInterval(function(){
+                bannerImage.fadeOut(1000, function(){
+                    bannerImage.attr('src', images[i]);
+                    bannerImage.fadeIn(1000);
+                });
+                i++;
+                if(i == images.length){
+                    i = 0;
+                }
+            }, 5000);
+        }
 
 
 
