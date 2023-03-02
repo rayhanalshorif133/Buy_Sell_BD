@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize membership_banner_text" style="font-size:3.5rem;line-height: 4.4rem ">
                                 Want to
                                 <br />
                                 Join club
@@ -121,13 +121,34 @@
         // banner_img
         var is_active = $(".membership_banner_images").closest('.owl-item').hasClass('active');
         var images = [
-            'web/assets/images/banner image/membership/GOLF PLAYER.png',
-            'web/assets/images/banner image/membership/wine_glass.png',
-            'web/assets/images/banner image/membership/GOLF PLAYER.png',
-            'web/assets/images/banner image/membership/GOLF TABLE.png',
-            'web/assets/images/banner image/membership/CLUB.png',
-        ]
+            {
+                'title': 'Want to <br> Join club',
+                'src': 'web/assets/images/banner image/membership/CLUB.png',
+            },
+            {
+                'title': 'Want to hassle free license service',
+                'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
+            },
+            {
+                'title': 'Want to buy, sell and rent land, property, flats',
+                'src': 'web/assets/images/banner image/membership/wine_glass.png',
+            },
+            {
+                'title': 'Want to Booking <br> Air Ticket',
+                'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
+            },
+            {
+                'title': 'Want to Booking <br> Air Ticket',
+                'src': 'web/assets/images/banner image/membership/GOLF TABLE.png',
+            },
+            {
+                'title': 'Want to Booking <br> Air Ticket',
+                'src': 'web/assets/images/banner image/membership/CLUB.png',
+            }
+        ];
         var bannerImage = $(".membership_banner_images img");
+        var bannerTest = $(".membership_banner_text");
+        bannerTest.html('Want to <br> Join club');
 
         setInterval(function(){
             is_active = $(".membership_banner_images").closest('.owl-item').hasClass('active');
@@ -139,7 +160,8 @@
             var i = 0;
             setInterval(function(){
                 bannerImage.fadeOut(1000, function(){
-                    bannerImage.attr('src', images[i]);
+                    bannerTest.html(images[i].title);
+                    bannerImage.attr('src', images[i].src);
                     bannerImage.fadeIn(1000);
                 });
                 i++;
