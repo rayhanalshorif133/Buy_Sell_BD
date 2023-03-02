@@ -397,6 +397,13 @@ div.success_menu ul.common_slider_class li {
     top: 10%;
     z-index: -1;
 }
+.banner_text_btn {
+    display: block;
+}
+.banner_image_btn {
+    display: none;
+    padding-top: 13%;
+}
 
 .banner_text {
     max-width: 100%;

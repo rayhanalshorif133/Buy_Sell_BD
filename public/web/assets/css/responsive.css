@@ -102,6 +102,14 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
+    /* Banner Btn */
+    .banner_text_btn {
+        display: none;
+    }
+    .banner_image_btn {
+        display: block;
+    }
+
     .main_menu li.nav-item,
     .orjon ul li {
         margin-right: 30px;
@@ -411,6 +419,14 @@
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+     /* Banner Btn */
+    .banner_text_btn {
+        display: none;
+    }
+    .banner_image_btn {
+        display: block;
+    }
 
     .bars>.btn{
         font-size: 28px !important;
@@ -928,6 +944,14 @@
 
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+     /* Banner Btn */
+    .banner_text_btn {
+        display: none;
+    }
+    .banner_image_btn {
+        display: block;
+    }
      .bars>.btn{
         font-size: 23px !important;
     }
@@ -1798,6 +1822,14 @@
     }
 }
 @media (max-width: 575.98px) {
+
+     /* Banner Btn */
+    .banner_text_btn {
+        display: none;
+    }
+    .banner_image_btn {
+        display: block;
+    }
 
     .before_text span{
         display: none;
@@ -3072,6 +3104,14 @@
     }
 }
 @media (max-width: 413px) {
+
+     /* Banner Btn */
+    .banner_text_btn {
+        display: none;
+    }
+    .banner_image_btn {
+        display: block;
+    }
 
     .serviceTab{
         font-size: 12px !important;

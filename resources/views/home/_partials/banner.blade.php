@@ -10,7 +10,9 @@
                             <h1 class="sal-animate text-capitalize membership_banner_text d-none" style="font-size:3.5rem;line-height: 4.4rem ">
                                 Want to join <br> your desire club
                             </h1>
-                            <a href="#contact_us" class="btn btn-md btn-buy-sell mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <div class="banner_text_btn">
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -18,6 +20,9 @@
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
                             src="{{asset('web/assets/images/banner image/membership/CLUB.png')}}"
                                 alt="Home Banner| Icon">
+                        </div>
+                        <div class="m-auto text-center banner_image_btn">
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
@@ -31,7 +36,7 @@
                             <br />
                             </h1>
                             <p></p>
-                            <a href="#contact_us" class="btn-buy-sell mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -52,7 +57,7 @@
                                 <br />
                             </h1>
                             <p></p>
-                            <a href="#contact_us" class="btn-buy-sell mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -74,7 +79,7 @@
                                 Air Ticket
                             </h1>
                             <p></p>
-                           <a href="#contact_us" class="btn-buy-sell mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                           <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -96,7 +101,7 @@
         $('.owl-carousel-banner').owlCarousel({
             loop:true,
             margin:10,
-            autoplay:true,
+            autoplay:false,
             autoplayTimeout:4500,
             autoplayHoverPause:true,
             dots: true,
