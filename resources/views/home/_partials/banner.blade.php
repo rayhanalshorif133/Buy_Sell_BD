@@ -152,12 +152,12 @@
                 'src': 'web/assets/images/banner image/membership/wine_glass.png',
             },
             {
-                'title': 'Find Your <br> Best Activities',
-                'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
+                'title': 'Choice your <br> psychological or mental <br> refreshment place',
+                'src': 'web/assets/images/banner image/membership/golf_table.png',
             },
             {
-                'title': 'Choice your <br> psychological or mental <br> refreshment place',
-                'src': 'web/assets/images/banner image/membership/GOLF TABLE.png',
+                'title': 'Find Your <br> Best Activities',
+                'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
             },
             {
                 'title': 'Want to join <br> your desire club',
