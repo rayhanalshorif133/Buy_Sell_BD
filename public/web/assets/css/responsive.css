@@ -102,6 +102,14 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
+    /* Banner Btn */
+    .banner_text_btn {
+        display: none;
+    }
+    .banner_image_btn {
+        display: block;
+    }
+
     .main_menu li.nav-item,
     .orjon ul li {
         margin-right: 30px;
@@ -411,6 +419,14 @@
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+     /* Banner Btn */
+    .banner_text_btn {
+        display: none;
+    }
+    .banner_image_btn {
+        display: block;
+    }
 
     .bars>.btn{
         font-size: 28px !important;
@@ -928,6 +944,14 @@
 
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+     /* Banner Btn */
+    .banner_text_btn {
+        display: none;
+    }
+    .banner_image_btn {
+        display: block;
+    }
      .bars>.btn{
         font-size: 23px !important;
     }
@@ -1798,6 +1822,14 @@
     }
 }
 @media (max-width: 575.98px) {
+
+     /* Banner Btn */
+    .banner_text_btn {
+        display: none;
+    }
+    .banner_image_btn {
+        display: block;
+    }
 
     .before_text span{
         display: none;
@@ -3028,7 +3060,7 @@
     #course_type {
         margin-top: 13px;
     }
-    .section_heading3 p {
+    .subtitle p {
         max-width: 100%;
     }
     .milestone_slider .card-body {
@@ -3037,7 +3069,7 @@
     }
     .course_cat_heading h1,
     .section_heading h2,
-    .section_heading3 h2 {
+    .subtitle h2 {
         font-size: 40px;
     }
     .facilities_heading h1 {
@@ -3072,6 +3104,14 @@
     }
 }
 @media (max-width: 413px) {
+
+     /* Banner Btn */
+    .banner_text_btn {
+        display: none;
+    }
+    .banner_image_btn {
+        display: block;
+    }
 
     .serviceTab{
         font-size: 12px !important;

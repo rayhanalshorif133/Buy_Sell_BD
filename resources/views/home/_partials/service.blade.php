@@ -32,11 +32,14 @@
                             <div class="pb-6 row">
                                 <div class="col-md-6">
                                     <div class="card_text">
-                                        <p class="before_text text-justify">
-                                            We provide an easy and convenient way to transfer your club membership to a different anew owner. We
-                                            ensure secure,
-                                            reliable, and fast transfer of membership information, ensuring a smooth transition.
-                                            They also provide helpful support to ensure that the process is as hassle-free aspossible.</p>
+                                        <div class="subtitle text-justify">
+                                            <p>
+                                                We provide an easy and convenient way to transfer your club membership to a different a new owner. We
+                                                ensure secure,
+                                                reliable, and fast transfer of membership information, ensuring a smooth transition.
+                                                They also provide helpful support to ensure that the process is as hassle-free aspossible.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -51,6 +54,15 @@
                     </div>
                     <div class="tab-pane fade" id="license" role="tabpanel" aria-labelledby="License-tab">
                         <div class="row">
+                            <div class="col-md-12 py-3 before_text">
+                                <div class="subtitle text-justify">
+                                    <p>
+                                        License and renewal services refer to the process of obtaining or renewing a license, permit, or certification for a specific activity or profession. This may include submitting applications, paying fees, and meeting specific requirements.
+                                        These services ensure that individuals and businesses comply with legal and regulatory standards and maintain their
+                                        ability to operate within their respective industries.
+                                    </p>
+                                </div>
+                            </div>
                             <div class="owl-carousel owl-theme owl-loaded service_slider_license">
                             <div class="owl-stage-outer">
                                 <div class="owl-stage">
@@ -58,11 +70,11 @@
                                         <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
                                             data-sal-easing="ease">
                                             <div class="course_single_item what_we_do">
-                                                <div class="card_image"><img class="img-fluid w-100" src="https://picsum.photos/1080/720"
+                                                <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/1.jpg')}}"
                                                         alt="image" loading="lazy"></div>
                                                 <div class="card_text">
-                                                    <h3>Do It..</h3>
-                                                    <p>With In 7 Days!!!</p>
+                                                    <h3>License</h3>
+                                                    <p>Want to hassle free license service consult with us.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -71,15 +83,29 @@
                                         <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
                                             data-sal-easing="ease">
                                             <div class="course_single_item what_we_do">
-                                                <div class="card_image"><img class="img-fluid w-100" src="https://picsum.photos/1080/720"
+                                                <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/2.jpg')}}"
                                                         alt="image" loading="lazy"></div>
                                                 <div class="card_text">
-                                                    <h3>Do It..</h3>
-                                                    <p>With In 7 Days!!!</p>
+                                                    <h3>License</h3>
+                                                    <p>Want to hassle free license service consult with us.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="owl-item">
+                                        <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
+                                            data-sal-easing="ease">
+                                            <div class="course_single_item what_we_do">
+                                                <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/3.jpg')}}"
+                                                        alt="image" loading="lazy"></div>
+                                                <div class="card_text">
+                                                    <h3>License</h3>
+                                                    <p>Want to hassle free license service consult with us.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             </div>
@@ -88,11 +114,11 @@
                     <div class="tab-pane fade" id="property" role="tabpanel" aria-labelledby="Property-tab">
                         <div class="row">
                             <div class="col-md-12 py-3 before_text">
-                                Property sell or rent services refer to the process of buying, selling, or renting real estate properties such as homes, apartments, and commercial spaces. These services often involve listing properties, conducting property inspections, negotiating prices, and finalizing transactions. They help individuals and businesses find suitable properties that meet their needs and achieve their goals in the real estate market.
-                                {{-- <span>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem assumenda ut odio at ipsam inventore, aliquam, mollitia a quod cum, maxime suscipit. Repudiandae dolorum repellendus sint provident rem voluptatum laudantium!
-                                </span>
-                                <span class="btn btn-sm btn-buy-sell">see more...</span> --}}
+                                <div class="subtitle text-justify">
+                                    <p>
+                                        Property sell or rent services refer to the process of buying, selling, or renting real estate properties such as homes, apartments, and commercial spaces. These services often involve listing properties, conducting property inspections, negotiating prices, and finalizing transactions. They help individuals and businesses find suitable properties that meet their needs and achieve their goals in the real estate market.
+                                    </p>
+                                </div>
                             </div>
                             <div class="owl-carousel owl-theme owl-loaded service_slider_property">
                                 <div class="owl-stage-outer">

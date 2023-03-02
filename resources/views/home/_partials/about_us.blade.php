@@ -4,8 +4,6 @@
     <div class="container">
         <div class="title">
             <h3>About Us</h3>
-            <p>B2M Technologies Ltd. Incorporated in Bangladesh is connected to all major cell phone operators, providing value added
-            services through mobile phone network.</p>
         </div>
         <div class="row" style="margin: 0 10px;">
             <div class="col-12 milestone_slider_bg">
@@ -21,13 +19,16 @@
                                         </div>
                                         <div class="col-md-7">
                                             <div class="card-body">
-                                                <div class="card-title h5">Welcome to B2M</div>
-                                                <p class="card-text">
-                                                    Established in 2006, B2M Technologies Ltd is one of the leading value-added mobile content services and application
-                                                    provider in Bangladesh. Being connected to all Telco’s in the country having subscriber base of 46 million, it is
-                                                    dedicated in providing first class entertainment, informative and relevant mobile content to the fastest growing mobile
-                                                    market.
-                                                </p>
+                                                <div class="subtitle">
+                                                    <h4>B2M Technologies Limited</h4>
+                                                    <p>
+                                                        B2M Technologies Ltd. Incorporated in Bangladesh is connected to all major cell phone operators, providing value added
+                                                        services through mobile phone network. Established in 2006, B2M Technologies Ltd is one of the leading value-added mobile content services and application
+                                                        provider in Bangladesh. Being connected to all Telco’s in the country having subscriber base of 46 million, it is
+                                                        dedicated in providing first class entertainment, informative and relevant mobile content to the fastest growing mobile
+                                                        market.
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -47,7 +48,7 @@
 <script>
     $(document).ready(function(){
         $(".about_slider").owlCarousel({
-            loop:true,
+            loop:false,
             margin:10,
             responsiveClass:true,
             responsive:{

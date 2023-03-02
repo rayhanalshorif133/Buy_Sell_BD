@@ -21,7 +21,7 @@
 .dark-mode .main_menu li.nav-item a.nav-link{
     color: rgb(255, 255, 255)!important;
 }
-.dark-mode .course_cat_heading h1, .section_heading h2, .section_heading3 h2 {
+.dark-mode .course_cat_heading h1, .section_heading h2, .subtitle h2 {
     color: rgb(255, 255, 255)!important;
 }
 .dark-mode .course_heading h3 {
@@ -76,6 +76,13 @@
     color: #ffffff;
 }
 .dark-mode .before_text {
+    color: #ffffff;
+}
+.dark-mode .what_we_do_text p {
+    color: #605f62;
+}
+
+.dark-mode .subtitle h4 {
     color: #ffffff;
 }
 

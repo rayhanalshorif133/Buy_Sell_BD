@@ -7,18 +7,22 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate">
-                                Unlock Exclusive Perks: <br />
-                                Join Our Membership Program Today!
+                            <h1 class="sal-animate text-capitalize membership_banner_text d-none" style="font-size:3.5rem;line-height: 4.4rem ">
+                                Want to join <br> your desire club
                             </h1>
-                            <a href="#contact_us" class="btn btn-md btn-buy-sell mt-3">Contact Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <div class="banner_text_btn">
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <div class="banner_img">
+                        <div class="banner_img membership_banner_images">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/Sliders/Membership.png')}}"
+                            src="{{asset('web/assets/images/banner image/membership/CLUB.png')}}"
                                 alt="Home Banner| Icon">
+                        </div>
+                        <div class="m-auto text-center banner_image_btn">
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
@@ -27,19 +31,24 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate">
-                                License: <br />
-                                Streamline Your Licensing Process: Sell and Renew Licenses with Ease
+                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
+                                Want to hassle free license service
+                            <br />
                             </h1>
                             <p></p>
-                            <a href="#contact_us" class="btn-buy-sell mt-3">Contact Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <div class="banner_text_btn">
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/Sliders/License.png')}}"
+                            src="{{asset('web/assets/images/banner image/line for license.png')}}"
                                 alt="Home Banner| Icon">
+                        </div>
+                        <div class="m-auto text-center banner_image_btn">
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
@@ -48,19 +57,24 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate">
-                                Property: <br />
-                                Stunning Property for Sale: Your Dream Home Awaits!
+                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
+                               Want to buy, sell and rent land, property, flats
+                                <br />
                             </h1>
                             <p></p>
-                            <a href="#contact_us" class="btn-buy-sell mt-3">Contact Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <div class="banner_text_btn">
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/Sliders/property.png')}}"
+                            src="{{asset('web/assets/images/banner image/home.png')}}"
                                 alt="Home Banner| Icon">
+                        </div>
+                        <div class="m-auto text-center banner_image_btn">
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
@@ -69,19 +83,25 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate">
-                                Ticket: <br />
-                                Get Your Ticket to the Ultimate Experience...!!!
+                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
+                                Want to Booking
+                                <br />
+                                Air Ticket
                             </h1>
                             <p></p>
-                           <a href="#contact_us" class="btn-buy-sell mt-3">Contact Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <div class="banner_text_btn">
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/Sliders/ticket.png')}}"
+                            src="{{asset('web/assets/images/banner image/ticket.png')}}"
                                 alt="Home Banner| Icon">
+                        </div>
+                        <div class="m-auto text-center banner_image_btn">
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +117,7 @@
             loop:true,
             margin:10,
             autoplay:false,
-            autoplayTimeout:5000,
+            autoplayTimeout:4500,
             autoplayHoverPause:true,
             dots: true,
             responsive:{
@@ -112,6 +132,70 @@
                 }
             }
         });
+        bannerImageFadeInFadeOutHandler();
     });
+
+    function bannerImageFadeInFadeOutHandler(){
+        // banner_img
+        var is_active = $(".membership_banner_images").closest('.owl-item').hasClass('active');
+        var images = [
+            {
+                'title': 'Want to join <br> your desire club',
+                'src': 'web/assets/images/banner image/membership/CLUB.png',
+            },
+            {
+                'title': 'Find Your <br> Best Activities',
+                'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
+            },
+            {
+                'title': 'Choice <br> Best Refresh environment',
+                'src': 'web/assets/images/banner image/membership/wine_glass.png',
+            },
+            {
+                'title': 'Find Your <br> Best Activities',
+                'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
+            },
+            {
+                'title': 'Choice your <br> psychological or mental <br> refreshment place',
+                'src': 'web/assets/images/banner image/membership/GOLF TABLE.png',
+            },
+            {
+                'title': 'Want to join <br> your desire club',
+                'src': 'web/assets/images/banner image/membership/CLUB.png',
+            }
+        ];
+        var bannerImage = $(".membership_banner_images img");
+        var bannerTest = $(".membership_banner_text");
+
+        bannerTest.html(images[0].title).fadeIn(1000).removeClass('d-none');
+
+        setInterval(function(){
+            is_active = $(".membership_banner_images").closest('.owl-item').hasClass('active');
+        }, 500);
+
+        // owl-item
+
+        if(is_active){
+            var i = 0;
+            setInterval(function(){
+                bannerImage.fadeOut(1000, function(){
+                    bannerImage.attr('src', images[i].src);
+                    bannerImage.fadeIn(1000);
+                });
+
+                bannerTest.fadeOut(1000, function(){
+                    bannerTest.html(images[i].title).fadeIn(1000);
+                });
+                i++;
+                if(i == images.length){
+                    i = 0;
+                }
+            }, 5000);
+        }
+
+
+
+
+    }
 
 </script>

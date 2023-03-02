@@ -1,7 +1,10 @@
-@charset "UTF-8";
-    .banner_text h1, .main_menu li.nav-item a.nav-link, .side_text a, .topbar_text a, h1, h2, h3, h4, h5, h6 {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.banner_text h1, .main_menu li.nav-item a.nav-link, .side_text a, .topbar_text a, h1, h2, h3, h4, h5, h6 {
     font-family: Hind Siliguri;
 }
+
+
+
 a, a:hover {
     text-decoration: none;
 }
@@ -30,6 +33,24 @@ a, a:hover {
     background: linear-gradient(214.38deg, #5daccd -2.24%, #25A9E0 59.38%);
 }
 
+
+/* What we do */
+.what_we_do_image {
+    height: 12rem;
+}
+.what_we_do_text {
+    padding: 2rem;
+}
+.what_we_do_text p{
+    color: #1f1e1e;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: justify;
+}
 
 .banner_text h1 span, .blog_item .blog_text a, .counte_item2 h4, .counte_item3 h4, .pg_banner_text h4 {
     -webkit-text-fill-color: transparent;
@@ -364,6 +385,17 @@ div.success_menu ul.common_slider_class li {
     position: relative;
     clear: both;
 }
+
+.subtitle h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: .20000000298023224px;
+    text-align: left;
+    align-self: left;
+    margin-bottom: 1.5rem!important;
+    color: #000;
+}
 .home_banner .red_shadow {
     position: absolute;
     left: 0;
@@ -376,10 +408,17 @@ div.success_menu ul.common_slider_class li {
     top: 10%;
     z-index: -1;
 }
+.banner_text_btn {
+    display: block;
+}
+.banner_image_btn {
+    display: none;
+    padding: 13%;
+}
 
 .banner_text {
     max-width: 100%;
-    margin: 3rem 0 0 0;
+    margin: 6rem 0 0 0;
 }
 
 .banner_text h5 {
@@ -424,48 +463,13 @@ div.success_menu ul.common_slider_class li {
     line-height: 28px;
     padding-bottom: 22px;
 }
-/* .banner_text a{
+
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     color: #fff;
-} */
-/* .banner_text a {
-    font-family: Hind Siliguri;
-    color: #fff;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    padding: 13px 22px;
-    margin-right: 22px;
-    transition: .3s linear;
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
-    text-align: center;
-} */
-/* .banner_text a:hover {
-    background: #fff;
-    color: #14A2DD;
-    padding-right: 36px;
-} */
-/* .banner_text a:hover span {
-    margin-right: 0;
-    margin-left: -5px;
-} */
-/* .banner_text a:hover span.angle {
-    color: #14A2DD;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    background: linear-gradient(90deg, #0083bc 0%, #14a2dd 35%, #00d4ff 100%);
+    isolation: isolate;
 }
-.banner_text a span {
-    margin-right: 9px;
-    transition: .3s linear;
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
-} */
 .banner_text ul {
     margin-top: 38px;
 }
@@ -729,7 +733,7 @@ div.success_menu ul.common_slider_class li {
     padding-top: 65px;
     padding-bottom: 65px;
 }
-.course_cat_heading h1, .section_heading h2, .section_heading3 h2 {
+.course_cat_heading h1, .section_heading h2, .subtitle h2 {
     color: #1f1e1e;
     font-family: "Hind Siliguri";
     font-weight: 600;
@@ -737,7 +741,7 @@ div.success_menu ul.common_slider_class li {
     line-height: 54px;
     padding-top: 46px;
 }
-.section_heading p, .section_heading2 p, .section_heading3 p {
+.section_heading p, .section_heading2 p, .subtitle p {
     color: #605f62;
     font-size: 18px;
     line-height: 28px;
@@ -752,16 +756,16 @@ div.success_menu ul.common_slider_class li {
     text-align: center;
     padding-bottom: 58px;
 }
-.section_heading2 h2, .section_heading3 h2 {
+.section_heading2 h2, .subtitle h2 {
     padding-bottom: 20px!important;
     font-size: 32px;
     line-height: 38px;
 }
-.section_heading2 p, .section_heading3 p {
+.section_heading2 p, .subtitle p {
     padding-bottom: 15px!important;
     font-size: 15px!important;
 }
-.section_heading3 p {
+.subtitle p {
     max-width: 100%;
     text-align: justify;
     font-size: 15px!important;
