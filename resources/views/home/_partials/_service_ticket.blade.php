@@ -71,7 +71,7 @@
                                     placeholder="From">
                             </div>
                             {{-- a small popup --}}
-                            <div class="popup">
+                            <div class="popup d-none">
                                 <div class="popup-content">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -406,6 +406,7 @@
     $(function() {
         $("#select-from").on("focus", function() {
             $(".popup").removeClass("d-none");
+            $(".location-from-search").focus();
         });
         $(".location-from-search").on("focusout", function() {
             $(".popup").addClass("d-none");
@@ -415,6 +416,27 @@
             var value = $(this).val().toLowerCase();
             $(".content_after_search").removeClass("text-center").addClass("text-start").removeClass("mt-5");
             $(".content_after_search").html(bar_loading);
+
+            setTimeout(function() {
+                $(".content_after_search").html(`
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="location-from-search-list">
+                                <li class="location-from-search-list-item">
+                                    <i class="fa-solid fa-plane"></i>
+                                    Dhaka</li>
+                                <li class="location-from-search-list-item">Chittagong</li>
+                                <li class="location-from-search-list-item">Rajshahi</li>
+                                <li class="location-from-search-list-item">Khulna</li>
+                                <li class="location-from-search-list-item">Barisal</li>
+                                <li class="location-from-search-list-item">Sylhet</li>
+                                <li class="location-from-search-list-item">Rangpur</li>
+                                <li class="location-from-search-list-item">Mymensingh</li>
+                            </ul>
+                        </div>
+                    </div>
+                `);
+            }, 1000);
             // $(".location-from-search-list li").filter(function() {
             //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             // });
