@@ -1,3 +1,37 @@
+<style>
+    /* small popup */
+
+    .popup {
+        position: absolute;
+        margin-top: -60px;
+        height: 25%;
+        background-color: #fff;
+        z-index: 999;
+        width: 22%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .location-from-search{
+        border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid #e0e0e0;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    /* focus */
+    .location-from-search:focus{
+        border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid #e0e0e0;
+        border-top: none;
+        box-shadow: none;
+    }
+
+
+
+
+</style>
+
 <div class="row p-3">
     <ul class="nav nav-pills mb-3 ticket-nav" id="pills-tab" role="tablist" style="margin: 0 0 0 7px;">
         <li class="nav-item" role="presentation">
@@ -20,7 +54,7 @@
                     <div class="row">
                         <div class="col-md-5">
                             <label for="select-to" class="form-label">From</label>
-                            <div class="input-icons">
+                            {{-- <div class="input-icons">
                                 <i class="fa-solid fa-location-dot icon"></i>
                                 <input type="text" for="select-from" class="form-control form-control-lg input-field location-from" placeholder="From">
                                 <span class="form-select d-none select-from">
@@ -30,7 +64,40 @@
                                         </div>
                                     </div>
                                 </span>
+                            </div> --}}
+                            <div class="input-icons">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <input type="text" for="select-from" name="select-from" id="select-from" class="form-control form-control-lg input-field location-from"
+                                    placeholder="From">
                             </div>
+                            {{-- a small popup --}}
+                            <div class="popup d-none">
+                                <div class="popup-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-icons">
+                                                        <i class="fa-solid fa-search icon"></i>
+                                                        <input type="text" for="select-from"
+                                                        class="form-control form-control-lg input-field location-from-search"
+                                                            placeholder="Where are you leaving from?">
+                                                    </div>
+                                                    <div class="text-center mt-5 content_after_search">
+                                                        <div>
+                                                            <i class="fa-solid fa-search icon fs-3"></i>
+                                                        </div>
+                                                        <h5>
+                                                            Search by city or airport
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="col-md-1" style="margin-top: 3rem!important;">
                             <div class="text-center">
@@ -324,6 +391,18 @@
 </div>
 
 <script>
+
+
+    $(function() {
+        $("#select-from").on("focus", function() {
+            $(".popup").removeClass("d-none");
+        });
+        $(".location-from-search").on("focusout", function() {
+            $(".popup").addClass("d-none");
+        });
+
+
+    });
 
         var loading = `
                 <div class="text-center m-auto">
