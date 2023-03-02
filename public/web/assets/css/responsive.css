@@ -5,6 +5,11 @@
     }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    .subtitle h4 {
+        font-size: 22px;
+    }
+
     .countdown_sm_device {
         display: none;
     }
@@ -102,6 +107,9 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
+    .subtitle h4 {
+        font-size: 18px;
+    }
     /* Banner Btn */
     .banner_text_btn {
         display: none;
@@ -420,6 +428,10 @@
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+
+    .subtitle h4 {
+        font-size: 18px;
+    }
      /* Banner Btn */
     .banner_text_btn {
         display: none;
@@ -945,6 +957,9 @@
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
 
+     .subtitle h4 {
+        font-size: 18px;
+    }
      /* Banner Btn */
     .banner_text_btn {
         display: none;
