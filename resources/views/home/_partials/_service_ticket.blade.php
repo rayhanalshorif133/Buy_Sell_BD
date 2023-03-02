@@ -16,7 +16,7 @@
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-roundtrip" role="tabpanel" aria-labelledby="pills-roundtrip-tab">
             <div class="row">
-                <div class="col-md-8 mb-3">
+                <div class="col-md-7 mb-3">
                     <div class="row">
                         <div class="col-md-5">
                             <label for="select-to" class="form-label">From</label>
@@ -56,18 +56,22 @@
                         <div class="col-md-1"></div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-5 mb-3">
                     <div class="row">
-                        <div class="col-md-12">
-                            <label for="dates" class="form-label">Departing & Returning</label>
+                        <div class="col-md-6">
+                            <label for="dates" class="form-label">Departing</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-calendar-alt icon"></i>
-                                <input type="text" name="dates" class="form-control form-control-lg input-field" />
+                                <input type="text" name="dates_departing" class="form-control form-control-lg input-field" />
                             </div>
                         </div>
-                        {{-- <div class="col-md-8">
-                            <input type="text" name="dates" class="form-control form-control-lg input-field" />
-                        </div> --}}
+                        <div class="col-md-6">
+                            <label for="dates" class="form-label">Returning</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-calendar-alt icon"></i>
+                                <input type="text" name="dates_returning" class="form-control form-control-lg input-field" />
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
@@ -332,11 +336,29 @@
         var time = 0;
 
         $(function() {
-            $('input[name="dates"]').daterangepicker({
-            opens: 'left'
+            $('input[name="dates_departing"]').daterangepicker({
+            opens: 'left',
+            locale: {
+                format: 'DD-MMM'
+            },
             }, function(start, end, label) {
-            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+                $('input[name="dates_returning"]').val(end.format('DD-MMM'));
             });
+
+            $('input[name="dates_returning"]').daterangepicker({
+            opens: 'left',
+            locale: {
+                format: 'DD-MMM'
+            },
+            }, function(start, end, label) {
+                $(this).val(start.format('DD-MMM'));
+                $('input[name="dates_departing"]').val(start.format('DD-MMM'));
+            });
+
+            $('input[name="dates_returning"]').change(function() {
+                $('input[name="dates_returning"]').val("sndcnsdkcn");
+            });
+
 
             $('input[name="departing-dates"]').daterangepicker({
                 singleDatePicker: true,
