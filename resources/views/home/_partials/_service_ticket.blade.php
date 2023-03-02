@@ -336,6 +336,10 @@
         var time = 0;
 
         $(function() {
+
+
+            let today = moment().format('DD-MMM');
+
             $('input[name="dates_departing"]').daterangepicker({
             opens: 'left',
             locale: {
@@ -351,13 +355,20 @@
                 format: 'DD-MMM'
             },
             }, function(start, end, label) {
-                $(this).val(start.format('DD-MMM'));
                 $('input[name="dates_departing"]').val(start.format('DD-MMM'));
             });
 
-            $('input[name="dates_returning"]').change(function() {
-                $('input[name="dates_returning"]').val("sndcnsdkcn");
+            $('input[name="dates_departing"]').change(function() {
+                let date = $(this).val().split(" - ")[0];
+                $('input[name="dates_departing"]').val(date);
             });
+            $('input[name="dates_returning"]').change(function() {
+                let date = $(this).val().split(" - ")[1];
+                $('input[name="dates_returning"]').val(date);
+            });
+
+            $('input[name="dates_departing"]').val(today);
+            $('input[name="dates_returning"]').val(today);
 
 
             $('input[name="departing-dates"]').daterangepicker({
