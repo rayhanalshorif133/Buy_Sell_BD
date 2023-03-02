@@ -80,7 +80,7 @@
                             <label for="name" class="form-label">Name</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-user icon"></i>
-                                <input type="text" name="name" class="form-control form-control-lg input-field" />
+                                <input type="text" name="name" class="form-control form-control-lg input-field" placeholder="Enter your name"/>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                             <label for="email" class="form-label">Email</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-envelope icon"></i>
-                                <input type="email" name="email" class="form-control form-control-lg input-field" />
+                                <input type="email" name="email" class="form-control form-control-lg input-field" placeholder="Enter your email" />
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                             <label for="phone" class="form-label">Phone</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-phone icon"></i>
-                                <input type="number" name="phone" class="form-control form-control-lg input-field" />
+                                <input type="number" name="phone" class="form-control form-control-lg input-field" placeholder="Enter your phone"/>
                             </div>
                         </div>
                     </div>
