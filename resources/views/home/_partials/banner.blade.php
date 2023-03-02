@@ -36,7 +36,9 @@
                             <br />
                             </h1>
                             <p></p>
-                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <div class="banner_text_btn">
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -44,6 +46,9 @@
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
                             src="{{asset('web/assets/images/banner image/line for license.png')}}"
                                 alt="Home Banner| Icon">
+                        </div>
+                        <div class="m-auto text-center banner_image_btn">
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
@@ -57,7 +62,9 @@
                                 <br />
                             </h1>
                             <p></p>
-                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <div class="banner_text_btn">
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -65,6 +72,9 @@
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
                             src="{{asset('web/assets/images/banner image/home.png')}}"
                                 alt="Home Banner| Icon">
+                        </div>
+                        <div class="m-auto text-center banner_image_btn">
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +89,9 @@
                                 Air Ticket
                             </h1>
                             <p></p>
-                           <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <div class="banner_text_btn">
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -87,6 +99,9 @@
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
                             src="{{asset('web/assets/images/banner image/ticket.png')}}"
                                 alt="Home Banner| Icon">
+                        </div>
+                        <div class="m-auto text-center banner_image_btn">
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
