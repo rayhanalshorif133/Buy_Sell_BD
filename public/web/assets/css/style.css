@@ -466,9 +466,8 @@ div.success_menu ul.common_slider_class li {
 
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-    color: #fff;
-    background: linear-gradient(90deg, #0083bc 0%, #14a2dd 35%, #00d4ff 100%);
-    isolation: isolate;
+    border-color: #14a2dd;
+    color: #14a2dd;
 }
 .banner_text ul {
     margin-top: 38px;

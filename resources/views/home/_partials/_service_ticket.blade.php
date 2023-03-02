@@ -1,15 +1,15 @@
 <div class="row p-3">
     <ul class="nav nav-pills mb-3 ticket-nav" id="pills-tab" role="tablist" style="margin: 0 0 0 7px;">
         <li class="nav-item" role="presentation">
-            <span class="btn btn-md btn-buy-sell active" id="pills-roundtrip-tab" data-bs-toggle="pill" data-bs-target="#pills-roundtrip"
+            <span class="btn btn-md btn-buy-sell-tab active" id="pills-roundtrip-tab" data-bs-toggle="pill" data-bs-target="#pills-roundtrip"
             type="button" role="tab" aria-controls="pills-roundtrip" aria-selected="true">Roundtrip</span>
         </li>
         <li class="nav-item" role="presentation">
-            <span class="btn btn-md btn-buy-sell" id="pills-one-way-tab" data-bs-toggle="pill" data-bs-target="#pills-one-way"
+            <span class="btn btn-md btn-buy-sell-tab" id="pills-one-way-tab" data-bs-toggle="pill" data-bs-target="#pills-one-way"
             type="button" role="tab" aria-controls="pills-one-way" aria-selected="false">One-way</span>
         </li>
         <li class="nav-item" role="presentation">
-            <span class="btn btn-md btn-buy-sell" id="pills-multi-city-tab" data-bs-toggle="pill" data-bs-target="#pills-multi-city"
+            <span class="btn btn-md btn-buy-sell-tab" id="pills-multi-city-tab" data-bs-toggle="pill" data-bs-target="#pills-multi-city"
             type="button" role="tab" aria-controls="pills-multi-city" aria-selected="false">Multi-city</span>
         </li>
     </ul>

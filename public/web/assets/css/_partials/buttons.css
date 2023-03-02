@@ -10,7 +10,7 @@
     background: linear-gradient(90deg, #0083bc 0%, #14a2dd 35%, #00d4ff 100%);
     border: 1px solid #14A2DD;
     border-radius: 5px;
-    padding: 7px 14px;
+    padding: 14px 20px;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -62,4 +62,22 @@
 }
 .navbar-nav .nav-item:last-child a, .navbar_btn span{
     padding: 5px 10px;
+}
+.btn-buy-sell-tab{
+    color: linear-gradient(90deg, #0083bc 0%, #14a2dd 35%, #00d4ff 100%);
+    background: #fff;
+    border: 1px solid #14A2DD;
+    border-radius: 5px;
+    padding: 7px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    margin: 0 5px;
+}
+.btn-buy-sell-tab:hover{
+    color: #fff;
+    background: linear-gradient(90deg, #0083bc 0%, #14a2dd 35%, #00d4ff 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

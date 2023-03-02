@@ -18,8 +18,10 @@
                        Club Membership
                     </h4>
                     <p class="less">
-                    We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
-                    which offers memberships to classes and
+                        We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
+                        which offers memberships to classes and activities at local gyms, studios, and other venues, and Meetup, which helps
+                        people find and join local groups with similar interests. Offline providers may include local organizations such as
+                        country clubs, sports teams, and community groups.
                     </p>
                     <p class="d-none more">
                         We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
@@ -51,7 +53,11 @@
                     </h4>
                     <p class="less">
                         We offer a range of license and renewal services to help you keep your state-issued identification current and valid.
-                        These services include help with driver’s ...
+                        These services include help with driver’s license renewals, vehicle registration, and more. Depending on the state you
+                        live in, we may be able to help you with renewing your license online, by mail, or in person. In certain states, you may
+                        also be able to register for a new driver’s license or vehicle online. We can help you fill out the necessary forms,
+                        submit the appropriate fees, and ensure that all the necessary paperwork is completed correctly. If you have any
+                        questions about the renewal process, we are available to answer them.
 
                     </p>
                     <p class="d-none more">
@@ -72,27 +78,28 @@
                 </div>
             </div>
         </div>
+
         <div class="col-lg-3 col-md-4 col-sm-6 pb-6 course-padding-area sal-animate" data-sal="slide-right"
             data-sal-duration="800" data-sal-easing="ease">
             <div class="course_single_item what_we_do">
                 <div class="card_image">
                     <img class="img-fluid w-100 what_we_do_image"
-                        src="{{asset('web/assets/images/what_we_do/membership.jpg')}}" alt="membership"
+                        src="{{asset('web/assets/images/what_we_do/property.jpg')}}" alt="membership"
                         loading="lazy">
                 </div>
                 <div class="subtitle p-3">
                     <h4>
-                       Club Membership
+                       Choice of Property
                     </h4>
                     <p class="less">
-                    We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
-                    which offers memberships to classes and
+                        We meet the client's needs and then negotiate the best deal. In this service, we tailor to the client's individual needs
+                        including budget, location, size and amenities. The service includes assistance with all paperwork and other legal
+                        matters.
                     </p>
                     <p class="d-none more">
-                        We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
-                        which offers memberships to classes and activities at local gyms, studios, and other venues, and Meetup, which helps
-                        people find and join local groups with similar interests. Offline providers may include local organizations such as
-                        country clubs, sports teams, and community groups.
+                        We meet the client's needs and then negotiate the best deal. In this service, we tailor to the client's individual needs
+                        including budget, location, size and amenities. The service includes assistance with all paperwork and other legal
+                        matters.
                     </p>
                     <div class="text-left read_more_what_we_do">
                         <span class="btn btn-md btn-buy-sell">Read More</span>
@@ -114,11 +121,13 @@
                 </div>
                 <div class="subtitle p-3">
                     <h4>
-                       Club Membership
+                        Ticket
                     </h4>
                     <p class="less">
-                    We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
-                    which offers memberships to classes and
+                        We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
+                        which offers memberships to classes and activities at local gyms, studios, and other venues, and Meetup, which helps
+                        people find and join local groups with similar interests. Offline providers may include local organizations such as
+                        country clubs, sports teams, and community groups.
                     </p>
                     <p class="d-none more">
                         We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
@@ -141,6 +150,13 @@
 </div>
 <script>
     $(function(){
+        // show 100 characters
+        $(".less").each(function(){
+            var text = $(this).text();
+            if(text.length > 75){
+                $(this).text(text.substring(0, 75) + "...");
+            }
+        });
         $(".read_more_what_we_do").on("click", function(){
             $(this).toggleClass("d-none");
             $(this).parent().find(".more").toggleClass("d-none");
