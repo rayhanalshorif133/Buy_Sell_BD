@@ -153,8 +153,8 @@
         // show 100 characters
         $(".less").each(function(){
             var text = $(this).text();
-            if(text.length > 100){
-                $(this).text(text.substring(0, 100) + "...");
+            if(text.length > 75){
+                $(this).text(text.substring(0, 75) + "...");
             }
         });
         $(".read_more_what_we_do").on("click", function(){
