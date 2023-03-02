@@ -7,10 +7,8 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-capitalize membership_banner_text" style="font-size:3.5rem;line-height: 4.4rem ">
-                                Want to
-                                <br />
-                                Join club
+                            <h1 class="sal-animate text-capitalize membership_banner_text d-none" style="font-size:3.5rem;line-height: 4.4rem ">
+                                Want to join <br> your desire club
                             </h1>
                             <a href="#contact_us" class="btn btn-md btn-buy-sell mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
@@ -122,33 +120,34 @@
         var is_active = $(".membership_banner_images").closest('.owl-item').hasClass('active');
         var images = [
             {
-                'title': 'Want to <br> Join club',
+                'title': 'Want to join <br> your desire club',
                 'src': 'web/assets/images/banner image/membership/CLUB.png',
             },
             {
-                'title': 'Want to hassle free license service',
+                'title': 'Find Your <br> Best Activities',
                 'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
             },
             {
-                'title': 'Want to buy, sell and rent land, property, flats',
+                'title': 'Choice <br> Best Refresh environment',
                 'src': 'web/assets/images/banner image/membership/wine_glass.png',
             },
             {
-                'title': 'Want to Booking <br> Air Ticket',
+                'title': 'Find Your <br> Best Activities',
                 'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
             },
             {
-                'title': 'Want to Booking <br> Air Ticket',
+                'title': 'Choice your <br> psychological or mental <br> refreshment place',
                 'src': 'web/assets/images/banner image/membership/GOLF TABLE.png',
             },
             {
-                'title': 'Want to Booking <br> Air Ticket',
+                'title': 'Want to join <br> your desire club',
                 'src': 'web/assets/images/banner image/membership/CLUB.png',
             }
         ];
         var bannerImage = $(".membership_banner_images img");
         var bannerTest = $(".membership_banner_text");
-        bannerTest.html('Want to <br> Join club');
+
+        bannerTest.html(images[0].title).fadeIn(1000).removeClass('d-none');
 
         setInterval(function(){
             is_active = $(".membership_banner_images").closest('.owl-item').hasClass('active');
@@ -160,9 +159,12 @@
             var i = 0;
             setInterval(function(){
                 bannerImage.fadeOut(1000, function(){
-                    bannerTest.html(images[i].title);
                     bannerImage.attr('src', images[i].src);
                     bannerImage.fadeIn(1000);
+                });
+
+                bannerTest.fadeOut(1000, function(){
+                    bannerTest.html(images[i].title).fadeIn(1000);
                 });
                 i++;
                 if(i == images.length){
