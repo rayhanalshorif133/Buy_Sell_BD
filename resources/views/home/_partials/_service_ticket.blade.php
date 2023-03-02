@@ -76,7 +76,7 @@
                                     placeholder="From">
                             </div>
                             {{-- a small popup --}}
-                            <div class="popup d-nonesd">
+                            <div class="popup d-none">
                                 <div class="popup-content">
                                     <div class="row">
                                         <div class="col-md-12">
