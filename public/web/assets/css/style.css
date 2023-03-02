@@ -3,6 +3,30 @@
     font-family: Hind Siliguri;
 }
 
+/* font size */
+.fs-9{
+    font-size: 9rem!important;
+}
+
+.loadingEffect{
+    color: #3c3c3c;
+    transition: all 0.5s ease;
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
 
 
 a, a:hover {

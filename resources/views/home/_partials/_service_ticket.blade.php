@@ -71,7 +71,7 @@
                                     placeholder="From">
                             </div>
                             {{-- a small popup --}}
-                            <div class="popup d-none">
+                            <div class="popup">
                                 <div class="popup-content">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -83,13 +83,17 @@
                                                         class="form-control form-control-lg input-field location-from-search"
                                                             placeholder="Where are you leaving from?">
                                                     </div>
-                                                    <div class="text-center mt-5 content_after_search">
+                                                    <div class="text-center px-4 mt-5 content_after_search">
                                                         <div>
                                                             <i class="fa-solid fa-search icon fs-3"></i>
                                                         </div>
                                                         <h5>
                                                             Search by city or airport
                                                         </h5>
+
+                                                        {{-- make a loading row --}}
+
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -392,6 +396,12 @@
 
 <script>
 
+    var bar_loading = `
+    <div class="row">
+        <i class="fa-solid fa-bars fs-9 loadingEffect"></i>
+    </div>
+    `;
+
 
     $(function() {
         $("#select-from").on("focus", function() {
@@ -401,6 +411,14 @@
             $(".popup").addClass("d-none");
         });
 
+        $(".location-from-search").keyup(function() {
+            var value = $(this).val().toLowerCase();
+            $(".content_after_search").removeClass("text-center").addClass("text-start").removeClass("mt-5");
+            $(".content_after_search").html(bar_loading);
+            // $(".location-from-search-list li").filter(function() {
+            //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            // });
+        });
 
     });
 
