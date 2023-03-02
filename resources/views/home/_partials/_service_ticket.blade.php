@@ -4,11 +4,16 @@
     .popup {
         position: absolute;
         margin-top: -60px;
-        height: 25%;
+        height: 40%;
         background-color: #fff;
         z-index: 999;
         width: 22%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        /* scroll */
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* scroll */
+
     }
 
     .location-from-search{
@@ -71,7 +76,7 @@
                                     placeholder="From">
                             </div>
                             {{-- a small popup --}}
-                            <div class="popup d-none">
+                            <div class="popup d-nonesd">
                                 <div class="popup-content">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -83,13 +88,15 @@
                                                         class="form-control form-control-lg input-field location-from-search"
                                                             placeholder="Where are you leaving from?">
                                                     </div>
-                                                    <div class="text-center px-4 mt-5 content_after_search">
-                                                        <div>
-                                                            <i class="fa-solid fa-search icon fs-3"></i>
+                                                    <div class="text-center mt-5 content_after_search">
+                                                        <div class="my-5">
+                                                            <div>
+                                                                <i class="fa-solid fa-search icon fs-3"></i>
+                                                            </div>
+                                                            <h5>
+                                                                Search by city or airport
+                                                            </h5>
                                                         </div>
-                                                        <h5>
-                                                            Search by city or airport
-                                                        </h5>
 
                                                         {{-- make a loading row --}}
 
@@ -397,10 +404,12 @@
 <script>
 
     var bar_loading = `
-    <div class="row">
+    <div class="row px-3">
         <i class="fa-solid fa-bars fs-9 loadingEffect"></i>
     </div>
     `;
+
+
 
 
     $(function() {
@@ -417,26 +426,50 @@
             $(".content_after_search").removeClass("text-center").addClass("text-start").removeClass("mt-5");
             $(".content_after_search").html(bar_loading);
 
-            setTimeout(function() {
-                $(".content_after_search").html(`
+            clearTimeout(time);
+            time = setTimeout(() => {
+                axios.get(`/airport/${value}/get`)
+                .then(function (response) {
+                    let data = response.data.data;
+                    let html = "";
+                    if(data.length == 0){
+                        html = `
+                        <li class="location-from-search-list-item">
+                            <i class="fa-solid fa-plane"></i>
+                            No Result Found
+                        </li>
+                        `;
+                    }else{
+                        data.forEach(element => {
+                            console.log(element);
+                        html += `<li class="location-from-search-list-item" id="ariport-${element.id}">
+                           <i class="fa-solid fa-plane"></i>
+                            <span>${element.name}</span>
+                            <p>${element.countryName}</p>
+                            </li>`;
+                        });
+                        }
+                    $(".content_after_search").html(`
                     <div class="row">
                         <div class="col-md-12">
-                            <ul class="location-from-search-list">
-                                <li class="location-from-search-list-item">
-                                    <i class="fa-solid fa-plane"></i>
-                                    Dhaka</li>
-                                <li class="location-from-search-list-item">Chittagong</li>
-                                <li class="location-from-search-list-item">Rajshahi</li>
-                                <li class="location-from-search-list-item">Khulna</li>
-                                <li class="location-from-search-list-item">Barisal</li>
-                                <li class="location-from-search-list-item">Sylhet</li>
-                                <li class="location-from-search-list-item">Rangpur</li>
-                                <li class="location-from-search-list-item">Mymensingh</li>
+                            <ul class="location-from-search-list">${html}
                             </ul>
                         </div>
                     </div>
-                `);
-            }, 1000);
+                    `);
+                });
+            }, 2000);
+            // $(".content_after_search").html(`
+            //     <div class="row">
+            //         <div class="col-md-12">
+            //             <ul class="location-from-search-list">
+            //                 <li class="location-from-search-list-item">
+            //                     <i class="fa-solid fa-plane"></i>
+            //                     Dhaka</li>
+            //             </ul>
+            //         </div>
+            //     </div>
+            // `);
             // $(".location-from-search-list li").filter(function() {
             //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             // });
