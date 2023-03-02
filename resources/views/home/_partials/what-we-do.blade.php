@@ -12,12 +12,18 @@
                     <div class="card_image">
                         <img class="img-fluid w-100 what_we_do_image"
                             src="{{asset('web/assets/images/what_we_do/membership.jpg')}}" alt="membership"
-                            loading="lazy"></div>
-                    <div class="what_we_do_text">
+                            loading="lazy">
+                    </div>
+                    <div class="subtitle">
+                        <h4>
+                           We provide an easy and convenient way to transfer your club membership
+                        </h4>
+                    </div>
+                    {{-- <div class="what_we_do_text">
                         <p>
                             We provide an easy and convenient way to transfer your club membership
                         </p>
-                    </div>
+                    </div> --}}
                 </div>
             </a>
         </div>

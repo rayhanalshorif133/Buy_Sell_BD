@@ -32,7 +32,7 @@
                             <div class="pb-6 row">
                                 <div class="col-md-6">
                                     <div class="card_text">
-                                        <div class="section_heading3 text-justify">
+                                        <div class="subtitle text-justify">
                                             <p>
                                                 We provide an easy and convenient way to transfer your club membership to a different a new owner. We
                                                 ensure secure,
@@ -55,7 +55,7 @@
                     <div class="tab-pane fade" id="license" role="tabpanel" aria-labelledby="License-tab">
                         <div class="row">
                             <div class="col-md-12 py-3 before_text">
-                                <div class="section_heading3 text-justify">
+                                <div class="subtitle text-justify">
                                     <p>
                                         License and renewal services refer to the process of obtaining or renewing a license, permit, or certification for a specific activity or profession. This may include submitting applications, paying fees, and meeting specific requirements.
                                         These services ensure that individuals and businesses comply with legal and regulatory standards and maintain their
@@ -114,7 +114,7 @@
                     <div class="tab-pane fade" id="property" role="tabpanel" aria-labelledby="Property-tab">
                         <div class="row">
                             <div class="col-md-12 py-3 before_text">
-                                <div class="section_heading3 text-justify">
+                                <div class="subtitle text-justify">
                                     <p>
                                         Property sell or rent services refer to the process of buying, selling, or renting real estate properties such as homes, apartments, and commercial spaces. These services often involve listing properties, conducting property inspections, negotiating prices, and finalizing transactions. They help individuals and businesses find suitable properties that meet their needs and achieve their goals in the real estate market.
                                     </p>

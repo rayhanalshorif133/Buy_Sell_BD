@@ -16,7 +16,7 @@
             <div class="col-lg-7 offset-lg-1 col-md-6 sal-animate" data-sal="slide-down" data-sal-delay="300"
                 data-sal-duration="1000" data-sal-easing="ease">
                 <div class="iso_text">
-                    <div class="section_heading3">
+                    <div class="subtitle">
                         <h4>About Rizwan Bin Farouq</h4>
                         <p class="text-justify mb-3">
                             Masters in Finance from the University of Dhaka 1982. 18 years of extensive experience in Banking & Financial Services industry, mostly in Hong Kong.
@@ -43,7 +43,7 @@
                         <div class="sal-animate readMoreAboutCeo d-none" data-sal="slide-down" data-sal-delay="300" data-sal-duration="1000"
                             data-sal-easing="ease">
                             <div class="iso_text">
-                                <div class="section_heading3">
+                                <div class="subtitle">
                                     <p class="text-justify">
                                     <h4>Memberships</h4>
                                     <div class="w-100 justify">

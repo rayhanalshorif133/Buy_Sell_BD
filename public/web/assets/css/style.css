@@ -385,6 +385,17 @@ div.success_menu ul.common_slider_class li {
     position: relative;
     clear: both;
 }
+
+.subtitle h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: .20000000298023224px;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 1.5rem!important;
+    color: #000;
+}
 .home_banner .red_shadow {
     position: absolute;
     left: 0;
@@ -757,7 +768,7 @@ div.success_menu ul.common_slider_class li {
     padding-top: 65px;
     padding-bottom: 65px;
 }
-.course_cat_heading h1, .section_heading h2, .section_heading3 h2 {
+.course_cat_heading h1, .section_heading h2, .subtitle h2 {
     color: #1f1e1e;
     font-family: "Hind Siliguri";
     font-weight: 600;
@@ -765,7 +776,7 @@ div.success_menu ul.common_slider_class li {
     line-height: 54px;
     padding-top: 46px;
 }
-.section_heading p, .section_heading2 p, .section_heading3 p {
+.section_heading p, .section_heading2 p, .subtitle p {
     color: #605f62;
     font-size: 18px;
     line-height: 28px;
@@ -780,16 +791,16 @@ div.success_menu ul.common_slider_class li {
     text-align: center;
     padding-bottom: 58px;
 }
-.section_heading2 h2, .section_heading3 h2 {
+.section_heading2 h2, .subtitle h2 {
     padding-bottom: 20px!important;
     font-size: 32px;
     line-height: 38px;
 }
-.section_heading2 p, .section_heading3 p {
+.section_heading2 p, .subtitle p {
     padding-bottom: 15px!important;
     font-size: 15px!important;
 }
-.section_heading3 p {
+.subtitle p {
     max-width: 100%;
     text-align: justify;
     font-size: 15px!important;

@@ -3060,7 +3060,7 @@
     #course_type {
         margin-top: 13px;
     }
-    .section_heading3 p {
+    .subtitle p {
         max-width: 100%;
     }
     .milestone_slider .card-body {
@@ -3069,7 +3069,7 @@
     }
     .course_cat_heading h1,
     .section_heading h2,
-    .section_heading3 h2 {
+    .subtitle h2 {
         font-size: 40px;
     }
     .facilities_heading h1 {

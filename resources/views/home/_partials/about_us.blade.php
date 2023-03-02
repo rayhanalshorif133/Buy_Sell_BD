@@ -19,8 +19,8 @@
                                         </div>
                                         <div class="col-md-7">
                                             <div class="card-body">
-                                                <div class="section_heading3">
-                                                    <h4 class="mb-4">B2M Technologies Limited</h4>
+                                                <div class="subtitle">
+                                                    <h4>B2M Technologies Limited</h4>
                                                     <p>
                                                         B2M Technologies Ltd. Incorporated in Bangladesh is connected to all major cell phone operators, providing value added
                                                         services through mobile phone network. Established in 2006, B2M Technologies Ltd is one of the leading value-added mobile content services and application
