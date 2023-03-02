@@ -72,27 +72,27 @@
                 </div>
             </div>
         </div>
+
         <div class="col-lg-3 col-md-4 col-sm-6 pb-6 course-padding-area sal-animate" data-sal="slide-right"
             data-sal-duration="800" data-sal-easing="ease">
             <div class="course_single_item what_we_do">
                 <div class="card_image">
                     <img class="img-fluid w-100 what_we_do_image"
-                        src="{{asset('web/assets/images/what_we_do/membership.jpg')}}" alt="membership"
+                        src="{{asset('web/assets/images/what_we_do/property.jpg')}}" alt="membership"
                         loading="lazy">
                 </div>
                 <div class="subtitle p-3">
                     <h4>
-                       Club Membership
+                       Choice of Property
                     </h4>
                     <p class="less">
-                    We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
-                    which offers memberships to classes and
+                    We meet the client's needs and then negotiate the best deal. In this service, we tailor to
+                    the client's individual needs including budget, location, ...
                     </p>
                     <p class="d-none more">
-                        We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
-                        which offers memberships to classes and activities at local gyms, studios, and other venues, and Meetup, which helps
-                        people find and join local groups with similar interests. Offline providers may include local organizations such as
-                        country clubs, sports teams, and community groups.
+                        We meet the client's needs and then negotiate the best deal. In this service, we tailor to the client's individual needs
+                        including budget, location, size and amenities. The service includes assistance with all paperwork and other legal
+                        matters.
                     </p>
                     <div class="text-left read_more_what_we_do">
                         <span class="btn btn-md btn-buy-sell">Read More</span>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="subtitle p-3">
                     <h4>
-                       Club Membership
+                        Ticket
                     </h4>
                     <p class="less">
                     We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
