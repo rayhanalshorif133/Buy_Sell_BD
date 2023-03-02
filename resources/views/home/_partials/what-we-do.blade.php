@@ -14,16 +14,15 @@
                             src="{{asset('web/assets/images/what_we_do/membership.jpg')}}" alt="membership"
                             loading="lazy">
                     </div>
-                    <div class="subtitle">
+                    <div class="subtitle p-3">
                         <h4>
-                           We provide an easy and convenient way to transfer your club membership
+                           Club Membership
                         </h4>
+                        <p>We offer club memberships, including both online and offline services. Some popular online providers include ClassPass,
+                        which offers memberships to classes and activities at local gyms, studios, and other venues, and Meetup, which helps
+                        people find and join local groups with similar interests. Offline providers may include local organizations such as
+                        country clubs, sports teams, and community groups.</p>
                     </div>
-                    {{-- <div class="what_we_do_text">
-                        <p>
-                            We provide an easy and convenient way to transfer your club membership
-                        </p>
-                    </div> --}}
                 </div>
             </a>
         </div>

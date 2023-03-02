@@ -391,8 +391,8 @@ div.success_menu ul.common_slider_class li {
     font-weight: 700;
     line-height: 36px;
     letter-spacing: .20000000298023224px;
-    text-align: center;
-    align-self: center;
+    text-align: left;
+    align-self: left;
     margin-bottom: 1.5rem!important;
     color: #000;
 }
@@ -463,48 +463,13 @@ div.success_menu ul.common_slider_class li {
     line-height: 28px;
     padding-bottom: 22px;
 }
-/* .banner_text a{
+
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     color: #fff;
-} */
-/* .banner_text a {
-    font-family: Hind Siliguri;
-    color: #fff;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    padding: 13px 22px;
-    margin-right: 22px;
-    transition: .3s linear;
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
-    text-align: center;
-} */
-/* .banner_text a:hover {
-    background: #fff;
-    color: #14A2DD;
-    padding-right: 36px;
-} */
-/* .banner_text a:hover span {
-    margin-right: 0;
-    margin-left: -5px;
-} */
-/* .banner_text a:hover span.angle {
-    color: #14A2DD;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    background: linear-gradient(90deg, #0083bc 0%, #14a2dd 35%, #00d4ff 100%);
+    isolation: isolate;
 }
-.banner_text a span {
-    margin-right: 9px;
-    transition: .3s linear;
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
-} */
 .banner_text ul {
     margin-top: 38px;
 }
