@@ -421,10 +421,19 @@
             $(".popup").addClass("d-none");
         });
 
-        $(".location-from-search").keyup(function() {
+        $(".location-from-search").keyup(function(event) {
             var value = $(this).val().toLowerCase();
+
+            // arrow key
+            console.log(event.keyCode);
             $(".content_after_search").removeClass("text-center").addClass("text-start").removeClass("mt-5");
-            $(".content_after_search").html(bar_loading);
+            if (event.keyCode == 40) {
+                $(".location-from-search-list-item").addClass("active");
+                return false;
+            }else{
+                $(".content_after_search").html(bar_loading);
+            }
+
 
             clearTimeout(time);
             time = setTimeout(() => {
@@ -441,7 +450,6 @@
                         `;
                     }else{
                         data.forEach(element => {
-                            console.log(element);
                         html += `<li class="location-from-search-list-item" id="ariport-${element.id}">
                            <i class="fa-solid fa-plane"></i>
                             <span>${element.name}</span>

@@ -48,6 +48,7 @@
     font-weight: 400;
     padding-left: 22px;
 }
+.location-from-search-list .active,
 .location-from-search-list-item:hover{
     background-color: #E7EDFD;
 }
