@@ -212,22 +212,22 @@ $(function() {
             $('input[name="dates_returning"]').val(selectDate);
             dates_returning.data('daterangepicker').setStartDate(selectDate);
         });
+});
+function handleReset(){
+    $("#pills-roundtrip-tab").on("click", function () {
+        handleReset();
     });
-    function handleReset(){
-        $("#pills-roundtrip-tab").on("click", function () {
-            handleReset();
-        });
     $("#pills-one-way-tab").on("click", function() {
         handleReset();
         });
     $("#pills-multi-city-tab").on("click", function() {
         handleReset();
-        });
+    });
     $(".location-from").val("");
     $(".location-to").val("");
     $(".select-from").html("");
     $(".select-to").html("");
-    }
+}
 
 
 

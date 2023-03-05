@@ -49,7 +49,7 @@
                 </div>
                 <div class="subtitle p-3">
                     <h4>
-                       License and Renewal
+                       License Renewal
                     </h4>
                     <p class="less">
                         We offer a range of license and renewal services to help you keep your state-issued identification current and valid.
@@ -89,7 +89,7 @@
                 </div>
                 <div class="subtitle p-3">
                     <h4>
-                       Choice of Property
+                       Property
                     </h4>
                     <p class="less">
                         We meet the client's needs and then negotiate the best deal. In this service, we tailor to the client's individual needs

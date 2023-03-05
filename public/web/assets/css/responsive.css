@@ -7,10 +7,10 @@
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
 
-    .subtitle h4 {
+    .management, .subtitle h4 {
         font-size: 22px;
     }
-    .subtitle h4 p{
+    .management, .subtitle h4 p{
         font-size: 16px;
     }
 
@@ -111,7 +111,7 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
-    .subtitle h4 {
+    .management, .subtitle h4 {
         font-size: 18px;
     }
     /* Banner Btn */
@@ -268,10 +268,6 @@
         font-size: 37px;
         line-height: 51px;
     }
-    .iso_text p,
-    .success_menu ul li .company_nav_tab {
-        font-size: 15px;
-    }
     .blog_item .blog_text h3 {
         font-size: 16px;
         line-height: 25px;
@@ -284,9 +280,6 @@
     }
     .orjon ul li {
         display: inline-block;
-    }
-    .iso_text p {
-        line-height: 21px;
     }
     #pro_gra_forwhom h2 {
         font-size: 40px;
@@ -432,12 +425,15 @@
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+    .management{
+        margin-top: 10%;
+    }
 
     .popup {
         width: 35%!important;
     }
 
-    .subtitle h4 {
+    .management, .subtitle h4 {
         font-size: 18px;
     }
      /* Banner Btn */
@@ -655,10 +651,6 @@
     .iso_text h3 {
         line-height: 40px;
         padding-bottom: 10px;
-    }
-    .iso_text p {
-        font-size: 14px;
-        line-height: 21px;
     }
     .training_department_main a {
         width: 42% !important;
@@ -965,7 +957,12 @@
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-     .subtitle h4 {
+
+     .management{
+        margin-top: 10%;
+    }
+
+     .management, .subtitle h4 {
         font-size: 18px;
     }
      /* Banner Btn */
@@ -1256,11 +1253,7 @@
     .glory_text h2 {
         line-height: 33px;
     }
-    .ceo_text p,
-    .glory_text p,
-    .iso_text p {
-        line-height: 25px;
-    }
+
     .glory_text p {
         padding-top: 32px;
     }
@@ -1818,10 +1811,7 @@
         font-size: 32px;
         line-height: 43px;
     }
-    .iso_text p {
-        font-size: 18px !important;
-        text-align: justify;
-    }
+
     .facilities_heading h1 {
         padding-bottom: 29px;
         padding-top: 10px;
@@ -1845,6 +1835,13 @@
     }
 }
 @media (max-width: 575.98px) {
+
+     .management{
+        margin-top: 10%;
+    }
+    .subtitle h4 {
+     font-size: 18px;
+    }
 
     .popup {
         width: 85%!important;
@@ -2361,10 +2358,6 @@
         line-height: 35px;
         padding-bottom: 19px;
         padding-top: 46px;
-    }
-    .iso_text p {
-        font-size: 14px;
-        line-height: 25px;
     }
     #branch h2,
     #counter_up.about_counter_up h2,
@@ -3090,8 +3083,8 @@
         max-width: 100%;
     }
     .milestone_slider .card-body {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .course_cat_heading h1,
     .section_heading h2,
@@ -3131,6 +3124,18 @@
 }
 @media (max-width: 413px) {
 
+
+     .management{
+        margin-top: 10%;
+    }
+
+    /* .banner_text h1{
+        font-size: 30px;
+    } */
+
+    .subtitle h4 {
+     font-size: 18px;
+    }
     .popup {
         width: 85%!important;
     }

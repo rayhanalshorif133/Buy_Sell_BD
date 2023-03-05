@@ -16,7 +16,7 @@
             <div class="col-lg-7 offset-lg-1 col-md-6 sal-animate" data-sal="slide-down" data-sal-delay="300"
                 data-sal-duration="1000" data-sal-easing="ease">
                 <div class="iso_text">
-                    <div class="subtitle">
+                    <div class="management">
                         <h4>Rizwan Bin Farouq <div>Managing Director</div></h4>
                         <p class="text-justify mb-3">
                             Masters in Finance from the University of Dhaka 1982. 18 years of extensive experience in Banking & Financial Services industry, mostly in Hong Kong.

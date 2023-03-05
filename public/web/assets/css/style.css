@@ -3,6 +3,7 @@
     font-family: Hind Siliguri;
 }
 
+
 /* font size */
 .fs-9{
     font-size: 9rem!important;
@@ -457,6 +458,27 @@ div.success_menu ul.common_slider_class li {
     margin-bottom: 1.5rem!important;
     color: #000;
 }
+
+.management h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: .20000000298023224px;
+    text-align: left;
+    align-self: left;
+    margin-bottom: 1.5rem!important;
+    color: #000;
+}
+.management p{
+    max-width: 100%;
+    text-align: justify;
+    font-size: 15px!important;
+    padding-bottom: 15px!important;
+}
+.management h4 div {
+    font-size: 14px;
+    color: #808080;
+}
 .home_banner .red_shadow {
     position: absolute;
     left: 0;
@@ -500,9 +522,9 @@ div.success_menu ul.common_slider_class li {
     font-size: 17px;
 }
 .banner_text h1 {
-    font-size: 42px;
+    font-size:4rem;
+    line-height: 4.4rem;
     font-weight: 700;
-    line-height: 46px;
     letter-spacing: .20000000298023224px;
     padding-top: 17px;
     padding-bottom: 18px;
@@ -3901,8 +3923,8 @@ form.student_form select {
     border: 1px solid #14A2DD;
 }
 .milestone_slider .card-body {
-    padding-left: 85px;
-    padding-right: 65px;
+    padding-left: 30px;
+    padding-right: 0px;
 }
 .milestone_slider .card-body .card-title {
     margin-bottom: 1rem;

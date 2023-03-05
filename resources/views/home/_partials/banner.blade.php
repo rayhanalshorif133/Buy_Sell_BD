@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-capitalize membership_banner_text d-none" style="font-size:4rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize membership_banner_text d-none">
                                 Want to join <br> your desire club
                             </h1>
                         </div>
@@ -33,7 +33,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-capitalize" style="font-size:4rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize">
                                 Want to hassle free license service
                                 <br />
                             </h1>
@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-capitalize" style="font-size:4rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize">
                                 Want to buy, sell and rent land, property, flats
                                 <br />
                             </h1>
@@ -91,7 +91,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-capitalize" style="font-size:4rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize">
                                 Want to Booking
                                 <br />
                                 Air Ticket

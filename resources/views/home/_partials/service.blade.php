@@ -1,3 +1,10 @@
+<style>
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+</style>
 
 <section id="courseslide"></section>
     <div class="container populer_courses">
@@ -99,7 +106,7 @@
                                                 <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/3.png')}}"
                                                         alt="image" loading="lazy"></div>
                                                 <div class="card_text">
-                                                    <h3>License</h3>
+                                                    <h3>Export & Import License</h3>
                                                     <p>Want to hassle free license service consult with us.</p>
                                                 </div>
                                             </div>
