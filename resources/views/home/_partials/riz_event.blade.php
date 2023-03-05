@@ -2,9 +2,6 @@
     <div class="container">
         <div class="title">
             <h3>Management</h3>
-            <p class="text-justify mb-3">Buysellbd is a personalized service for buying and selling Club Membership of Exclusive Clubs. Gaining access to a Club like Dhaka Club, Gulshan Club, Banani Club, Uttara Club are very exclusive and time consuming. On the other hand finding
-            someone eligible to handover existing membership is sometime very difficult. BuySellBD brings the only exclusive
-            platform to make these transactions easier.</p>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-delay="300" data-sal-duration="1000"
