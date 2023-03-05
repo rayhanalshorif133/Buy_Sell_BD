@@ -31,25 +31,31 @@
     rotate: -45deg;
 }
 
-.location-from-search-list-item{
+.location-from-search-list-item,
+.location-to-search-list-item{
     cursor: pointer;
     padding: 10px 15px;
     transition: all 0.3s ease;
 }
 
-.location-from-search-list-item span{
+.location-from-search-list-item span,
+.location-to-search-list-item span{
     font-size: 14px;
     color: #000;
     font-weight: 700;
 }
-.location-from-search-list-item p{
+.location-from-search-list-item p,
+.location-to-search-list-item p
+{
     font-size: 12px;
     color: #808080;
     font-weight: 400;
     padding-left: 22px;
 }
 .location-from-search-list .active,
-.location-from-search-list-item:hover{
+.location-from-search-list-item:hover,
+.location-to-search-list .active,
+.location-to-search-list-item:hover{
     background-color: #E7EDFD;
 }
   .subtitle h4 div{

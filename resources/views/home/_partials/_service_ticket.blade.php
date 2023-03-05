@@ -16,7 +16,8 @@
 
     }
 
-    .location-from-search{
+    .location-from-search,
+    .location-to-search {
         border-radius: 0;
         border: 0;
         border-bottom: 1px solid #e0e0e0;
@@ -24,17 +25,15 @@
     }
 
     /* focus */
-    .location-from-search:focus{
+
+    .location-from-search:focus,
+    .location-to-search:focus{
         border-radius: 0;
         border: 0;
         border-bottom: 1px solid #e0e0e0;
         border-top: none;
         box-shadow: none;
     }
-
-
-
-
 </style>
 
 <div class="row p-3">
@@ -105,17 +104,40 @@
                             <label for="select-to" class="form-label">To</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-location-dot icon"></i>
-                                <input type="text" for="select-to" class="form-control form-control-lg input-field location-to" placeholder="To">
-                                <span class="form-select d-none select-to">
-                                    <option value="0">
-                                        <div class="text-center m-auto">
-                                            <div class="spinner-border text-ticket" role="status">
-                                                <span class="visually-hidden">Loading...</span>
+                                <input type="text" for="select-to" name="select-to" id="select-to"
+                                    class="form-control form-control-lg input-field location-to" placeholder="To">
+                            </div>
+                            {{-- a small popup --}}
+                            <div class="popup d-none popup-to">
+                                <div class="popup-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-icons">
+                                                        <i class="fa-solid fa-search icon"></i>
+                                                        <input type="text" for="select-to"
+                                                            class="form-control form-control-lg input-field location-to-search"
+                                                            placeholder="Where are you going to?">
+                                                    </div>
+                                                    <div class="text-center mt-5 content_after_search_to">
+                                                        <div class="my-5">
+                                                            <div>
+                                                                <i class="fa-solid fa-search icon fs-3"></i>
+                                                            </div>
+                                                            <h5>
+                                                                Search by city or airport
+                                                            </h5>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </option>
-                                </span>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                         <div class="col-md-1"></div>
                     </div>
@@ -481,6 +503,96 @@
 
 
     });
+
+
+    // Select To
+    $(function() {
+        $("#select-to").on("focus", function() {
+            $(".popup-to").removeClass("d-none");
+            $(".location-to-search").focus();
+        });
+
+        $(".location-to-search").on("focusout", function() {
+            $(".popup-to").addClass("d-none");
+        });
+        $(".location-to-search").keyup(function(event) {
+        var value = $(this).val().toLowerCase();
+
+
+        // arrow key
+        $(".content_after_search_to").removeClass("text-center").addClass("text-start").removeClass("mt-5");
+            if (event.keyCode == 40) {
+                $(".location-to-search-list-item.active").removeClass("active").next().addClass("active");
+                $(".popup-to").scrollTop($(".location-to-search-list-item.active").offset().top - $(".popup-to").offset().top +
+                $(".popup-to").scrollTop() - $(".location-to-search-list-item.active").height() * 4);
+                return false;
+            }
+            else if (event.keyCode == 38){
+                $(".location-to-search-list-item.active").removeClass("active").prev().addClass("active");
+                return false;
+            }
+            else if (event.keyCode == 13) {
+            $(".location-to-search-list-item.active").click();
+            let value = $(".location-to-search-list-item.active").text();
+            value = value.trim();
+            console.log(value);
+            // 10 characters
+                if(value.length > 20){
+                    value = value.substring(0, 20) + "...";
+                }
+                $("#select-to").val(value);
+                $("#select-to").css("font-size", "14px");
+                $(".popup-to").addClass("d-none");
+                return false;
+            }
+            else{
+                $(".content_after_search_to").html(bar_loading);
+            }
+
+            clearTimeout(time);
+            time = setTimeout(() => {
+            axios.get(`/airport/${value}/get`)
+            .then(function (response) {
+            let data = response.data.data;
+            let html = "";
+            if(data.length == 0){
+            html = `
+            <li class="location-to-search-list-item">
+                <i class="fa-solid fa-plane"></i>
+                No Result Found
+            </li>
+            `;
+            }else{
+            data.forEach((element,index) => {
+            let classActive = index == 0 ? "active" : "";
+            html += `<li class="location-to-search-list-item ${classActive}" id="ariport-${element.id}">
+                <i class="fa-solid fa-plane"></i>
+                <span>${element.name}</span>
+                <p>${element.countryName}</p>
+            </li>`;
+            });
+            }
+            $(".content_after_search_to").html(`
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="location-to-search-list">${html}
+                    </ul>
+                </div>
+            </div>
+            `);
+            });
+
+            $(".location-to-search-list-item").click(function() {
+            console.log("clicked");
+            });
+
+            }, 2000);
+            });
+
+    });
+
+
+
 
         var loading = `
                 <div class="text-center m-auto">
