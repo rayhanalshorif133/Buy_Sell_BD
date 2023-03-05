@@ -10,9 +10,9 @@
                             <h1 class="sal-animate text-capitalize membership_banner_text d-none" style="font-size:4rem;line-height: 4.4rem ">
                                 Want to join <br> your desire club
                             </h1>
-                            <div class="banner_text_btn">
-                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
-                            </div>
+                        </div>
+                        <div class="banner_text_btn">
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -21,6 +21,8 @@
                             src="{{asset('web/assets/images/banner image/membership/CLUB.png')}}"
                                 alt="Home Banner| Icon">
                         </div>
+                    </div>
+                    <div class="col-md-12">
                         <div class="m-auto text-center banner_image_btn">
                             <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
                         </div>
@@ -33,22 +35,25 @@
                         <div class="banner_text">
                             <h1 class="sal-animate text-capitalize" style="font-size:4rem;line-height: 4.4rem ">
                                 Want to hassle free license service
-                            <br />
+                                <br />
                             </h1>
                             <p></p>
                             <div class="banner_text_btn">
-                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i
+                                        class="fa-solid fa-comment"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/line for license.png')}}"
-                                alt="Home Banner| Icon">
+                                src="{{asset('web/assets/images/banner image/line for license.png')}}" alt="Home Banner| Icon">
                         </div>
+                    </div>
+                    <div class="col-md-12">
                         <div class="m-auto text-center banner_image_btn">
-                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i
+                                    class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
@@ -58,23 +63,26 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
                             <h1 class="sal-animate text-capitalize" style="font-size:4rem;line-height: 4.4rem ">
-                               Want to buy, sell and rent land, property, flats
+                                Want to buy, sell and rent land, property, flats
                                 <br />
                             </h1>
                             <p></p>
                             <div class="banner_text_btn">
-                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i
+                                        class="fa-solid fa-comment"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/home.png')}}"
-                                alt="Home Banner| Icon">
+                                src="{{asset('web/assets/images/banner image/home.png')}}" alt="Home Banner| Icon">
                         </div>
+                    </div>
+                    <div class="col-md-12">
                         <div class="m-auto text-center banner_image_btn">
-                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i
+                                    class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
@@ -90,22 +98,26 @@
                             </h1>
                             <p></p>
                             <div class="banner_text_btn">
-                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                                <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i
+                                        class="fa-solid fa-comment"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/ticket.png')}}"
-                                alt="Home Banner| Icon">
+                                src="{{asset('web/assets/images/banner image/ticket.png')}}" alt="Home Banner| Icon">
                         </div>
+                    </div>
+                    <div class="col-md-12">
                         <div class="m-auto text-center banner_image_btn">
-                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i class="fa-solid fa-comment"></i></a>
+                            <a href="#contact_us" class="btn-buy-sell-banner mt-3">Consult With Us &nbsp;<i
+                                    class="fa-solid fa-comment"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
