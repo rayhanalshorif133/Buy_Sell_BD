@@ -1,12 +1,9 @@
 <section id="iso">
     <div class="container">
         <div class="title">
-            <h3>RIZ Event</h3>
-            <p class="text-justify mb-3">Buysellbd is a personalized service for buying and selling Club Membership of Exclusive Clubs. Gaining access to a Club like Dhaka Club, Gulshan Club, Banani Club, Uttara Club are very exclusive and time consuming. On the other hand finding
-            someone eligible to handover existing membership is sometime very difficult. BuySellBD brings the only exclusive
-            platform to make these transactions easier.</p>
+            <h3>Management</h3>
         </div>
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-delay="300" data-sal-duration="1000"
                 data-sal-easing="ease">
                 <div class="iso_image"><img class="img-fluid w-100"
@@ -16,8 +13,8 @@
             <div class="col-lg-7 offset-lg-1 col-md-6 sal-animate" data-sal="slide-down" data-sal-delay="300"
                 data-sal-duration="1000" data-sal-easing="ease">
                 <div class="iso_text">
-                    <div class="subtitle">
-                        <h4>About Rizwan Bin Farouq</h4>
+                    <div class="management">
+                        <h4>Rizwan Bin Farouq <div>Managing Director</div></h4>
                         <p class="text-justify mb-3">
                             Masters in Finance from the University of Dhaka 1982. 18 years of extensive experience in Banking & Financial Services industry, mostly in Hong Kong.
                             Chairman of Stock Broking House (First Capital Securities Ltd), and Real Estate Developer Company (Urban Design And

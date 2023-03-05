@@ -4,7 +4,7 @@
     .popup {
         position: absolute;
         margin-top: -60px;
-        height: 40%;
+        height: 80%;
         background-color: #fff;
         z-index: 999;
         width: 22%;
@@ -16,7 +16,8 @@
 
     }
 
-    .location-from-search{
+    .location-from-search,
+    .location-to-search {
         border-radius: 0;
         border: 0;
         border-bottom: 1px solid #e0e0e0;
@@ -24,17 +25,15 @@
     }
 
     /* focus */
-    .location-from-search:focus{
+
+    .location-from-search:focus,
+    .location-to-search:focus{
         border-radius: 0;
         border: 0;
         border-bottom: 1px solid #e0e0e0;
         border-top: none;
         box-shadow: none;
     }
-
-
-
-
 </style>
 
 <div class="row p-3">
@@ -58,25 +57,14 @@
                 <div class="col-md-7 mb-3">
                     <div class="row">
                         <div class="col-md-5">
-                            <label for="select-to" class="form-label">From</label>
-                            {{-- <div class="input-icons">
-                                <i class="fa-solid fa-location-dot icon"></i>
-                                <input type="text" for="select-from" class="form-control form-control-lg input-field location-from" placeholder="From">
-                                <span class="form-select d-none select-from">
-                                    <div class="text-center m-auto">
-                                        <div class="spinner-border text-ticket" role="status">
-                                            <span class="visually-hidden">Loading...</span>
-                                        </div>
-                                    </div>
-                                </span>
-                            </div> --}}
+                            <label for="select-from" class="form-label">From</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-location-dot icon"></i>
                                 <input type="text" for="select-from" name="select-from" id="select-from" class="form-control form-control-lg input-field location-from"
                                     placeholder="From">
                             </div>
                             {{-- a small popup --}}
-                            <div class="popup d-none">
+                            <div class="popup d-none popup-from">
                                 <div class="popup-content">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -98,9 +86,6 @@
                                                             </h5>
                                                         </div>
 
-                                                        {{-- make a loading row --}}
-
-
                                                     </div>
                                                 </div>
                                             </div>
@@ -119,17 +104,40 @@
                             <label for="select-to" class="form-label">To</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-location-dot icon"></i>
-                                <input type="text" for="select-to" class="form-control form-control-lg input-field location-to" placeholder="To">
-                                <span class="form-select d-none select-to">
-                                    <option value="0">
-                                        <div class="text-center m-auto">
-                                            <div class="spinner-border text-ticket" role="status">
-                                                <span class="visually-hidden">Loading...</span>
+                                <input type="text" for="select-to" name="select-to" id="select-to"
+                                    class="form-control form-control-lg input-field location-to" placeholder="To">
+                            </div>
+                            {{-- a small popup --}}
+                            <div class="popup d-none popup-to">
+                                <div class="popup-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-icons">
+                                                        <i class="fa-solid fa-search icon"></i>
+                                                        <input type="text" for="select-to"
+                                                            class="form-control form-control-lg input-field location-to-search"
+                                                            placeholder="Where are you going to?">
+                                                    </div>
+                                                    <div class="text-center mt-5 content_after_search_to">
+                                                        <div class="my-5">
+                                                            <div>
+                                                                <i class="fa-solid fa-search icon fs-3"></i>
+                                                            </div>
+                                                            <h5>
+                                                                Search by city or airport
+                                                            </h5>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </option>
-                                </span>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                         <div class="col-md-1"></div>
                     </div>
@@ -401,240 +409,5 @@
     </div>
 </div>
 
-<script>
-
-    var bar_loading = `
-    <div class="row px-3">
-        <i class="fa-solid fa-bars fs-9 loadingEffect"></i>
-    </div>
-    `;
 
 
-
-
-    $(function() {
-        $("#select-from").on("focus", function() {
-            $(".popup").removeClass("d-none");
-            $(".location-from-search").focus();
-        });
-        $(".location-from-search").on("focusout", function() {
-            $(".popup").addClass("d-none");
-        });
-
-        $(".location-from-search").keyup(function(event) {
-            var value = $(this).val().toLowerCase();
-
-            // arrow key
-            console.log(event.keyCode);
-            $(".content_after_search").removeClass("text-center").addClass("text-start").removeClass("mt-5");
-            if (event.keyCode == 40) {
-                $(".location-from-search-list-item").addClass("active");
-                return false;
-            }else{
-                $(".content_after_search").html(bar_loading);
-            }
-
-
-            clearTimeout(time);
-            time = setTimeout(() => {
-                axios.get(`/airport/${value}/get`)
-                .then(function (response) {
-                    let data = response.data.data;
-                    let html = "";
-                    if(data.length == 0){
-                        html = `
-                        <li class="location-from-search-list-item">
-                            <i class="fa-solid fa-plane"></i>
-                            No Result Found
-                        </li>
-                        `;
-                    }else{
-                        data.forEach(element => {
-                        html += `<li class="location-from-search-list-item" id="ariport-${element.id}">
-                           <i class="fa-solid fa-plane"></i>
-                            <span>${element.name}</span>
-                            <p>${element.countryName}</p>
-                            </li>`;
-                        });
-                        }
-                    $(".content_after_search").html(`
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="location-from-search-list">${html}
-                            </ul>
-                        </div>
-                    </div>
-                    `);
-                });
-            }, 2000);
-            // $(".content_after_search").html(`
-            //     <div class="row">
-            //         <div class="col-md-12">
-            //             <ul class="location-from-search-list">
-            //                 <li class="location-from-search-list-item">
-            //                     <i class="fa-solid fa-plane"></i>
-            //                     Dhaka</li>
-            //             </ul>
-            //         </div>
-            //     </div>
-            // `);
-            // $(".location-from-search-list li").filter(function() {
-            //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            // });
-        });
-
-    });
-
-        var loading = `
-                <div class="text-center m-auto">
-                    <div class="spinner-border text-ticket" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                </div>
-            `;
-
-        var time = 0;
-
-        $(function() {
-
-
-            let today = moment().format('DD-MMM');
-
-            $('input[name="dates_departing"]').daterangepicker({
-            opens: 'left',
-            locale: {
-                format: 'DD-MMM'
-            },
-            }, function(start, end, label) {
-                $('input[name="dates_returning"]').val(end.format('DD-MMM'));
-            });
-
-            $('input[name="dates_returning"]').daterangepicker({
-            opens: 'left',
-            locale: {
-                format: 'DD-MMM'
-            },
-            }, function(start, end, label) {
-                $('input[name="dates_departing"]').val(start.format('DD-MMM'));
-            });
-
-            $('input[name="dates_departing"]').change(function() {
-                let date = $(this).val().split(" - ")[0];
-                $('input[name="dates_departing"]').val(date);
-            });
-            $('input[name="dates_returning"]').change(function() {
-                let date = $(this).val().split(" - ")[1];
-                $('input[name="dates_returning"]').val(date);
-            });
-
-            $('input[name="dates_departing"]').val(today);
-            $('input[name="dates_returning"]').val(today);
-
-
-            $('input[name="departing-dates"]').daterangepicker({
-                singleDatePicker: true,
-                showDropdowns: true,
-                }, function(start, end, label) {
-                $('input[name="departing-dates"]').val(start.format('YYYY-MM-DD'));
-            });
-        });
-
-        // $('input[name="dates"]').daterangepicker();
-
-
-        $(document).on("click",".select-from option", function(event) {
-            let value = $(this).text();
-            $(".location-from").val(value);
-            $(".select-from").addClass("d-none");
-        });
-
-        $(document).on("click",".select-to option", function(event) {
-            let value = $(this).text();
-            $(".location-to").val(value);
-            $(".select-to").addClass("d-none");
-        });
-
-    $(document).ready(function() {
-        $(".location-from").on("focus", function() {
-            $(".select-from").removeClass("d-none");
-            $(".location-from").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                handleAirportSearch(value, ".select-from");
-                $(".select-from option").filter(function() {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
-        // location to
-        $(".location-to").on("focus", function() {
-            $(".select-to").removeClass("d-none");
-            $(".location-to").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                handleAirportSearch(value, ".select-to");
-                $(".select-to option").filter(function() {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
-
-
-        setInterval(() => {
-            $(".location-from").val() == "" ? $(".select-from").html("") : "";
-            $(".location-to").val() == "" ? $(".select-to").html("") : "";
-        }, 3000);
-
-        handleReset();
-    });
-
-
-
-
-    function handleReset(){
-
-        $("#pills-roundtrip-tab").on("click", function() {
-            handleReset();
-        });
-        $("#pills-one-way-tab").on("click", function() {
-            handleReset();
-        });
-
-        $("#pills-multi-city-tab").on("click", function() {
-            handleReset();
-        });
-
-
-
-        $(".location-from").val("");
-        $(".location-to").val("");
-        $(".select-from").html("");
-        $(".select-to").html("");
-    }
-
-
-
-    function handleAirportSearch(value, id){
-        if(value == ""){
-            return false;
-        }
-        $(id).html(loading);
-        clearTimeout(time);
-        time = setTimeout(() => {
-            axios.get(`/airport/${value}/get`)
-            .then(function (response) {
-                let data = response.data.data;
-                let html = "";
-                if(data.length == 0){
-                    html = `<option value="0" disabled>No data</option>`;
-                }else{
-                    data.forEach(element => {
-                        html += `<option value="${element.id}">${element.name}</option>`;
-                    });
-                }
-                $(id).html(html);
-            });
-        }, 2000);
-    }
-
-
-
-</script>
