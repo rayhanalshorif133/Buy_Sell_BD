@@ -70,7 +70,7 @@
                                         <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
                                             data-sal-easing="ease">
                                             <div class="course_single_item what_we_do">
-                                                <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/1.jpg')}}"
+                                                <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/1.png')}}"
                                                         alt="image" loading="lazy"></div>
                                                 <div class="card_text">
                                                     <h3>License</h3>
@@ -83,7 +83,7 @@
                                         <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
                                             data-sal-easing="ease">
                                             <div class="course_single_item what_we_do">
-                                                <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/2.jpg')}}"
+                                                <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/2.png')}}"
                                                         alt="image" loading="lazy"></div>
                                                 <div class="card_text">
                                                     <h3>License</h3>
@@ -96,7 +96,7 @@
                                         <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
                                             data-sal-easing="ease">
                                             <div class="course_single_item what_we_do">
-                                                <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/3.jpg')}}"
+                                                <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/3.png')}}"
                                                         alt="image" loading="lazy"></div>
                                                 <div class="card_text">
                                                     <h3>License</h3>
