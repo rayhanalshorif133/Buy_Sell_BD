@@ -58,25 +58,14 @@
                 <div class="col-md-7 mb-3">
                     <div class="row">
                         <div class="col-md-5">
-                            <label for="select-to" class="form-label">From</label>
-                            {{-- <div class="input-icons">
-                                <i class="fa-solid fa-location-dot icon"></i>
-                                <input type="text" for="select-from" class="form-control form-control-lg input-field location-from" placeholder="From">
-                                <span class="form-select d-none select-from">
-                                    <div class="text-center m-auto">
-                                        <div class="spinner-border text-ticket" role="status">
-                                            <span class="visually-hidden">Loading...</span>
-                                        </div>
-                                    </div>
-                                </span>
-                            </div> --}}
+                            <label for="select-from" class="form-label">From</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-location-dot icon"></i>
                                 <input type="text" for="select-from" name="select-from" id="select-from" class="form-control form-control-lg input-field location-from"
                                     placeholder="From">
                             </div>
                             {{-- a small popup --}}
-                            <div class="popup d-none">
+                            <div class="popup d-none popup-from">
                                 <div class="popup-content">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -97,9 +86,6 @@
                                                                 Search by city or airport
                                                             </h5>
                                                         </div>
-
-                                                        {{-- make a loading row --}}
-
 
                                                     </div>
                                                 </div>
@@ -411,16 +397,12 @@
 
 
     $(function() {
-        $(".popup").on("click", function() {
-            console.log($(this).text());
-        });
-
         $("#select-from").on("focus", function() {
-            $(".popup").removeClass("d-none");
+            $(".popup-from").removeClass("d-none");
             $(".location-from-search").focus();
         });
         $(".location-from-search").on("focusout", function() {
-            $(".popup").addClass("d-none");
+            $(".popup-from").addClass("d-none");
         });
 
         $(".location-from-search").keyup(function(event) {
@@ -431,7 +413,7 @@
             $(".content_after_search").removeClass("text-center").addClass("text-start").removeClass("mt-5");
             if (event.keyCode == 40) {
                 $(".location-from-search-list-item.active").removeClass("active").next().addClass("active");
-                $(".popup").scrollTop($(".location-from-search-list-item.active").offset().top - $(".popup").offset().top + $(".popup").scrollTop() - $(".location-from-search-list-item.active").height() * 4);
+                $(".popup-from").scrollTop($(".location-from-search-list-item.active").offset().top - $(".popup-from").offset().top + $(".popup-from").scrollTop() - $(".location-from-search-list-item.active").height() * 4);
                 return false;
             }
             else if (event.keyCode == 38){
@@ -449,7 +431,7 @@
                 $("#select-from").val(value);
 
                 $("#select-from").css("font-size", "14px");
-                $(".popup").addClass("d-none");
+                $(".popup-from").addClass("d-none");
                 return false;
             }
             else{

@@ -116,7 +116,7 @@
             <div class="course_single_item what_we_do">
                 <div class="card_image">
                     <img class="img-fluid w-100 what_we_do_image"
-                        src="{{asset('web/assets/images/what_we_do/membership.jpg')}}" alt="membership"
+                        src="{{asset('web/assets/images/what_we_do/ticket.png')}}" alt="membership"
                         loading="lazy">
                 </div>
                 <div class="subtitle p-3">
