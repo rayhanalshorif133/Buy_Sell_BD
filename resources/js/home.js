@@ -1,4 +1,8 @@
 $(function(){
+
+
+
+
     axios.post("/get-cookie", {
         name: "dark"
     }).then((response) => {

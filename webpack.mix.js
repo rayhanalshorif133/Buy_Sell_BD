@@ -14,6 +14,7 @@ mix.browserSync("http://localhost:8000");
 
 mix.js("resources/js/app.js", "public/js")
     .js("resources/js/home.js", "public/js/home.js")
+    .js("resources/js/home_ticket.js", "public/js/home_ticket.js")
     .js("resources/js//admin/slider.js", "public/js/admin/slider.js")
     .sass("resources/sass/custom.scss", "public/css")
     .sass("resources/sass/app.scss", "public/css")
