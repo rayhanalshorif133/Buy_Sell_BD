@@ -150,11 +150,10 @@
 </div>
 <script>
     $(function(){
-        // show 100 characters
         $(".less").each(function(){
             var text = $(this).text();
-            if(text.length > 75){
-                $(this).text(text.substring(0, 75) + "...");
+            if(text.length > 120){
+                $(this).html(text.substring(0, 120) + "...");
             }
         });
         $(".read_more_what_we_do").on("click", function(){

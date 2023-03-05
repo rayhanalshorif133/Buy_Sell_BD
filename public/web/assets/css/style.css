@@ -3,6 +3,57 @@
     font-family: Hind Siliguri;
 }
 
+/* font size */
+.fs-9{
+    font-size: 9rem!important;
+}
+
+.loadingEffect{
+    color: #3c3c3c;
+    transition: all 0.5s ease;
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fa-plane{
+    rotate: -45deg;
+}
+
+.location-from-search-list-item{
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.location-from-search-list-item span{
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+}
+.location-from-search-list-item p{
+    font-size: 12px;
+    color: #808080;
+    font-weight: 400;
+    padding-left: 22px;
+}
+.location-from-search-list .active,
+.location-from-search-list-item:hover{
+    background-color: #E7EDFD;
+}
+
+
 
 
 a, a:hover {
@@ -36,7 +87,7 @@ a, a:hover {
 
 /* What we do */
 .what_we_do_image {
-    height: 12rem;
+    height: 14.3rem;
 }
 .what_we_do_text {
     padding: 2rem;

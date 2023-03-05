@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-capitalize membership_banner_text d-none" style="font-size:3.5rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize membership_banner_text d-none" style="font-size:4rem;line-height: 4.4rem ">
                                 Want to join <br> your desire club
                             </h1>
                             <div class="banner_text_btn">
@@ -31,7 +31,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize" style="font-size:4rem;line-height: 4.4rem ">
                                 Want to hassle free license service
                             <br />
                             </h1>
@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize" style="font-size:4rem;line-height: 4.4rem ">
                                Want to buy, sell and rent land, property, flats
                                 <br />
                             </h1>
@@ -83,7 +83,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_text">
-                            <h1 class="sal-animate text-capitalize" style="font-size:3.5rem;line-height: 4.4rem ">
+                            <h1 class="sal-animate text-capitalize" style="font-size:4rem;line-height: 4.4rem ">
                                 Want to Booking
                                 <br />
                                 Air Ticket
@@ -152,12 +152,12 @@
                 'src': 'web/assets/images/banner image/membership/wine_glass.png',
             },
             {
-                'title': 'Find Your <br> Best Activities',
-                'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
+                'title': 'Choice your <br> psychological or mental <br> refreshment place',
+                'src': 'web/assets/images/banner image/membership/golf_table.png',
             },
             {
-                'title': 'Choice your <br> psychological or mental <br> refreshment place',
-                'src': 'web/assets/images/banner image/membership/GOLF TABLE.png',
+                'title': 'Find Your <br> Best Activities',
+                'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
             },
             {
                 'title': 'Want to join <br> your desire club',
