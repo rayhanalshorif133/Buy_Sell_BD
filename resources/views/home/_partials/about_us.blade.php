@@ -20,6 +20,26 @@
                                         <div class="col-md-7">
                                             <div class="card-body">
                                                 <div class="subtitle">
+                                                    <h4>Buy Sell BD</h4>
+                                                    <p>
+                                                        Buysellbd is a personalized service for buying and selling Club Membership of Exclusive Clubs. Gaining access to a Club
+                                                        like Dhaka Club, Gulshan Club, Banani Club, Uttara Club are very exclusive and time consuming. On the other hand finding
+                                                        someone eligible to handover existing membership is sometime very difficult. BuySellBD brings the only exclusive
+                                                        platform to make these transactions easier.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-5"><img class="card-img-top img-fluid"
+                                                src="{{asset('web/assets/images/about/b2m.png')}}" alt="Company">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <div class="subtitle">
                                                     <h4>B2M Technologies Limited</h4>
                                                     <p>
                                                         B2M Technologies Ltd. Incorporated in Bangladesh is connected to all major cell phone operators, providing value added
