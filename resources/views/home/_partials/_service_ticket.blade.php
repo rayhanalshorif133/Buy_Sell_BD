@@ -4,7 +4,7 @@
     .popup {
         position: absolute;
         margin-top: -60px;
-        height: 40%;
+        height: 80%;
         background-color: #fff;
         z-index: 999;
         width: 22%;
@@ -410,9 +410,11 @@
     `;
 
 
-
-
     $(function() {
+        $(".popup").on("click", function() {
+            console.log($(this).text());
+        });
+
         $("#select-from").on("focus", function() {
             $(".popup").removeClass("d-none");
             $(".location-from-search").focus();
@@ -424,13 +426,33 @@
         $(".location-from-search").keyup(function(event) {
             var value = $(this).val().toLowerCase();
 
+
             // arrow key
-            console.log(event.keyCode);
             $(".content_after_search").removeClass("text-center").addClass("text-start").removeClass("mt-5");
             if (event.keyCode == 40) {
-                $(".location-from-search-list-item").addClass("active");
+                $(".location-from-search-list-item.active").removeClass("active").next().addClass("active");
+                $(".popup").scrollTop($(".location-from-search-list-item.active").offset().top - $(".popup").offset().top + $(".popup").scrollTop() - $(".location-from-search-list-item.active").height() * 4);
                 return false;
-            }else{
+            }
+            else if (event.keyCode == 38){
+                $(".location-from-search-list-item.active").removeClass("active").prev().addClass("active");
+                return false;
+            }
+            else if (event.keyCode == 13) {
+                $(".location-from-search-list-item.active").click();
+                let value = $(".location-from-search-list-item.active").text();
+                value = value.trim();
+                // 10 characters
+                if(value.length > 20){
+                    value = value.substring(0, 20) + "...";
+                }
+                $("#select-from").val(value);
+
+                $("#select-from").css("font-size", "14px");
+                $(".popup").addClass("d-none");
+                return false;
+            }
+            else{
                 $(".content_after_search").html(bar_loading);
             }
 
@@ -449,8 +471,9 @@
                         </li>
                         `;
                     }else{
-                        data.forEach(element => {
-                        html += `<li class="location-from-search-list-item" id="ariport-${element.id}">
+                        data.forEach((element,index) => {
+                            let classActive = index == 0 ? "active" : "";
+                        html += `<li class="location-from-search-list-item ${classActive}" id="ariport-${element.id}">
                            <i class="fa-solid fa-plane"></i>
                             <span>${element.name}</span>
                             <p>${element.countryName}</p>
@@ -466,22 +489,14 @@
                     </div>
                     `);
                 });
+
+                $(".location-from-search-list-item").click(function() {
+                    console.log("clicked");
+                });
+
             }, 2000);
-            // $(".content_after_search").html(`
-            //     <div class="row">
-            //         <div class="col-md-12">
-            //             <ul class="location-from-search-list">
-            //                 <li class="location-from-search-list-item">
-            //                     <i class="fa-solid fa-plane"></i>
-            //                     Dhaka</li>
-            //             </ul>
-            //         </div>
-            //     </div>
-            // `);
-            // $(".location-from-search-list li").filter(function() {
-            //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            // });
         });
+
 
     });
 
@@ -634,6 +649,8 @@
             });
         }, 2000);
     }
+
+
 
 
 
