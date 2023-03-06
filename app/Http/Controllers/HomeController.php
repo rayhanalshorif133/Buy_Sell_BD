@@ -36,7 +36,12 @@ class HomeController extends Controller
     }
     public function welcome()
     {
-        $sliders = Slider::all();
+        $slider_categories = Slider::select('slider_category')->distinct()->get();
+
+        foreach ($slider_categories as $slider_category) {
+            $slider_category->slider = Slider::where('slider_category', $slider_category->slider_category)->first();
+            $slider_category->slider->titles = json_decode($slider_category->slider->title);
+        }
         // $about = About::first();
         // $services = Service::all();
         // $headerAndFooter = HeaderAndFooter::first();
@@ -49,10 +54,9 @@ class HomeController extends Controller
         //     $about->image = 'images/no-image.jpg';
         //     $about->save();
         // }
-        foreach ($sliders as $slider) {
-            $slider->titles = json_decode($slider->title);
-        }
-        return view('home.index', compact('sliders'));
+        // dd($slider_categories);
+
+        return view('home.index', compact('slider_categories'));
     }
 
 
