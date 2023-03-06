@@ -65,7 +65,6 @@ function handleScroll(){
 }
 
 function managementHandler() {
-    // width of the window
     let width = $(window).width();
     if (width < 767) {
         $(".management_pc").addClass("d-none");
@@ -74,5 +73,4 @@ function managementHandler() {
         $(".management_pc").removeClass("d-none");
         $(".management_phone").addClass("d-none");
     }
-
 }

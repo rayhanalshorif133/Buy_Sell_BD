@@ -128,7 +128,7 @@
         $('.owl-carousel-banner').owlCarousel({
             loop:true,
             margin:10,
-            autoplay:false,
+            autoplay:true,
             autoplayTimeout:4500,
             autoplayHoverPause:true,
             dots: true,
