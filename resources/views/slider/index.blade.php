@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
 @section('head')
+<style>
+    .appendNewLineTitle,
+    .removeNewLineTitle{
+        cursor: pointer;
+    }
+</style>
 
 @endsection
 @section('content')
@@ -9,7 +15,7 @@
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">
-                    <h2 class="card-title">Slider</h2>
+                    <h2 class="card-title">Banner</h2>
                     <div class="btn-group float-right actionBtn d-none ml-2">
                         <button type="button" class="btn btn-sm btn-outline-danger dropdown-toggle"data-toggle="dropdown" aria-expanded="false">Action</button>
                         <div class="dropdown-menu" role="menu" style="">
@@ -33,7 +39,7 @@
                                 <th style="width: 10px">#</th>
                                 <th>Image</th>
                                 <th>Title</th>
-                                <th>Description</th>
+                                <th>Slider Category</th>
                                 <th>Status</th>
                                 <th class="w-20">Actions</th>
                             </tr>
@@ -55,10 +61,16 @@
                                 <td>
                                     <img src="{{asset($slider->image)}}" alt="" width="100px">
                                 </td>
-                                <td>
-                                    {{$slider->title}}
+                                <td class="text-uppercase">
+                                    @foreach ($slider->titles as $title)
+                                    <p>{{$title}}</p>
+                                    @endforeach
                                 </td>
-                                <td>{{$slider->description}}</td>
+                                <td>
+                                    <span class="badge badge-info text-capitalize">
+                                    {{$slider->slider_category}}
+                                    </span>
+                                </td>
                                 <td>
                                     @if($slider->status == "active")
                                     <span class="badge badge-success text-capitalize">{{$slider->status}}</span>

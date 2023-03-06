@@ -37,19 +37,22 @@ class HomeController extends Controller
     public function welcome()
     {
         $sliders = Slider::all();
-        $about = About::first();
-        $services = Service::all();
-        $headerAndFooter = HeaderAndFooter::first();
-        $colors = Color::all();
-        $whatWeDos = WhatWeDo::all();
+        // $about = About::first();
+        // $services = Service::all();
+        // $headerAndFooter = HeaderAndFooter::first();
+        // $colors = Color::all();
+        // $whatWeDos = WhatWeDo::all();
 
-        if (!$about) {
-            $about = new About();
-            $about->description = 'No description';
-            $about->image = 'images/no-image.jpg';
-            $about->save();
+        // if (!$about) {
+        //     $about = new About();
+        //     $about->description = 'No description';
+        //     $about->image = 'images/no-image.jpg';
+        //     $about->save();
+        // }
+        foreach ($sliders as $slider) {
+            $slider->titles = json_decode($slider->title);
         }
-        return view('home.index', compact('headerAndFooter', 'sliders', 'about', 'services', 'colors','whatWeDos'));
+        return view('home.index', compact('sliders'));
     }
 
 

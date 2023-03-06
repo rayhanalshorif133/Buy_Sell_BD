@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Slider;
+use App\Models\SliderMembership;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
@@ -13,11 +14,35 @@ class SliderController extends Controller
     {
         $sliders = Slider::all();
 
+        foreach ($sliders as $slider) {
+            $slider->titles = json_decode($slider->title);
+        }
+
         return view('slider.index', compact('sliders'));
     }
 
     public function storeOrUpdate(Request $request)
     {
+
+        if ($request->slider_id) {
+            $validator = Validator::make($request->all(), [
+                'title' => 'required',
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
+                'slider_category' => 'required' . $request->slider_id,
+            ]);
+        } else {
+            $validator = Validator::make($request->all(), [
+                'title' => 'required',
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
+                'slider_category' => 'required',
+            ]);
+        }
+        if ($validator->fails()) {
+            Session::flash('message', $validator->errors()->first());
+            Session::flash('class', 'danger');
+            return redirect()->back();
+        }
+
 
         if ($request->slider_id) {
             $slider = Slider::find($request->slider_id);
@@ -45,13 +70,13 @@ class SliderController extends Controller
         $imageName = '/storage/images/slider/' . $imageName;
 
         if ($request->title) {
-            $slider->title = $request->title;
+            $slider->title = json_encode($request->title);
         }
-        if ($request->description) {
-            $slider->description = $request->description;
-        }
+        $slider->slider_category = $request->slider_category;
         $slider->image = $imageName;
         $slider->save();
+
+
         Session::flash('message', 'Slider created successfully.');
         Session::flash('class', 'success');
         return redirect()->route('user.slider.index');
