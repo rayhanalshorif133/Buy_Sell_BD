@@ -1,6 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/home.js": "/js/home.js",
+    "/js/home_ticket.js": "/js/home_ticket.js",
     "/js/admin/slider.js": "/js/admin/slider.js",
     "/css/app.css": "/css/app.css",
     "/css/custom.css": "/css/custom.css"

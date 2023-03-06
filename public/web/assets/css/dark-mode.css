@@ -81,7 +81,8 @@
 .dark-mode .what_we_do_text p {
     color: #605f62;
 }
-
+.management h4,
+.dark-mode .nav-link,
 .dark-mode .subtitle h4 {
     color: #ffffff;
 }

@@ -1,4 +1,5 @@
 $(function(){
+
     axios.post("/get-cookie", {
         name: "dark"
     }).then((response) => {
@@ -41,6 +42,12 @@ $(function(){
     $(window).scroll(function () {
         handleScroll();
     });
+
+    managementHandler();
+    $(window).resize(function () {
+        managementHandler();
+    });
+
 });
 function handleScroll(){
     if($(".navbar-light").hasClass("nav_sticky")){
@@ -54,5 +61,16 @@ function handleScroll(){
             $(".light-mode-logo").removeClass("d-none");
             $(".dark-mode-logo").addClass("d-none");
         }
+    }
+}
+
+function managementHandler() {
+    let width = $(window).width();
+    if (width < 767) {
+        $(".management_pc").addClass("d-none");
+        $(".management_phone").removeClass("d-none");
+    } else {
+        $(".management_pc").removeClass("d-none");
+        $(".management_phone").addClass("d-none");
     }
 }

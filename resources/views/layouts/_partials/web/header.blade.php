@@ -90,7 +90,7 @@
                         <i class="fa-solid fa-xmark"></i>
                     </span>
                 </div>
-                <ul class="justify-content-center flex-column text-center ms-auto mb-2 mb-lg-0 main_menu navbar-nav">
+                <ul class="justify-content-left flex-column text-left mb-2 mb-lg-0 main_menu_phone navbar-nav">
                     <li class="nav-item">
                         <a href="/" data-rr-ui-event-key="home" class="nav-link">Home</a>
                     </li>
@@ -109,7 +109,7 @@
                     <li class="nav-item">
                         <a href="#contactUs" data-rr-ui-event-key="#" class="nav-link">Contact</a>
                     </li>
-                    <div class="navbar_btn text-center nav-item">
+                    <div class="navbar_btn nav-item">
                         <span class="sal-animate dark-mode btn btn-sm btn-buy-sell">
                             <i class="fa-solid fa-moon"></i>
                             <i class="fa-solid fa-sun d-none"></i>
