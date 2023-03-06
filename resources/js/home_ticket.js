@@ -10,8 +10,23 @@ $(function() {
         $(".popup-from").removeClass("d-none");
         $(".location-from-search").focus();
     });
-    $(".location-from-search").on("focusout", function() {
+
+
+
+    $(document).on("click", ".location-from-search-list-item", function () {
+        let value = $(this).text();
+        value = value.trim();
+        if (value.length > 20) {
+            value = value.substring(0, 20) + "...";
+        }
+        $("#select-from").val(value);
+        $("#select-from").css("font-size", "14px");
         $(".popup-from").addClass("d-none");
+    });
+
+
+    $(".location-from-search").on("focusout", function() {
+        // $(".popup-from").addClass("d-none");
     });
     $(".location-from-search").keyup(function(event) {
         var value = $(this).val().toLowerCase();
@@ -81,18 +96,40 @@ $(function() {
     });
 });
 // Select To
+
 $(function() {
+
+
+
+
     $("#select-to").on("focus", function () {
         $(".popup-to").removeClass("d-none");
         $(".location-to-search").focus();
     });
     $(".location-to-search").on("focusout", function() {
+        // $(".popup-to").addClass("d-none");
+    });
+
+    $(document).on("click", ".location-to-search-list-item", function(){
+        let value = $(this).text();
+        value = value.trim();
+        if(value.length > 20){
+            value = value.substring(0, 20) + "...";
+        }
+        $("#select-to").val(value);
+        $("#select-to").css("font-size", "14px");
         $(".popup-to").addClass("d-none");
     });
+
     $(".location-to-search").keyup(function(event) {
+
+
+
+
+
         var value = $(this).val().toLowerCase();
-// arrow key
         $(".content_after_search_to").removeClass("text-center").addClass("text-start").removeClass("mt-5");
+        console.log(event.keyCode);
         if (event.keyCode == 40) {
             $(".location-to-search-list-item.active").removeClass("active").next().addClass("active");
             $(".popup-to").scrollTop($(".location-to-search-list-item.active").offset().top - $(".popup-to").offset().top +
@@ -104,10 +141,8 @@ $(function() {
             return false;
         }
         else if (event.keyCode == 13) {
-            (".location-to-search-list-item.active").click();
             let value = $(".location-to-search-list-item.active").text();
             value = value.trim();
-            console.log(value);
             if(value.length > 20){
                 value = value.substring(0, 20) + "...";
             }
@@ -151,11 +186,9 @@ $(function() {
                 </div>
         `);
         });
-        $(".location-to-search-list-item").click(function() {
-            console.log("clicked");
-        });
         }, 2000);
-    });
+        });
+
 });
     var loading = `
     <div class="text-center m-auto">

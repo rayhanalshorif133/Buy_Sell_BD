@@ -95,12 +95,12 @@
                             </div>
 
                         </div>
-                        <div class="col-md-1" style="margin-top: 3rem!important;">
+                        <div class="col-md-1 exchangeIcon" style="">
                             <div class="text-center">
                                 <i class="fas fa-exchange-alt"></i>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 select_to_div">
                             <label for="select-to" class="form-label">To</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-location-dot icon"></i>
@@ -204,55 +204,109 @@
             </div>
         </div>
         <div class="tab-pane fade" id="pills-one-way" role="tabpanel" aria-labelledby="pills-one-way-tab">
-           <div class="row">
-                <div class="col-md-8 mb-3">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <label for="select-to" class="form-label">From</label>
-                            <div class="input-icons">
-                                <i class="fa-solid fa-location-dot icon"></i>
-                                <input type="text" for="select-from" class="form-control form-control-lg input-field location-from"
-                                    placeholder="From">
-                                <span class="form-select d-none select-from">
-                                    <div class="text-center m-auto">
-                                        <div class="spinner-border text-ticket" role="status">
-                                            <span class="visually-hidden">Loading...</span>
-                                        </div>
-                                    </div>
-                                </span>
-                            </div>
+          <div class="row">
+            <div class="col-md-7 mb-3">
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="select-from" class="form-label">From</label>
+                        <div class="input-icons">
+                            <i class="fa-solid fa-location-dot icon"></i>
+                            <input type="text" for="select-from" name="select-from" id="select-from"
+                                class="form-control form-control-lg input-field location-from" placeholder="From">
                         </div>
-                        <div class="col-md-1" style="margin-top: 3rem!important;">
-                            <div class="text-center">
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <label for="select-to" class="form-label">To</label>
-                            <div class="input-icons">
-                                <i class="fa-solid fa-location-dot icon"></i>
-                                <input type="text" for="select-to" class="form-control form-control-lg input-field location-to" placeholder="To">
-                                <span class="form-select d-none select-to">
-                                    <option value="0">
-                                        <div class="text-center m-auto">
-                                            <div class="spinner-border text-ticket" role="status">
-                                                <span class="visually-hidden">Loading...</span>
+                        {{-- a small popup --}}
+                        <div class="popup d-none popup-from">
+                            <div class="popup-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-icons">
+                                                    <i class="fa-solid fa-search icon"></i>
+                                                    <input type="text" for="select-from"
+                                                        class="form-control form-control-lg input-field location-from-search"
+                                                        placeholder="Where are you leaving from?">
+                                                </div>
+                                                <div class="text-center mt-5 content_after_search">
+                                                    <div class="my-5">
+                                                        <div>
+                                                            <i class="fa-solid fa-search icon fs-3"></i>
+                                                        </div>
+                                                        <h5>
+                                                            Search by city or airport
+                                                        </h5>
+                                                    </div>
+
+                                                </div>
                                             </div>
                                         </div>
-                                    </option>
-                                </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                    </div>
+                    <div class="col-md-1 exchangeIcon" style="">
+                        <div class="text-center">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-5 select_to_div">
+                        <label for="select-to" class="form-label">To</label>
+                        <div class="input-icons">
+                            <i class="fa-solid fa-location-dot icon"></i>
+                            <input type="text" for="select-to" name="select-to" id="select-to"
+                                class="form-control form-control-lg input-field location-to" placeholder="To">
+                        </div>
+                        {{-- a small popup --}}
+                        <div class="popup d-none popup-to">
+                            <div class="popup-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-icons">
+                                                    <i class="fa-solid fa-search icon"></i>
+                                                    <input type="text" for="select-to"
+                                                        class="form-control form-control-lg input-field location-to-search"
+                                                        placeholder="Where are you going to?">
+                                                </div>
+                                                <div class="text-center mt-5 content_after_search_to">
+                                                    <div class="my-5">
+                                                        <div>
+                                                            <i class="fa-solid fa-search icon fs-3"></i>
+                                                        </div>
+                                                        <h5>
+                                                            Search by city or airport
+                                                        </h5>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="col-md-1"></div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-5 mb-3">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <label for="dates" class="form-label">Departing</label>
                         <div class="input-icons">
                             <i class="fa-solid fa-calendar-alt icon"></i>
-                            <input type="text" name="departing-dates" class="form-control form-control-lg input-field" />
+                            <input type="text" name="dates_departing" class="form-control form-control-lg input-field" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="dates" class="form-label">Returning</label>
+                        <div class="input-icons">
+                            <i class="fa-solid fa-calendar-alt icon"></i>
+                            <input type="text" name="dates_returning" class="form-control form-control-lg input-field" />
                         </div>
                     </div>
                 </div>
@@ -263,7 +317,8 @@
                         <label for="name" class="form-label">Name</label>
                         <div class="input-icons">
                             <i class="fa-solid fa-user icon"></i>
-                            <input type="text" name="name" class="form-control form-control-lg input-field" />
+                            <input type="text" name="name" class="form-control form-control-lg input-field"
+                                placeholder="Enter your name" />
                         </div>
                     </div>
                 </div>
@@ -274,7 +329,8 @@
                         <label for="email" class="form-label">Email</label>
                         <div class="input-icons">
                             <i class="fa-solid fa-envelope icon"></i>
-                            <input type="email" name="email" class="form-control form-control-lg input-field" />
+                            <input type="email" name="email" class="form-control form-control-lg input-field"
+                                placeholder="Enter your email" />
                         </div>
                     </div>
                 </div>
@@ -285,13 +341,14 @@
                         <label for="phone" class="form-label">Phone</label>
                         <div class="input-icons">
                             <i class="fa-solid fa-phone icon"></i>
-                            <input type="number" name="phone" class="form-control form-control-lg input-field" />
+                            <input type="number" name="phone" class="form-control form-control-lg input-field"
+                                placeholder="Enter your phone" />
                         </div>
                     </div>
                 </div>
             </div>
             {{-- submit btn --}}
-            <div class="col-md-12">
+            <div class="col-md-12 mb-3">
                 <div class="row">
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-md btn-buy-sell">Submit</button>
@@ -299,17 +356,123 @@
                 </div>
             </div>
         </div>
-
         </div>
         <div class="tab-pane fade" id="pills-multi-city" role="tabpanel" aria-labelledby="pills-multi-city-tab">
             <div class="row">
+                <div class="col-md-7 mb-3">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label for="select-from" class="form-label">From</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <input type="text" for="select-from" name="select-from" id="select-from"
+                                    class="form-control form-control-lg input-field location-from" placeholder="From">
+                            </div>
+                            {{-- a small popup --}}
+                            <div class="popup d-none popup-from">
+                                <div class="popup-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-icons">
+                                                        <i class="fa-solid fa-search icon"></i>
+                                                        <input type="text" for="select-from"
+                                                            class="form-control form-control-lg input-field location-from-search"
+                                                            placeholder="Where are you leaving from?">
+                                                    </div>
+                                                    <div class="text-center mt-5 content_after_search">
+                                                        <div class="my-5">
+                                                            <div>
+                                                                <i class="fa-solid fa-search icon fs-3"></i>
+                                                            </div>
+                                                            <h5>
+                                                                Search by city or airport
+                                                            </h5>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-1 exchangeIcon" style="">
+                            <div class="text-center">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-5 select_to_div">
+                            <label for="select-to" class="form-label">To</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <input type="text" for="select-to" name="select-to" id="select-to"
+                                    class="form-control form-control-lg input-field location-to" placeholder="To">
+                            </div>
+                            {{-- a small popup --}}
+                            <div class="popup d-none popup-to">
+                                <div class="popup-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-icons">
+                                                        <i class="fa-solid fa-search icon"></i>
+                                                        <input type="text" for="select-to"
+                                                            class="form-control form-control-lg input-field location-to-search"
+                                                            placeholder="Where are you going to?">
+                                                    </div>
+                                                    <div class="text-center mt-5 content_after_search_to">
+                                                        <div class="my-5">
+                                                            <div>
+                                                                <i class="fa-solid fa-search icon fs-3"></i>
+                                                            </div>
+                                                            <h5>
+                                                                Search by city or airport
+                                                            </h5>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="dates" class="form-label">Departing</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-calendar-alt icon"></i>
+                                <input type="text" name="dates_departing" class="form-control form-control-lg input-field" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="dates" class="form-label">Returning</label>
+                            <div class="input-icons">
+                                <i class="fa-solid fa-calendar-alt icon"></i>
+                                <input type="text" name="dates_returning" class="form-control form-control-lg input-field" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-4 mb-3">
                     <div class="row">
                         <div class="col-md-12">
                             <label for="name" class="form-label">Name</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-user icon"></i>
-                                <input type="text" name="name" placeholder="Enter your name" class="form-control form-control-lg input-field" />
+                                <input type="text" name="name" class="form-control form-control-lg input-field"
+                                    placeholder="Enter your name" />
                             </div>
                         </div>
                     </div>
@@ -320,7 +483,8 @@
                             <label for="email" class="form-label">Email</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-envelope icon"></i>
-                                <input type="email" name="email" placeholder="Enter your email" class="form-control form-control-lg input-field" />
+                                <input type="email" name="email" class="form-control form-control-lg input-field"
+                                    placeholder="Enter your email" />
                             </div>
                         </div>
                     </div>
@@ -331,73 +495,14 @@
                             <label for="phone" class="form-label">Phone</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-phone icon"></i>
-                                <input type="number" name="phone" placeholder="Enter Phone Number" class="form-control form-control-lg input-field" />
+                                <input type="number" name="phone" class="form-control form-control-lg input-field"
+                                    placeholder="Enter your phone" />
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8 mb-3">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <label for="select-to" class="form-label">From</label>
-                            <div class="input-icons">
-                                <i class="fa-solid fa-location-dot icon"></i>
-                                <input type="text" for="select-from" class="form-control form-control-lg input-field location-from"
-                                    placeholder="From">
-                                <span class="form-select d-none select-from">
-                                    <div class="text-center m-auto">
-                                        <div class="spinner-border text-ticket" role="status">
-                                            <span class="visually-hidden">Loading...</span>
-                                        </div>
-                                    </div>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-1" style="margin-top: 3rem!important;">
-                            <div class="text-center">
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <label for="select-to" class="form-label">To</label>
-                            <div class="input-icons">
-                                <i class="fa-solid fa-location-dot icon"></i>
-                                <input type="text" for="select-to" class="form-control form-control-lg input-field location-to" placeholder="To">
-                                <span class="form-select d-none select-to">
-                                    <option value="0">
-                                        <div class="text-center m-auto">
-                                            <div class="spinner-border text-ticket" role="status">
-                                                <span class="visually-hidden">Loading...</span>
-                                            </div>
-                                        </div>
-                                    </option>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-1"></div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <label for="dates" class="form-label">Departing</label>
-                            <div class="input-icons">
-                                <i class="fa-solid fa-calendar-alt icon"></i>
-                                <input type="text" name="departing-dates" class="form-control form-control-lg input-field" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 mb-3">
-                    {{-- add anothr btn --}}
-                    <div class="row">
-                        <div class="col-md-12 float-end m-auto">
-                            <button type="button" class="btn btn-md btn-buy-sell">Add Another</button>
                         </div>
                     </div>
                 </div>
                 {{-- submit btn --}}
-                <div class="col-md-12">
+                <div class="col-md-12 mb-3">
                     <div class="row">
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-md btn-buy-sell">Submit</button>
