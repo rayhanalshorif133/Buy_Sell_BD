@@ -6,12 +6,33 @@ var bar_loading = `
 `;
 
 $(function() {
-    $("#select-from").on("focus", function () {
+    handleReset();
+    $(".select-from").on("focus", function () {
         $(".popup-from").removeClass("d-none");
+        $(".popup-to").addClass("d-none");
         $(".location-from-search").focus();
     });
-    $(".location-from-search").on("focusout", function() {
+
+    $(".whereInput span").on("click", function () {
         $(".popup-from").addClass("d-none");
+    });
+
+
+    $(document).on("click", ".location-from-search-list-item", function () {
+        let value = $(this).text();
+        value = value.trim();
+        if (value.length > 20) {
+            value = value.substring(0, 20) + "...";
+        }
+        $(".select-from").val(value);
+        $(".select-from").css("font-size", "14px");
+        $(".popup-from").addClass("d-none");
+        $(".input-field").css("font-size", "14px");
+    });
+
+
+    $(".location-from-search").on("focusout", function() {
+        // $(".popup-from").addClass("d-none");
     });
     $(".location-from-search").keyup(function(event) {
         var value = $(this).val().toLowerCase();
@@ -34,9 +55,10 @@ $(function() {
             if(value.length > 20){
                 value = value.substring(0, 20) + "...";
             }
-            $("#select-from").val(value);
-            $("#select-from").css("font-size", "14px");
+            $(".select-from").val(value);
+            $(".select-from").css("font-size", "14px");
             $(".popup-from").addClass("d-none");
+            $(".input-field").css("font-size", "14px");
             return false;
         }
         else{
@@ -74,25 +96,48 @@ $(function() {
                 </div>
                 `);
         });
-        $(".location-from-search-list-item").click(function() {
-            console.log("clicked");
-        });
         }, 2000);
     });
 });
 // Select To
+
 $(function() {
-    $("#select-to").on("focus", function () {
+
+
+
+
+    $(".select-to").on("focus", function () {
         $(".popup-to").removeClass("d-none");
+        $(".popup-from").addClass("d-none");
         $(".location-to-search").focus();
     });
-    $(".location-to-search").on("focusout", function() {
+
+    $(".whereInput span").on("click", function () {
         $(".popup-to").addClass("d-none");
     });
+
+
+    $(document).on("click", ".location-to-search-list-item", function(){
+        let value = $(this).text();
+        value = value.trim();
+        if(value.length > 20){
+            value = value.substring(0, 20) + "...";
+        }
+        $(".select-to").val(value);
+        $(".select-to").css("font-size", "14px");
+        $(".popup-to").addClass("d-none");
+        $(".input-field").css("font-size", "14px");
+    });
+
     $(".location-to-search").keyup(function(event) {
+
+
+
+
+
         var value = $(this).val().toLowerCase();
-// arrow key
         $(".content_after_search_to").removeClass("text-center").addClass("text-start").removeClass("mt-5");
+        console.log(event.keyCode);
         if (event.keyCode == 40) {
             $(".location-to-search-list-item.active").removeClass("active").next().addClass("active");
             $(".popup-to").scrollTop($(".location-to-search-list-item.active").offset().top - $(".popup-to").offset().top +
@@ -104,16 +149,15 @@ $(function() {
             return false;
         }
         else if (event.keyCode == 13) {
-            (".location-to-search-list-item.active").click();
             let value = $(".location-to-search-list-item.active").text();
             value = value.trim();
-            console.log(value);
             if(value.length > 20){
                 value = value.substring(0, 20) + "...";
             }
-            $("#select-to").val(value);
-            $("#select-to").css("font-size", "14px");
+            $(".select-to").val(value);
+            $(".select-to").css("font-size", "14px");
             $(".popup-to").addClass("d-none");
+            $(".input-field").css("font-size", "14px");
             return false;
         }
         else{
@@ -151,11 +195,9 @@ $(function() {
                 </div>
         `);
         });
-        $(".location-to-search-list-item").click(function() {
-            console.log("clicked");
-        });
         }, 2000);
-    });
+        });
+
 });
     var loading = `
     <div class="text-center m-auto">
@@ -184,7 +226,7 @@ $(function() {
 
 
         $(function() {
-        let today = moment().format('DD-MMM');
+        var today = moment().format('DD-MMM');
             dates_returning =  $('input[name="dates_returning"]').daterangepicker({
                 opens: 'left',
                 singleDatePicker: true,
@@ -194,6 +236,7 @@ $(function() {
                 }, function (start, end, label) {
                 dates_departing = $('input[name="dates_departing"]').val();
                 if (dates_departing > start.format('DD-MMM')) {
+                    $('input[name="dates_returning"]').val(today);
                     toastMsg.fire({
                         icon: 'error', // error, info, warning
                         title: 'Departing date must be less than returning date'
@@ -212,6 +255,25 @@ $(function() {
             $('input[name="dates_returning"]').val(selectDate);
             dates_returning.data('daterangepicker').setStartDate(selectDate);
         });
+
+        $('input[name="dates_returning"]').on('apply.daterangepicker', function(ev, picker) {
+            let selectDate = picker.startDate.format('DD-MMM');
+            dates_departing = $('input[name="dates_departing"]').val();
+            let compare =  compareDates(selectDate,dates_departing);
+
+            if (!compare){
+
+                // dates_returning.data('daterangepicker').setStartDate(selectDate);
+                // dates_returning reset
+                $('input[name="dates_returning"]').val(dates_departing);
+
+                toastMsg.fire({
+                    icon: 'error', // error, info, warning
+                    title: 'Departing date must be less than returning date'
+                });
+            }
+        });
+
 });
 function handleReset(){
     $("#pills-roundtrip-tab").on("click", function () {
@@ -228,6 +290,18 @@ function handleReset(){
     $(".select-from").html("");
     $(".select-to").html("");
 }
+
+
+var compareDates = (d1, d2) => {
+    let date1 = new Date(d1).getTime();
+    let date2 = new Date(d2).getTime();
+
+    if (date1 < date2) {
+        return false;
+    } else {
+        return true;
+    }
+};
 
 
 

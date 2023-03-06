@@ -432,6 +432,11 @@
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+
+    .btn-buy-sell-tab{
+        padding: 7px 14px!important;
+    }
+
     .management{
         margin-top: 10%;
     }
@@ -969,6 +974,31 @@
 
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+
+    .iso_image {
+        border: none!important;
+    }
+    .img-fluid {
+        max-width: 70%!important;
+    }
+    .ceo_image {
+        text-align: center!important;
+    }
+
+    .btn-buy-sell-tab{
+        padding: 7px 14px!important;
+    }
+
+    .exchangeIcon{
+        margin-top: 0px!important;
+    }
+    .exchangeIcon .fa-exchange-alt{
+        transform: rotate(90deg);
+    }
+    .select_to_div{
+        margin: -1rem 0 0 0!important;
+    }
 
 
      .management{
@@ -1849,6 +1879,30 @@
     }
 }
 @media (max-width: 575.98px) {
+
+    .iso_image {
+        border: none!important;
+    }
+    .img-fluid {
+        max-width: 70%!important;
+    }
+    .ceo_image {
+        text-align: center!important;
+    }
+    .btn-buy-sell-tab{
+        padding: 7px 14px!important;
+    }
+
+     .exchangeIcon{
+        margin-top: 0px!important;
+    }
+    .exchangeIcon .fa-exchange-alt{
+        transform: rotate(90deg);
+    }
+    .select_to_div{
+        margin: -1rem 0 0 0!important;
+    }
+
 
      .management{
         margin-top: 10%;
@@ -3138,6 +3192,35 @@
     }
 }
 @media (max-width: 413px) {
+
+    .iso_image {
+        border: none!important;
+    }
+    .img-fluid {
+        max-width: 70%!important;
+    }
+    .ceo_image {
+        text-align: center!important;
+    }
+    /* ticket */
+    .btn-buy-sell-tab{
+        padding: 4px 6px!important;
+    }
+     .exchangeIcon{
+        margin-top: 0px!important;
+    }
+    .exchangeIcon .fa-exchange-alt{
+        transform: rotate(90deg);
+    }
+    .select_to_div{
+        margin: -1rem 0 0 0!important;
+    }
+
+
+    .input-icons>input{
+        font-size: 14px !important;
+    }
+
 
 
      .management{
