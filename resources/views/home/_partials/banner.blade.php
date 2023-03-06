@@ -18,7 +18,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img membership_banner_images">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/membership/club.png')}}"
+                            src="{{asset('web/assets/images/banner_image/membership/club.png')}}"
                                 alt="Home Banner| Icon">
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                                src="{{asset('web/assets/images/banner image/line for license.png')}}" alt="Home Banner| Icon">
+                                src="{{asset('web/assets/images/banner_image/line_for_license.png')}}" alt="Home Banner| Icon">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -76,7 +76,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                                src="{{asset('web/assets/images/banner image/home.png')}}" alt="Home Banner| Icon">
+                                src="{{asset('web/assets/images/banner_image/home.png')}}" alt="Home Banner| Icon">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -106,7 +106,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                                src="{{asset('web/assets/images/banner image/ticket.png')}}" alt="Home Banner| Icon">
+                                src="{{asset('web/assets/images/banner_image/ticket.png')}}" alt="Home Banner| Icon">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -153,27 +153,27 @@
         var images = [
             {
                 'title': 'Want to join <br> your desire club!',
-                'src': 'web/assets/images/banner image/membership/club_2.jpg',
+                'src': 'web/assets/images/banner_image/membership/club_2.jpg',
             },
             {
                 'title': 'Find Your <br> Best Activities',
-                'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
+                'src': 'web/assets/images/banner_image/membership/GOLF_PLAYER.png',
             },
             {
                 'title': `You're on <br> right place!`,
-                'src': 'web/assets/images/banner image/membership/wine_glass.png',
+                'src': 'web/assets/images/banner_image/membership/wine_glass.png',
             },
             {
                 'title': 'Good is not Good <br> When better is <br> Expected!',
-                'src': 'web/assets/images/banner image/membership/golf_table.png',
+                'src': 'web/assets/images/banner_image/membership/golf_table.png',
             },
             {
                 'title': 'Find Your <br> Modern club',
-                'src': 'web/assets/images/banner image/membership/GOLF.jpg',
+                'src': 'web/assets/images/banner_image/membership/GOLF.jpg',
             },
             {
                 'title': 'Want to feel <br> in the rhythm!',
-                'src': 'web/assets/images/banner image/membership/club_2.jpg',
+                'src': 'web/assets/images/banner_image/membership/club_2.jpg',
             }
         ];
         var bannerImage = $(".membership_banner_images img");
