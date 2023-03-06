@@ -317,6 +317,25 @@ div.success_menu ul.common_slider_class li {
     margin-right: 48px;
     align-self: center;
 }
+.main_menu_phone li.nav-item {
+    margin-right: 48px;
+    align-self: left;
+}
+.main_menu_phone li.nav-item a.nav-link{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: .20000000298023224px;
+    text-align: left;
+    align-self: left;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
 .main_menu li.nav-item a.nav-link {
     font-size: 16px;
     font-weight: 600;
@@ -396,14 +415,28 @@ div.success_menu ul.common_slider_class li {
 #all_blog .all_blog_menu li, #mission .mission_img, #organogram>h2, .author .icon, .footer_heading .footer_btn, .offcanvas_menu .logo, .pg_marketplace .marketplace_item .icon, .pg_marketplace2 .marketplace_item .icon, .pro_gra_for_whom_item:nth-child(odd) .for_whom_image, .section_heading {
     text-align: center;
 }
+.footer_item_1 ul li:last-child, .offcanvas-body .main_menu_phone {
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+    margin-left: 2rem;
+}
+
 .footer_item_1 ul li:last-child, .offcanvas-body .main_menu {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
 }
+
+.offcanvas-body .main_menu_phone li,
 .offcanvas-body .main_menu li {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     margin-right: 0;
+}
+.offcanvas-body .main_menu_phone li a.nav-link {
+    line-height: 24px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 .offcanvas-body .main_menu li a.nav-link {
     line-height: 24px;
@@ -472,6 +505,7 @@ div.success_menu ul.common_slider_class li {
     margin-bottom: 1.5rem!important;
     color: #000;
 }
+
 .management p{
     max-width: 100%;
     text-align: justify;
