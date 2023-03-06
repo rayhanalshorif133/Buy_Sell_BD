@@ -27,13 +27,13 @@ class SliderController extends Controller
         if ($request->slider_id) {
             $validator = Validator::make($request->all(), [
                 'title' => 'required',
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
+                'image' => 'required|image',
                 'slider_category' => 'required' . $request->slider_id,
             ]);
         } else {
             $validator = Validator::make($request->all(), [
                 'title' => 'required',
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
+                'image' => 'required|image',
                 'slider_category' => 'required',
             ]);
         }
@@ -55,7 +55,7 @@ class SliderController extends Controller
             }
         } else {
             $validator = Validator::make($request->all(), [
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
+                'image' => 'required|image',
             ]);
             if ($validator->fails()) {
                 Session::flash('message', $validator->errors()->first());
