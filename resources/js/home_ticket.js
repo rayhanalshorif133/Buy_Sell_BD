@@ -6,7 +6,8 @@ var bar_loading = `
 `;
 
 $(function() {
-    $("#select-from").on("focus", function () {
+    handleReset();
+    $(".select-from").on("focus", function () {
         $(".popup-from").removeClass("d-none");
         $(".location-from-search").focus();
     });
@@ -19,8 +20,8 @@ $(function() {
         if (value.length > 20) {
             value = value.substring(0, 20) + "...";
         }
-        $("#select-from").val(value);
-        $("#select-from").css("font-size", "14px");
+        $(".select-from").val(value);
+        $(".select-from").css("font-size", "14px");
         $(".popup-from").addClass("d-none");
     });
 
@@ -49,8 +50,8 @@ $(function() {
             if(value.length > 20){
                 value = value.substring(0, 20) + "...";
             }
-            $("#select-from").val(value);
-            $("#select-from").css("font-size", "14px");
+            $(".select-from").val(value);
+            $(".select-from").css("font-size", "14px");
             $(".popup-from").addClass("d-none");
             return false;
         }
@@ -89,9 +90,6 @@ $(function() {
                 </div>
                 `);
         });
-        $(".location-from-search-list-item").click(function() {
-            console.log("clicked");
-        });
         }, 2000);
     });
 });
@@ -102,7 +100,7 @@ $(function() {
 
 
 
-    $("#select-to").on("focus", function () {
+    $(".select-to").on("focus", function () {
         $(".popup-to").removeClass("d-none");
         $(".location-to-search").focus();
     });
@@ -116,8 +114,8 @@ $(function() {
         if(value.length > 20){
             value = value.substring(0, 20) + "...";
         }
-        $("#select-to").val(value);
-        $("#select-to").css("font-size", "14px");
+        $(".select-to").val(value);
+        $(".select-to").css("font-size", "14px");
         $(".popup-to").addClass("d-none");
     });
 
@@ -146,8 +144,8 @@ $(function() {
             if(value.length > 20){
                 value = value.substring(0, 20) + "...";
             }
-            $("#select-to").val(value);
-            $("#select-to").css("font-size", "14px");
+            $(".select-to").val(value);
+            $(".select-to").css("font-size", "14px");
             $(".popup-to").addClass("d-none");
             return false;
         }
