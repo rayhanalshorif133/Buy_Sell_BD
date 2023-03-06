@@ -226,7 +226,7 @@ $(function() {
 
 
         $(function() {
-        let today = moment().format('DD-MMM');
+        var today = moment().format('DD-MMM');
             dates_returning =  $('input[name="dates_returning"]').daterangepicker({
                 opens: 'left',
                 singleDatePicker: true,
@@ -236,6 +236,7 @@ $(function() {
                 }, function (start, end, label) {
                 dates_departing = $('input[name="dates_departing"]').val();
                 if (dates_departing > start.format('DD-MMM')) {
+                    $('input[name="dates_returning"]').val(today);
                     toastMsg.fire({
                         icon: 'error', // error, info, warning
                         title: 'Departing date must be less than returning date'
@@ -254,6 +255,25 @@ $(function() {
             $('input[name="dates_returning"]').val(selectDate);
             dates_returning.data('daterangepicker').setStartDate(selectDate);
         });
+
+        $('input[name="dates_returning"]').on('apply.daterangepicker', function(ev, picker) {
+            let selectDate = picker.startDate.format('DD-MMM');
+            dates_departing = $('input[name="dates_departing"]').val();
+            let compare =  compareDates(selectDate,dates_departing);
+
+            if (!compare){
+
+                // dates_returning.data('daterangepicker').setStartDate(selectDate);
+                // dates_returning reset
+                $('input[name="dates_returning"]').val(dates_departing);
+
+                toastMsg.fire({
+                    icon: 'error', // error, info, warning
+                    title: 'Departing date must be less than returning date'
+                });
+            }
+        });
+
 });
 function handleReset(){
     $("#pills-roundtrip-tab").on("click", function () {
@@ -270,6 +290,18 @@ function handleReset(){
     $(".select-from").html("");
     $(".select-to").html("");
 }
+
+
+var compareDates = (d1, d2) => {
+    let date1 = new Date(d1).getTime();
+    let date2 = new Date(d2).getTime();
+
+    if (date1 < date2) {
+        return false;
+    } else {
+        return true;
+    }
+};
 
 
 

@@ -80,7 +80,7 @@
                                                 <div class="card_image"><img class="img-fluid w-100" src="{{asset('web/assets/images/services/license/1.png')}}"
                                                         alt="image" loading="lazy"></div>
                                                 <div class="card_text">
-                                                    <h3>License</h3>
+                                                    <h3>BRTA License</h3>
                                                     <p>Want to hassle free license service consult with us.</p>
                                                 </div>
                                             </div>
