@@ -9,9 +9,13 @@ $(function() {
     handleReset();
     $(".select-from").on("focus", function () {
         $(".popup-from").removeClass("d-none");
+        $(".popup-to").addClass("d-none");
         $(".location-from-search").focus();
     });
 
+    $(".whereInput span").on("click", function () {
+        $(".popup-from").addClass("d-none");
+    });
 
 
     $(document).on("click", ".location-from-search-list-item", function () {
@@ -23,6 +27,7 @@ $(function() {
         $(".select-from").val(value);
         $(".select-from").css("font-size", "14px");
         $(".popup-from").addClass("d-none");
+        $(".input-field").css("font-size", "14px");
     });
 
 
@@ -53,6 +58,7 @@ $(function() {
             $(".select-from").val(value);
             $(".select-from").css("font-size", "14px");
             $(".popup-from").addClass("d-none");
+            $(".input-field").css("font-size", "14px");
             return false;
         }
         else{
@@ -102,11 +108,14 @@ $(function() {
 
     $(".select-to").on("focus", function () {
         $(".popup-to").removeClass("d-none");
+        $(".popup-from").addClass("d-none");
         $(".location-to-search").focus();
     });
-    $(".location-to-search").on("focusout", function() {
-        // $(".popup-to").addClass("d-none");
+
+    $(".whereInput span").on("click", function () {
+        $(".popup-to").addClass("d-none");
     });
+
 
     $(document).on("click", ".location-to-search-list-item", function(){
         let value = $(this).text();
@@ -117,6 +126,7 @@ $(function() {
         $(".select-to").val(value);
         $(".select-to").css("font-size", "14px");
         $(".popup-to").addClass("d-none");
+        $(".input-field").css("font-size", "14px");
     });
 
     $(".location-to-search").keyup(function(event) {
@@ -147,6 +157,7 @@ $(function() {
             $(".select-to").val(value);
             $(".select-to").css("font-size", "14px");
             $(".popup-to").addClass("d-none");
+            $(".input-field").css("font-size", "14px");
             return false;
         }
         else{

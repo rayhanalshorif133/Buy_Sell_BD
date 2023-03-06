@@ -70,11 +70,14 @@
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="input-icons">
+                                                    <div class="input-icons whereInput">
                                                         <i class="fa-solid fa-search icon"></i>
                                                         <input type="text" for="select-from"
                                                         class="form-control form-control-lg input-field location-from-search"
                                                             placeholder="Where are you leaving from?">
+                                                        <span>
+                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                        </span>
                                                     </div>
                                                     <div class="text-center mt-5 content_after_search">
                                                         <div class="my-5">
@@ -114,11 +117,14 @@
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="input-icons">
+                                                    <div class="input-icons whereInput">
                                                         <i class="fa-solid fa-search icon"></i>
                                                         <input type="text" for="select-to"
                                                             class="form-control form-control-lg input-field location-to-search"
                                                             placeholder="Where are you going to?">
+                                                        <span>
+                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                        </span>
                                                     </div>
                                                     <div class="text-center mt-5 content_after_search_to">
                                                         <div class="my-5">
@@ -221,11 +227,14 @@
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="input-icons">
+                                                    <div class="input-icons whereInput">
                                                         <i class="fa-solid fa-search icon"></i>
                                                         <input type="text" for="select-from"
                                                             class="form-control form-control-lg input-field location-from-search"
                                                             placeholder="Where are you leaving from?">
+                                                        <span>
+                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                        </span>
                                                     </div>
                                                     <div class="text-center mt-5 content_after_search">
                                                         <div class="my-5">
@@ -265,11 +274,14 @@
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="input-icons">
+                                                    <div class="input-icons whereInput">
                                                         <i class="fa-solid fa-search icon"></i>
                                                         <input type="text" for="select-to"
                                                             class="form-control form-control-lg input-field location-to-search"
                                                             placeholder="Where are you going to?">
+                                                        <span>
+                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                        </span>
                                                     </div>
                                                     <div class="text-center mt-5 content_after_search_to">
                                                         <div class="my-5">
@@ -368,11 +380,14 @@
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="input-icons">
+                                                    <div class="input-icons whereInput">
                                                         <i class="fa-solid fa-search icon"></i>
                                                         <input type="text" for="select-from"
                                                             class="form-control form-control-lg input-field location-from-search"
                                                             placeholder="Where are you leaving from?">
+                                                        <span>
+                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                        </span>
                                                     </div>
                                                     <div class="text-center mt-5 content_after_search">
                                                         <div class="my-5">
@@ -412,11 +427,14 @@
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="input-icons">
+                                                    <div class="input-icons whereInput">
                                                         <i class="fa-solid fa-search icon"></i>
                                                         <input type="text" for="select-to"
                                                             class="form-control form-control-lg input-field location-to-search"
                                                             placeholder="Where are you going to?">
+                                                        <span>
+                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                        </span>
                                                     </div>
                                                     <div class="text-center mt-5 content_after_search_to">
                                                         <div class="my-5">
