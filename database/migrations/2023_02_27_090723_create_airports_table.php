@@ -1,6 +1,6 @@
 <?php
 
-use Database\Seeders\AirportSeeder;
+// use Database\Seeders\AirportSeeder;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -24,8 +24,8 @@ class CreateAirportsTable extends Migration
             $table->timestamps();
         });
 
-        $airportSeeder = new AirportSeeder();
-        $airportSeeder->run();
+        // $airportSeeder = new AirportSeeder();
+        // $airportSeeder->run();
     }
 
     /**
