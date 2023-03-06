@@ -307,7 +307,7 @@
                 </div>
                 <div class="col-md-5 mb-3">
                     <div class="row">
-                        <div class="col-md-6 m-auto text-left">
+                        <div class="col-md-8 m-auto text-left">
                             <label for="dates" class="form-label">Departing</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-calendar-alt icon"></i>
@@ -460,18 +460,11 @@
                 </div>
                 <div class="col-md-5 mb-3">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8 m-auto text-left">
                             <label for="dates" class="form-label">Departing</label>
                             <div class="input-icons">
                                 <i class="fa-solid fa-calendar-alt icon"></i>
                                 <input type="text" name="dates_departing" class="form-control form-control-lg input-field" />
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="dates" class="form-label">Returning</label>
-                            <div class="input-icons">
-                                <i class="fa-solid fa-calendar-alt icon"></i>
-                                <input type="text" name="dates_returning" class="form-control form-control-lg input-field" />
                             </div>
                         </div>
                     </div>

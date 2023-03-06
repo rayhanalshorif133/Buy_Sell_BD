@@ -18,7 +18,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="banner_img membership_banner_images">
                             <img class="img-fluid homebanner-thumb video_thumb sal-animate" id="bannerImage"
-                            src="{{asset('web/assets/images/banner image/membership/CLUB.png')}}"
+                            src="{{asset('web/assets/images/banner image/membership/club.png')}}"
                                 alt="Home Banner| Icon">
                         </div>
                     </div>
@@ -152,28 +152,28 @@
         var is_active = $(".membership_banner_images").closest('.owl-item').hasClass('active');
         var images = [
             {
-                'title': 'Want to join <br> your desire club',
-                'src': 'web/assets/images/banner image/membership/CLUB.png',
+                'title': 'Want to join <br> your desire club!',
+                'src': 'web/assets/images/banner image/membership/club_2.jpg',
             },
             {
                 'title': 'Find Your <br> Best Activities',
                 'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
             },
             {
-                'title': 'Choice <br> Best Refresh environment',
+                'title': `You're on <br> right place!`,
                 'src': 'web/assets/images/banner image/membership/wine_glass.png',
             },
             {
-                'title': 'Choice your <br> psychological or mental <br> refreshment place',
+                'title': 'Good is not Good <br> When better is <br> Expected!',
                 'src': 'web/assets/images/banner image/membership/golf_table.png',
             },
             {
-                'title': 'Find Your <br> Best Activities',
-                'src': 'web/assets/images/banner image/membership/GOLF PLAYER.png',
+                'title': 'Find Your <br> Modern club',
+                'src': 'web/assets/images/banner image/membership/GOLF.jpg',
             },
             {
-                'title': 'Want to join <br> your desire club',
-                'src': 'web/assets/images/banner image/membership/CLUB.png',
+                'title': 'Want to feel <br> in the rhythm!',
+                'src': 'web/assets/images/banner image/membership/club_2.jpg',
             }
         ];
         var bannerImage = $(".membership_banner_images img");
