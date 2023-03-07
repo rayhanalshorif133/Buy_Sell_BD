@@ -506,6 +506,12 @@ div.success_menu ul.common_slider_class li {
     color: #000;
 }
 
+
+.management_phone h4{
+    color: #000;
+    text-align: center;
+}
+
 .management p{
     max-width: 100%;
     text-align: justify;

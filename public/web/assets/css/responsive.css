@@ -1883,7 +1883,7 @@
     .iso_image {
         border: none!important;
     }
-    .img-fluid {
+    .img-fluid-ceo {
         max-width: 70%!important;
     }
     .ceo_image {
@@ -3196,7 +3196,8 @@
     .iso_image {
         border: none!important;
     }
-    .img-fluid {
+
+    .img-fluid-ceo {
         max-width: 70%!important;
     }
     .ceo_image {
