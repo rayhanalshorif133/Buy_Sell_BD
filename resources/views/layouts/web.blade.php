@@ -79,8 +79,6 @@
     <div class="back_to_top">
         <a href="#"><i class="fa fa-angle-up"></i></a>
     </div>
-
-
     <script src="{{asset('web/assets/js/owl.carousel.min.js')}}"></script>
     <script src="{{asset('web/assets/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('web/assets/js/slick.min.js')}}"></script>

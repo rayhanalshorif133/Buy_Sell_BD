@@ -3,6 +3,11 @@
     font-family: Hind Siliguri;
 }
 
+
+#extend_content {
+    margin-top: 135px;
+}
+
 .exchangeIcon{
     margin-top: 3rem;
 }
@@ -2053,8 +2058,13 @@ del {
 #footer {
     padding-top: 30px;
     background: #403532;
-    position: relative;
+    position: fixed;
     z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
 #footer .footer_left {
     position: absolute;

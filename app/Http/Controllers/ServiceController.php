@@ -68,4 +68,13 @@ class ServiceController extends Controller
         $service->delete();
         return $this->respondWithSuccess('Service deleted successfully.');
     }
+
+
+
+    // public
+
+    public function view($serviceName = null, $serviceItemName = null)
+    {
+        return view('public.service_details', compact('serviceName', 'serviceItemName'));
+    }
 }

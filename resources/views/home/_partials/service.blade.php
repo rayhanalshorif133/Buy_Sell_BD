@@ -131,6 +131,7 @@
                                 <div class="owl-stage-outer">
                                     <div class="owl-stage">
                                         <div class="owl-item">
+                                            <a href="{{route('services.view-details',["property","house"])}}">
                                             <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
                                                 data-sal-easing="ease">
                                                 <div class="course_single_item what_we_do">
@@ -142,32 +143,37 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            </a>
                                         </div>
                                         <div class="owl-item">
-                                            <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
-                                                data-sal-easing="ease">
-                                                <div class="course_single_item what_we_do">
-                                                    <div class="card_image"><img class="img-fluid w-100"
-                                                            src="{{asset('web/assets/images/services/property/flat.jpg')}}" alt="image" loading="lazy"></div>
-                                                    <div class="card_text">
-                                                        <h3>Flats</h3>
-                                                        <p></p>
+                                            <a href="{{route("services.view-details",["property","flats"])}}">
+                                                <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
+                                                    data-sal-easing="ease">
+                                                    <div class="course_single_item what_we_do">
+                                                        <div class="card_image"><img class="img-fluid w-100"
+                                                                src="{{asset('web/assets/images/services/property/flat.jpg')}}" alt="image" loading="lazy"></div>
+                                                        <div class="card_text">
+                                                            <h3>Flats</h3>
+                                                            <p></p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
                                         <div class="owl-item">
-                                            <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
-                                                data-sal-easing="ease">
-                                                <div class="course_single_item what_we_do">
-                                                    <div class="card_image"><img class="img-fluid w-100"
-                                                            src="{{asset('web/assets/images/services/property/land.jpg')}}" alt="image" loading="lazy"></div>
-                                                    <div class="card_text">
-                                                        <h3>Land</h3>
-                                                        <p></p>
+                                            <a href="{{route("services.view-details",["property","land"])}}">
+                                                <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
+                                                    data-sal-easing="ease">
+                                                    <div class="course_single_item what_we_do">
+                                                        <div class="card_image"><img class="img-fluid w-100"
+                                                                src="{{asset('web/assets/images/services/property/land.jpg')}}" alt="image" loading="lazy"></div>
+                                                        <div class="card_text">
+                                                            <h3>Land</h3>
+                                                            <p></p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
