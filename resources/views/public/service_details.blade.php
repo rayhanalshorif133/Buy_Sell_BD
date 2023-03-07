@@ -33,7 +33,7 @@
                 <div class="row g-0 align-items-center">
                     <div class="col-md-5">
                         <img class="card-img-top img-fluid"
-                            src="//localhost:3000/web/assets/images/about/buysellbd.png" alt="Company">
+                            src="https://picsum.photos/500/300" alt="Company">
                     </div>
                     <div class="col-md-7">
                         <div class="card-body">
