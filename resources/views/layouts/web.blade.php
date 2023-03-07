@@ -55,6 +55,8 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93245109-2"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    @yield('head')
     <script>
         window.dataLayer = window.dataLayer || [];
 
