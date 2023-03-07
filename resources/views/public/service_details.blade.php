@@ -2,6 +2,7 @@
 
 
 @section('head')
+<link rel="stylesheet" href="{{asset('web/assets/lightbox/dist/css/lightbox.min.css')}}">
 <style>
     /* card atractive desing */
     .custom-card {
@@ -32,8 +33,11 @@
             @for ($i = 0; $i < 10; $i++)
                 <div class="row g-0 align-items-center">
                     <div class="col-md-5">
+                        <a class="example-image-link" href="https://picsum.photos/1200/1000"
+                            data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                         <img class="card-img-top img-fluid"
                             src="https://picsum.photos/500/300" alt="Company">
+                        </a>
                     </div>
                     <div class="col-md-7">
                         <div class="card-body">
@@ -75,6 +79,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="{{asset('web/assets/lightbox/dist/js/lightbox-plus-jquery.min.js')}}"></script>
 <script src="{{ asset('js/home.js') }}"></script>
 <script src="{{ asset('js/home_ticket.js') }}"></script>
 
