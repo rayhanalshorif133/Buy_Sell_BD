@@ -2239,8 +2239,8 @@ del {
     -ms-flex-align: center;
     align-items: center;
     border-top: 1px solid rgba(45, 45, 45, .1);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .copy .copy_text p {
     color: #2d2d2d;
