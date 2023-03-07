@@ -31,7 +31,7 @@
             <h3 class="text-capitalize">{{$serviceItemName}}</h3>
         </div>
         <div class="row" style="margin: 0 10px 10px 10px;">
-            @for ($i = 0; $i < 3; $i++)
+            @for ($i = 0; $i < 10; $i++)
            <div class="col-md-6 mt-3">
             <div class="card" style="width:100%">
                 <img src="https://picsum.photos/500/300" class="card-img-top" alt="...">
