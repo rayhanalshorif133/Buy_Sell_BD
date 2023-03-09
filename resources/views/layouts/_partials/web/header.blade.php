@@ -32,23 +32,23 @@
                     </li>
                     <li class="nav-item sal-animate" data-sal="slide-right" data-sal-delay="300" data-sal-duration="800"
                         data-sal-easing="ease">
-                        <a href="#about" class="nav-link">About Us</a>
+                        <a href="/#about" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item sal-animate" data-sal="slide-right" data-sal-delay="300" data-sal-duration="800"
                         data-sal-easing="ease">
-                        <a href="#whatWeDo" class="nav-link">What We Do?</a>
+                        <a href="/#whatWeDo" class="nav-link">What We Do?</a>
                     </li>
                     <li class="nav-item sal-animate" data-sal="slide-right" data-sal-delay="300" data-sal-duration="800"
                         data-sal-easing="ease">
-                        <a href="#riz_event" class="nav-link">RIZ Event</a>
+                        <a href="/#riz_event" class="nav-link">RIZ Event</a>
                     </li>
                     <li class="nav-item sal-animate" data-sal="slide-right" data-sal-delay="300" data-sal-duration="800"
                         data-sal-easing="ease">
-                        <a href="#service" data-rr-ui-event-key="service" class="nav-link">Service</a>
+                        <a href="/#service" data-rr-ui-event-key="service" class="nav-link">Service</a>
                     </li>
                     <li class="nav-item sal-animate" data-sal="slide-right" data-sal-delay="300" data-sal-duration="800"
                         data-sal-easing="ease">
-                        <a href="#contactUs" data-rr-ui-event-key="contactUs" class="nav-link">Contact Us</a>
+                        <a href="/#contactUs" data-rr-ui-event-key="contactUs" class="nav-link">Contact Us</a>
                     </li>
                     <div class="navbar_btn nav-item">
                         <span class="sal-animate dark-mode btn btn-sm btn-buy-sell">
@@ -95,19 +95,19 @@
                         <a href="/" data-rr-ui-event-key="home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" data-rr-ui-event-key="#" class="nav-link">About Us</a>
+                        <a href="/#about" data-rr-ui-event-key="#" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#whatWeDo" data-rr-ui-event-key="#" class="nav-link">What we do?</a>
+                        <a href="/#whatWeDo" data-rr-ui-event-key="#" class="nav-link">What we do?</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#riz_event" data-rr-ui-event-key="#" class="nav-link">Riz Event</a>
+                        <a href="/#riz_event" data-rr-ui-event-key="#" class="nav-link">Riz Event</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#service" data-rr-ui-event-key="#" class="nav-link">Service</a>
+                        <a href="/#service" data-rr-ui-event-key="#" class="nav-link">Service</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contactUs" data-rr-ui-event-key="#" class="nav-link">Contact</a>
+                        <a href="/#contactUs" data-rr-ui-event-key="#" class="nav-link">Contact</a>
                     </li>
                     <div class="navbar_btn nav-item">
                         <span class="sal-animate dark-mode btn btn-sm btn-buy-sell">
