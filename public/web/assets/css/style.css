@@ -2059,7 +2059,7 @@ del {
 #footer {
     padding-top: 30px;
     background: #403532;
-    position: fixed;
+    position: relative;
     z-index: 2;
     left: 0;
     bottom: 0;
