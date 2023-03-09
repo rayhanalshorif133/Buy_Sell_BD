@@ -34,7 +34,7 @@
                 <div class="row g-0 align-items-center">
                     <div class="col-md-5">
                         <a class="example-image-link" href="https://picsum.photos/1200/1000"
-                            data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            data-lightbox="example-set" data-title="Buy Sell BD">
                         <img class="card-img-top img-fluid"
                             src="https://picsum.photos/500/300" alt="Company">
                         </a>
