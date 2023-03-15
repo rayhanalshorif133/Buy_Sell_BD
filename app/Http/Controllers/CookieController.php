@@ -19,4 +19,14 @@ class CookieController extends Controller
         $value = $request->cookie($request->name);
         return $value;
     }
+
+    public function demo()
+    {
+        return view('home._partials.demo');
+    }
+
+    public function demo2()
+    {
+        return view('home._partials.demo2');
+    }
 }

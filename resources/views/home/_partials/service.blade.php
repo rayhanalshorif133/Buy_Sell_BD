@@ -131,7 +131,7 @@
                                 <div class="owl-stage-outer">
                                     <div class="owl-stage">
                                         <div class="owl-item">
-                                            <a href="{{route('services.view-details',["property","house"])}}">
+                                            <a href="{{route('services.view-details',["property","house"])}}" >
                                             <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
                                                 data-sal-easing="ease">
                                                 <div class="course_single_item what_we_do">
@@ -146,7 +146,7 @@
                                             </a>
                                         </div>
                                         <div class="owl-item">
-                                            <a href="{{route("services.view-details",["property","flats"])}}">
+                                            <a href="{{route("services.view-details",["property","flats"])}}" >
                                                 <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
                                                     data-sal-easing="ease">
                                                     <div class="course_single_item what_we_do">
@@ -161,7 +161,7 @@
                                             </a>
                                         </div>
                                         <div class="owl-item">
-                                            <a href="{{route("services.view-details",["property","land"])}}">
+                                            <a href="{{route("services.view-details",["property","land"])}}" >
                                                 <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
                                                     data-sal-easing="ease">
                                                     <div class="course_single_item what_we_do">
@@ -196,7 +196,12 @@
     }
 </style>
 
+
 <script>
+
+    function closeWin() {
+        window.close();
+    }
     $(document).ready(function(){
         $(".service_slider_membership").owlCarousel({
             loop:true,
@@ -266,4 +271,5 @@
         });
 
     });
+
 </script>

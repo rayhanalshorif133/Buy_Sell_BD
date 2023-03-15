@@ -91,6 +91,7 @@
         });
     });
 
+
     function windowResize(){
     // wondow resize
     let width = $(window).width();

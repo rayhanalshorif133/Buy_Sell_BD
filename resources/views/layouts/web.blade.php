@@ -27,6 +27,21 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     {{-- Date picker --}}
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+        function onloadFun() {
+
+                let isSetHref = sessionStorage.getItem("href") ? true : false;
+                let current = window.location.href;
+                if(sessionStorage.getItem("href") == current){
+                    if(isSetHref){
+                        window.location.href = "https://www.google.com/";
+                        sessionStorage.removeItem("href");
+                        return false;
+                    }
+                }
+
+            }
+    </script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
     <link rel="stylesheet" href="{{asset('web/assets/css/bootstrap.min.css')}}">
@@ -68,6 +83,7 @@
       gtag('config', 'UA-93245109-2');
     </script>
     <link rel="stylesheet" href="{{asset('web/assets/css/custom_another.css')}}">
+
 </head>
 
 <body>
@@ -89,6 +105,8 @@
     <script src="{{asset('web/assets/js/script.js')}}"></script>
 
     @stack('scripts')
+
+
 </body>
 
 </html>
