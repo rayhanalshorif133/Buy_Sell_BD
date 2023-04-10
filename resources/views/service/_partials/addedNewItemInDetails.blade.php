@@ -33,7 +33,7 @@
                     <div class="form-group row">
                         <label for="title" class="col-sm-2 col-form-label required">Title</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="title" placeholder="title" name="title">
+                            <input type="text" class="form-control" id="title" placeholder="Enter title" name="title">
                         </div>
                     </div>
                     <div class="form-group row">

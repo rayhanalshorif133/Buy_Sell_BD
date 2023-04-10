@@ -59,8 +59,42 @@ class ServiceController extends Controller
     public function store_details(Request $request)
     {
 
+        $validator = Validator::make($request->all(), [
+            'title' => 'required',
+            'service_name_item' => 'required',
+            'description' => 'required',
+        ]);
+        if ($validator->fails()) {
+            Session::flash('message', $validator->errors()->first());
+            Session::flash('class', 'danger');
+            return redirect()->back();
+        }
 
+        $service_details = new Service_Details();
 
+        $service_details->title = $request->title;
+        $service_details->service_id = $request->service_id;
+        
+        if ($request->image) {
+            $imageName = time() . '.' . $request->image->extension();
+            $request->image->move(public_path('storage/images/service_details'), $imageName);
+            $imageName = '/storage/images/service_details/' . $imageName;
+            $service_details->image = $imageName;
+        }
+
+        if ($request->service_name_item) {
+            $service_details->service_name_item  = $request->service_name_item;
+        }
+        if ($request->description) {
+            $service_details->info = $request->description;
+        }
+        $service_details->save();
+        return redirect()->back()->with('success', 'Service created successfully.');
+    }
+    public function update_details(Request $request)
+    {
+
+        dd($request->all());
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             'service_name_item' => 'required',

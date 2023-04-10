@@ -55,7 +55,7 @@
                             <td>
                                 <img src="{{asset($service->image)}}" alt="" width="100px">
                             </td>
-                            <td>
+                            <td class="title">
                                 {{$service->title}}
                             </td>
                             <td>
@@ -68,7 +68,8 @@
                                 @endif
                             </td>
                             <td class="w-20">
-                                <span class="btn btn-success btn-sm" title="View">
+                                <span class="btn btn-success btn-sm showInDetails" title="View"data-toggle="modal"
+                                    data-target="#showInDetails">
                                     <i class="fas fa-eye"></i>
                                 </span>
                                 <span class="btn btn-info btn-sm editBtn" data-toggle="modal"
@@ -86,6 +87,26 @@
             </div>
     </div>
 </div>
+@include('service._partials.showItemInDetails')
 @include('service._partials.addedNewItemInDetails')
 @include('service._partials.updateItemInDetails')
 @endsection
+
+@push('js')
+<script>
+    $(function() {
+        handleShowBtn();
+    });
+
+    handleShowBtn = () => {
+
+        $('.showInDetails').on('click', function() {
+            let id = $(this).closest('tr').attr('id');
+            let title = $(this).closest('tr').find('.title').text();
+            title = title.trim();
+            $(".details_title").text(title);
+        });
+        console.log('hello');
+    };
+</script>
+@endpush
