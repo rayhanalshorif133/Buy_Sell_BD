@@ -19,6 +19,10 @@
 
     /* Add rounded corners to the top left and the top right corner of the image */
 
+    ol, ul {
+        list-style: disc;
+        margin-left: 2.6rem;
+    }
 
 </style>
 @endsection
@@ -46,16 +50,8 @@
                     <div class="col-md-7">
                         <div class="card-body">
                             <div class="subtitle">
-                                <h4>Buy Sell BD</h4>
-                                <p class="about_details">
-                                    ALPS Concord. Apartment No. 5B more or less 1,500 sft. in covered area and open terrace on the 4th Floor of the ALPS
-                                    Concord Condominium of House No. 02, Road No. 19, Sector # 14, P.S. - Uttara, Dhaka - 1230, consisting of 3 (three)
-                                    bedrooms, 4 (four) bathrooms, 1 (one) kitchen, 1 (one) living, 1 (one) dining, 2 (two) verandas and one Car-park in
-                                    the Ground Floor
-                                </p>
-                                <p class="copy_details d-none">
-                                    ALPS Concord. Apartment No. 5B more or less 1,500 sft. in covered area and open terrace on the 4th Floor of the ALPS Concord Condominium of House No. 02, Road No. 19, Sector # 14, P.S. - Uttara, Dhaka - 1230, consisting of 3 (three) bedrooms, 4 (four) bathrooms, 1 (one) kitchen, 1 (one) living, 1 (one) dining, 2 (two) verandas and one Car-park in the Ground Floor
-                                </p>
+                                <p class="about_details">{!! $itemDetails->info !!}</p>
+                                {{-- <p class="copy_details d-none">{!! $itemDetails->info !!}</p> --}}
                                 <div class="read_more_about_btn text-left d-none">
                                     <span class="btn btn-md btn-buy-sell">Read More</span>
                                 </div>
