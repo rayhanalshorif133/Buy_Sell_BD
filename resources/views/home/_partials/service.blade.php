@@ -25,11 +25,11 @@
                             role="tab" aria-controls="License" aria-selected="false">License</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="Property-tab" data-bs-toggle="tab" data-bs-target="#property" type="button"
+                        <button class="nav-link active" id="Property-tab" data-bs-toggle="tab" data-bs-target="#property" type="button"
                             role="tab" aria-controls="Property" aria-selected="false">Property</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="Ticket-tab" data-bs-toggle="tab" data-bs-target="#ticket" type="button"
+                        <button class="nav-link" id="Ticket-tab" data-bs-toggle="tab" data-bs-target="#ticket" type="button"
                             role="tab" aria-controls="Ticket" aria-selected="false">Ticket</button>
                     </li>
                 </ul>
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="property" role="tabpanel" aria-labelledby="Property-tab">
+                    <div class="tab-pane fade show active" id="property" role="tabpanel" aria-labelledby="Property-tab">
                         <div class="row">
                             <div class="col-md-12 py-3 before_text">
                                 <div class="subtitle text-justify">
@@ -180,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade show active" id="ticket" role="tabpanel" aria-labelledby="Ticket-tab">
+                    <div class="tab-pane fade" id="ticket" role="tabpanel" aria-labelledby="Ticket-tab">
                         @include('home._partials._service_ticket')
                     </div>
                 </div>
