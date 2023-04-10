@@ -149,6 +149,16 @@ class ServiceController extends Controller
         $service->delete();
         return $this->respondWithSuccess('Service deleted successfully.');
     }
+    public function detailsDelete($id)
+    {
+        $service = Service_Details::find($id);
+        $oldImage = public_path($service->image);
+        if (file_exists($oldImage)) {
+            unlink($oldImage);
+        }
+        $service->delete();
+        return $this->respondWithSuccess('Service details deleted successfully.');
+    }
 
 
 

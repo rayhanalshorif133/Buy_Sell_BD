@@ -114,35 +114,44 @@
     handleDeleteBtn = () => {
         $(".deleteBtn").click(function () {
             let id = $(this).closest('tr').attr('id');
-            swal({
-                title: "Are you sure?",
-                text: "Once deleted, you will not be able to recover this imaginary file!",
-                icon: "warning",
-                buttons: true,
-                dangerMode: true,
-            })
-            .then((willDelete) => {
-                if (willDelete) {
-                    $.ajax({
-                        url: "#",
-                        type: "POST",
-                        data: {
-                            _token: "{{ csrf_token() }}",
-                            id: id
-                        },
-                        success: function (response) {
-                            if (response.status == 200) {
-                                swal("Poof! Your imaginary file has been deleted!", {
-                                    icon: "success",
-                                });
-                                $(`#${id}`).remove();
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+            if (result.isConfirmed) {
+
+                axios.delete("/user/service/details/"+id + "/delete")
+                    .then(function (response) {
+                        if (response.status == 200) {
+                            if (response.data.status == true) {
+                                $("#"+id).remove();
+                                Swal.fire(
+                                    'Deleted!',
+                                    'Your file has been deleted.',
+                                    'success'
+                                )
+                            } else {
+                                Swal.fire(
+                                    'Failed!',
+                                    'Your file has not been deleted.',
+                                    'error'
+                                )
                             }
+                        } else {
+                            Swal.fire(
+                                'Failed!',
+                                'Your file has not been deleted.',
+                                'error'
+                            )
                         }
-                    });
-                } else {
-                    swal("Your imaginary file is safe!");
-                }
-            });
+                    })
+            }
+            })
         });
     };
 </script>

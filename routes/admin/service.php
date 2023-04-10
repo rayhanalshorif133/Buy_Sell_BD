@@ -15,4 +15,5 @@ Route::middleware('auth')
         Route::post('/update_details', [ServiceController::class, 'update_details'])->name('update_details');
         Route::post('/store-or-Update', [ServiceController::class, 'storeOrUpdate'])->name('storeOrUpdate');
         Route::delete('/{id}/delete', [ServiceController::class, 'delete'])->name('delete');
+        Route::delete('/details/{id}/delete', [ServiceController::class, 'detailsDelete'])->name('details-delete');
     });
