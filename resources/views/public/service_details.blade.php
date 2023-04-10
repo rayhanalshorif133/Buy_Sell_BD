@@ -23,6 +23,9 @@
         list-style: disc;
         margin-left: 2.6rem;
     }
+    .w-90{
+        width: 90%;
+    }
 
 </style>
 @endsection
@@ -33,27 +36,30 @@
         <div class="title">
             <h3 class="text-capitalize">{{$serviceItemName}}</h3>
         </div>
-        <div style="margin: 0 10px 10px 10px;">
+        <div style="margin: 10px;">
             <div class="row g-0 align-items-center">
                 @foreach ($serviceDetails as $itemDetails)
                 {{-- {{dd($itemDetails)}} --}}
                     <div class="col-md-5">
                         @php
-                            $image = $itemDetails->image ? $itemDetails->image : 'https://picsum.photos/500/300';
+                            $image = $itemDetails->image ? asset($itemDetails->image) : 'https://picsum.photos/500/300';
                         @endphp
                         <a class="example-image-link" href="{{$image}}"
                             data-lightbox="example-set" data-title="Buy Sell BD">
-                        <img class="card-img-top img-fluid"
-                            src="https://picsum.photos/500/300" alt="Company">
+                        <img class="card-img-top img-fluid w-90"
+                            src="{{$image}}" alt="Company">
                         </a>
                     </div>
                     <div class="col-md-7">
                         <div class="card-body">
+                            <h5>{{$itemDetails->title}}</h5>
                             <div class="subtitle">
                                 <p class="about_details">{!! $itemDetails->info !!}</p>
                                 {{-- <p class="copy_details d-none">{!! $itemDetails->info !!}</p> --}}
-                                <div class="read_more_about_btn text-left d-none">
-                                    <span class="btn btn-md btn-buy-sell">Read More</span>
+                                <div class="text-left">
+                                    <a href="/#contactUs">
+                                        <span class="btn btn-md btn-buy-sell">Contact Us</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
