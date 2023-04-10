@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Service;
+use App\Models\Service_Details;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Session;
@@ -57,6 +58,14 @@ class ServiceController extends Controller
     }
 
 
+    public function detailsView($id)
+    {
+        $service = Service::find($id);
+        $serviceDetails = Service_Details::where('service_id', $id)->get();
+        return view('service.details', compact('service', 'serviceDetails'));
+    }
+
+
 
     public function delete($id)
     {
@@ -75,6 +84,8 @@ class ServiceController extends Controller
 
     public function view($serviceName = null, $serviceItemName = null)
     {
-        return view('public.service_details', compact('serviceName', 'serviceItemName'));
+        $serviceDetails = Service_Details::where('service_name', $serviceName)
+                        ->where('service_name_item', $serviceItemName)->get();
+        return view('public.service_details', compact('serviceName', 'serviceItemName', 'serviceDetails'));
     }
 }

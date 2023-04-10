@@ -30,10 +30,14 @@
             <h3 class="text-capitalize">{{$serviceItemName}}</h3>
         </div>
         <div style="margin: 0 10px 10px 10px;">
-            @for ($i = 0; $i < 10; $i++)
-                <div class="row g-0 align-items-center">
+            <div class="row g-0 align-items-center">
+                @foreach ($serviceDetails as $itemDetails)
+                {{-- {{dd($itemDetails)}} --}}
                     <div class="col-md-5">
-                        <a class="example-image-link" href="https://picsum.photos/1200/1000"
+                        @php
+                            $image = $itemDetails->image ? $itemDetails->image : 'https://picsum.photos/500/300';
+                        @endphp
+                        <a class="example-image-link" href="{{$image}}"
                             data-lightbox="example-set" data-title="Buy Sell BD">
                         <img class="card-img-top img-fluid"
                             src="https://picsum.photos/500/300" alt="Company">
@@ -44,22 +48,13 @@
                             <div class="subtitle">
                                 <h4>Buy Sell BD</h4>
                                 <p class="about_details">
-                                    Buysellbd is a personalized service for buying and selling Club Membership of Exclusive Clubs.
-                                    Gaining access to a Club
-                                    like Dhaka Club, Gulshan Club, Banani Club, Uttara Club are very exclusive and time consuming. On
-                                    the other hand finding
-                                    someone eligible to handover existing membership is sometime very difficult. BuySellBD brings the
-                                    only exclusive
-                                    platform to make these transactions easier.
+                                    ALPS Concord. Apartment No. 5B more or less 1,500 sft. in covered area and open terrace on the 4th Floor of the ALPS
+                                    Concord Condominium of House No. 02, Road No. 19, Sector # 14, P.S. - Uttara, Dhaka - 1230, consisting of 3 (three)
+                                    bedrooms, 4 (four) bathrooms, 1 (one) kitchen, 1 (one) living, 1 (one) dining, 2 (two) verandas and one Car-park in
+                                    the Ground Floor
                                 </p>
                                 <p class="copy_details d-none">
-                                    Buysellbd is a personalized service for buying and selling Club Membership of Exclusive Clubs.
-                                    Gaining access to a Club
-                                    like Dhaka Club, Gulshan Club, Banani Club, Uttara Club are very exclusive and time consuming. On
-                                    the other hand finding
-                                    someone eligible to handover existing membership is sometime very difficult. BuySellBD brings the
-                                    only exclusive
-                                    platform to make these transactions easier.
+                                    ALPS Concord. Apartment No. 5B more or less 1,500 sft. in covered area and open terrace on the 4th Floor of the ALPS Concord Condominium of House No. 02, Road No. 19, Sector # 14, P.S. - Uttara, Dhaka - 1230, consisting of 3 (three) bedrooms, 4 (four) bathrooms, 1 (one) kitchen, 1 (one) living, 1 (one) dining, 2 (two) verandas and one Car-park in the Ground Floor
                                 </p>
                                 <div class="read_more_about_btn text-left d-none">
                                     <span class="btn btn-md btn-buy-sell">Read More</span>
@@ -67,9 +62,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <hr>
-           @endfor
+                @endforeach
+            </div>
+            <hr>
         </div>
     </div>
 </section>
