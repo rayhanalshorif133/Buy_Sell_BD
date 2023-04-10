@@ -11,9 +11,9 @@
             </div>
             <div class="modal-body">
 
-                <span class="details_image">
+                <div class="details_image text-center w-50 m-auto">
                     <img src="https://picsum.photos/500/300?random=1" alt="" class="img-fluid">
-                </span>
+                </div>
                 <strong><i class="fas fa-check-circle mr-1"></i> Title</strong>
                 <p class="text-muted">
                     <span class="details_title"></span>

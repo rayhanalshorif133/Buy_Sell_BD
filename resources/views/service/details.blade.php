@@ -52,7 +52,7 @@
                         @foreach ($serviceDetails as $service)
                         <tr id="{{$service->id}}">
                             <td>{{$loop->index+1}}</td>
-                            <td>
+                            <td class="image">
                                 <img src="{{asset($service->image)}}" alt="" width="100px">
                             </td>
                             <td class="title">
@@ -96,17 +96,54 @@
 <script>
     $(function() {
         handleShowBtn();
+        handleDeleteBtn();
     });
 
+    
     handleShowBtn = () => {
-
         $('.showInDetails').on('click', function() {
             let id = $(this).closest('tr').attr('id');
             let title = $(this).closest('tr').find('.title').text();
+            let image = $(this).closest('tr').find('.image img').attr('src');
             title = title.trim();
             $(".details_title").text(title);
+            $(".details_image").find('img').attr('src', image);
         });
-        console.log('hello');
+    };
+
+    handleDeleteBtn = () => {
+        $(".deleteBtn").click(function () {
+            let id = $(this).closest('tr').attr('id');
+            swal({
+                title: "Are you sure?",
+                text: "Once deleted, you will not be able to recover this imaginary file!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    $.ajax({
+                        url: "#",
+                        type: "POST",
+                        data: {
+                            _token: "{{ csrf_token() }}",
+                            id: id
+                        },
+                        success: function (response) {
+                            if (response.status == 200) {
+                                swal("Poof! Your imaginary file has been deleted!", {
+                                    icon: "success",
+                                });
+                                $(`#${id}`).remove();
+                            }
+                        }
+                    });
+                } else {
+                    swal("Your imaginary file is safe!");
+                }
+            });
+        });
     };
 </script>
 @endpush
