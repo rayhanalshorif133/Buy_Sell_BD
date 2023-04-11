@@ -67,10 +67,12 @@
                             Buysellbd values your privacy. This Privacy Policy describes how we (Buysellbd or “the product” or its developer “B2M
                             Technologies Ltd” Join venture company with “Zing mobile” or “B2M”) handle user data
                             <br>
-                            <span class="see_more">See More</span>
-                            <span class="loading">
-                                <span>.</span><span>.</span><span>.</span>
-                            </span>
+                            <a href="{{route('privacy-policy.index')}}">
+                                <span class="see_more">See More</span>
+                                <span class="loading">
+                                    <span>.</span><span>.</span><span>.</span>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -138,9 +140,4 @@
             </div>
         </div>
     </section>
-    <script>
-        $(function(){
-            console.log($);
-        });
-    </script>
 </footer>
