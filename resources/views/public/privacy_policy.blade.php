@@ -53,7 +53,7 @@
             <div class="subtitle">
                 How Buysellbd Handles User Data <br>Information you provide:
             </div>We may collect and store any information you provide through our web or other related services.
-            <span class="subtitle">Information collected automatically:</span> <p>
+            <span class="subtitle">Information collected automatically:</span> <p class="description">
                 We receive and store certain types of information whenever you interact with us.
                 For example, we obtain certain types of information as Internet protocol (IP) address used to connect your computer to
                 the Internet; login; e-mail address; password; computer and connection information such as browser type, version, and
@@ -68,13 +68,13 @@
                 such as pricing, advertising, search results, and other personalized content
             </p>
             <span class="subtitle">Tracking Technology:</span>
-            <p>
+            <p class="description">
                 BuySellBD analyzes information that is tracked each time you use our Services.We may use Google
                 Analytics, including the Google Analytics Demographics and Interest Reporting feature, and other software to track usage
                 of its Services.
             </p>
             <span class="subtitle">Use of “Cookies” To Collect Information</span>
-            <p>
+            <p class="description">
             Cookies are small data files that a website you visit may save on your computer or handheld device that usually includes
             an anonymous unique identifier. Our Websites and those of our Products may use cookies for user authentication, keeping
             track of your preferences, promotional campaigns, tracking our audience size and traffic patterns, and in certain other
@@ -97,31 +97,38 @@
             Dhaka 1209,
             </p>
 
-            Disclosure of User Data
-            BUYSELLBD collects Personal Information and other information from you in order to but are not limited to:
-            • Support user authentication/security and content recommendation;
-            • Determine your current geographic location/language for localized content/services;
-            • Comply with the requirements of our games developer, partners, and Distributors;
-            • Notify you of changes to this Privacy Policy and other policies;
-            • Integrate with additional service providers for use of the Services;
-            • Personalize our Services to better reflect particular interests and preferences;
-            • Generally improve your experience.
-            Additionally, we may use anonymous Personal Information and share it in an aggregated form with third parties,
-            advertisers and/or business partners in order to analyze Service usage, improve the Services and your experience, or for
-            other similar purposes. Such (anonymous) use of information is not subject to any restrictions under this Privacy
-            Policy.
-            Furthermore, Should you breach our terms and conditions or terms of use or if we are under a duty to disclose or share
-            your personal data in order to comply with any legal obligation, we may disclose your information to a relevant
-            authority. This may include exchanging information with other companies and organizations for the purposes of fraud
-            protection and credit risk reduction. Any disclosure of personal information will be strictly controlled and made fully
-            in accordance with current international law or the law of the area of the concerned case of business.
+            <p class="description">
+                Disclosure of User Data
+                BUYSELLBD collects Personal Information and other information from you in order to but are not limited to:
+                • Support user authentication/security and content recommendation;
+                • Determine your current geographic location/language for localized content/services;
+                • Comply with the requirements of our games developer, partners, and Distributors;
+                • Notify you of changes to this Privacy Policy and other policies;
+                • Integrate with additional service providers for use of the Services;
+                • Personalize our Services to better reflect particular interests and preferences;
+                • Generally improve your experience.
+                Additionally, we may use anonymous Personal Information and share it in an aggregated form with third parties,
+                advertisers and/or business partners in order to analyze Service usage, improve the Services and your experience, or for
+                other similar purposes. Such (anonymous) use of information is not subject to any restrictions under this Privacy
+                Policy.
+                Furthermore, Should you breach our terms and conditions or terms of use or if we are under a duty to disclose or share
+                your personal data in order to comply with any legal obligation, we may disclose your information to a relevant
+                authority. This may include exchanging information with other companies and organizations for the purposes of fraud
+                protection and credit risk reduction. Any disclosure of personal information will be strictly controlled and made fully
+                in accordance with current international law or the law of the area of the concerned case of business.
+            </p>
+            <p class="subtitle">POLICY CHANGES</p>
+            <p class="description">
+                Changes in this policy will occur from time to time in response to changing legal, regulatory or operational
+                requirements. We will provide notice of any such changes (including when they will take effect) in accordance with law.
+                Your continued use of the services or products after any such updates take effect will constitute acceptance of those
+                changes. If you do not accept any updates to this Privacy Statement, you may cancel your use of our services or
+                products. To see when this Privacy Statement was last updated, please see the "Last Updated" section below.
+            </p>
 
-            POLICY CHANGES
-            Changes in this policy will occur from time to time in response to changing legal, regulatory or operational
-            requirements. We will provide notice of any such changes (including when they will take effect) in accordance with law.
-            Your continued use of the services or products after any such updates take effect will constitute acceptance of those
-            changes. If you do not accept any updates to this Privacy Statement, you may cancel your use of our services or
-            products. To see when this Privacy Statement was last updated, please see the "Last Updated" section below.
+
+
+
     </div>
 </div>
 </section>
