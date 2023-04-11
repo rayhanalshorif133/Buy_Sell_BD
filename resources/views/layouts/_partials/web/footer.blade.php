@@ -15,8 +15,10 @@
                                     B2M Technologies Ltd. :<br>
                                     House #75A, Road 5/A, 4th floor<br>
                                     Dhanmondi, Dhaka 1209, <br>Bangladesh.<br>
-                                    Tel : (+880) 2 9128356-8<br>
-                                    Fax : (+880) 2 9128359<br>
+                                    <i class="fa fa-phone"></i> <a href="tel:+8801732701937" class="text-white">(+880) 1732701937</a><br>
+                                    <i class="fa fa-envelope"></i> <a href="mailto:admin@gmail.com" class="text-white">admin@gmail.com</a><br>
+                                    <i class="fa fa-globe"></i> <a href="http://b2m-tech.com/" target="_blank" class="text-white">http://b2m-tech.com/</a><br>
+                                    <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/01732701937" class="text-white" target="_blank">(+880) 1732701937</a>
                                 </div>
                             </li>
                         </ul>

@@ -59,7 +59,7 @@
                                     <a href="/#contactUs">
                                         <span class="btn btn-md btn-buy-sell">Contact Us</span>
                                     </a>
-                                    <a href="https://wa.me/01923988380" target="_blank">
+                                    <a href="https://wa.me/01732701937" target="_blank">
                                         <span class="btn btn-md btn-buy-sell-whatsapp">
                                             <i class="fa-brands fa-whatsapp fs-5"></i>
                                         </span>
