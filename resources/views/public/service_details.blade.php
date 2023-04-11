@@ -39,7 +39,6 @@
         <div style="margin: 10px;">
             <div class="row g-0 align-items-center">
                 @foreach ($serviceDetails as $itemDetails)
-                {{-- {{dd($itemDetails)}} --}}
                     <div class="col-md-5">
                         @php
                             $image = $itemDetails->image ? asset($itemDetails->image) : 'https://picsum.photos/500/300';
@@ -64,9 +63,9 @@
                             </div>
                         </div>
                     </div>
+                    <hr>
                 @endforeach
             </div>
-            <hr>
         </div>
     </div>
 </section>
