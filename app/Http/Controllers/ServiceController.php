@@ -72,21 +72,16 @@ class ServiceController extends Controller
 
         $service_details = new Service_Details();
 
-        $service_details->title = $request->title;
         $service_details->service_id = $request->service_id;
-        
+        $service_details->title = $request->title;
+        $service_details->service_name_item  = $request->service_name_item;
+        $service_details->info = $request->description;
+
         if ($request->image) {
             $imageName = time() . '.' . $request->image->extension();
             $request->image->move(public_path('storage/images/service_details'), $imageName);
             $imageName = '/storage/images/service_details/' . $imageName;
             $service_details->image = $imageName;
-        }
-
-        if ($request->service_name_item) {
-            $service_details->service_name_item  = $request->service_name_item;
-        }
-        if ($request->description) {
-            $service_details->info = $request->description;
         }
         $service_details->save();
         return redirect()->back()->with('success', 'Service created successfully.');
@@ -94,7 +89,6 @@ class ServiceController extends Controller
     public function update_details(Request $request)
     {
 
-        dd($request->all());
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             'service_name_item' => 'required',
@@ -110,7 +104,7 @@ class ServiceController extends Controller
 
         $service_details->title = $request->title;
         $service_details->service_id = $request->service_id;
-        
+
         if ($request->image) {
             $imageName = time() . '.' . $request->image->extension();
             $request->image->move(public_path('storage/images/service_details'), $imageName);
@@ -131,10 +125,21 @@ class ServiceController extends Controller
 
     public function detailsView($id)
     {
-        $service = Service::find($id);
+        $serviceID = $id;
         $serviceDetails = Service_Details::where('service_id', $id)->get();
         $serviceItems = ['land','house','flats'];
-        return view('service.details', compact('service', 'serviceDetails','serviceItems'));
+        return view('service.details', compact('serviceID', 'serviceDetails','serviceItems'));
+    }
+
+    public function fetchDetails($id)
+    {
+        $serviceDetails = Service_Details::find($id);
+
+        if($serviceDetails){
+            return $this->respondWithSuccess('Service details fetched successfully.', $serviceDetails);
+        }else{
+            return $this->respondWithError('Service details not found.');
+        }
     }
 
 

@@ -44,11 +44,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @if (count($serviceDetails) == 0)
-                        <tr>
-                            <td colspan="5" class="text-center">No data found</td>
-                        </tr>
-                        @endif
                         @foreach ($serviceDetails as $service)
                         <tr id="{{$service->id}}">
                             <td>{{$loop->index+1}}</td>
@@ -73,7 +68,7 @@
                                     <i class="fas fa-eye"></i>
                                 </span>
                                 <span class="btn btn-info btn-sm editBtn" data-toggle="modal"
-                                    data-target="#modal-add-and-update-service">
+                                    data-target="#updateItem">
                                     <i class="fas fa-pencil-alt"></i>
                                 </span>
                                 <span class="btn btn-danger btn-sm deleteBtn">
@@ -97,6 +92,7 @@
     $(function() {
         handleShowBtn();
         handleDeleteBtn();
+        handleEditBtn();
         assingDescription();
     });
 
@@ -105,17 +101,39 @@
         $('#description').summernote({
             placeholder: 'Write description here...',
             tabsize: 2,
-            height: 100});
+            height: 200});
     }
 
+    handleEditBtn = () => {
+        $('.editBtn').on('click', function() {
+            let id = $(this).closest('tr').attr('id');
+            axios.get(`/user/service/fetch-details/${id}`)
+            .then(function (response) {
+                console.log(response.data.data);
+                let {title, image, info} = response.data.data;
+                $(".details_title").text(title);
+                if(image == null) {
+                    image = "/images/no-image.jpg";
+                }
+                $(".details_image").find('img').attr('src', image);
+                $(".details_description").html(info);
+                })
+        });
+    };
     handleShowBtn = () => {
         $('.showInDetails').on('click', function() {
             let id = $(this).closest('tr').attr('id');
-            let title = $(this).closest('tr').find('.title').text();
-            let image = $(this).closest('tr').find('.image img').attr('src');
-            title = title.trim();
-            $(".details_title").text(title);
-            $(".details_image").find('img').attr('src', image);
+            axios.get(`/user/service/fetch-details/${id}`)
+            .then(function (response) {
+                console.log(response.data.data);
+                let {title, image, info} = response.data.data;
+                $(".details_title").text(title);
+                if(image == null) {
+                    image = "/images/no-image.jpg";
+                }
+                $(".details_image").find('img').attr('src', image);
+                $(".details_description").html(info);
+                })
         });
     };
 

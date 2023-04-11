@@ -12,28 +12,19 @@
             <div class="modal-body">
 
                 <div class="details_image text-center w-50 m-auto">
-                    <img src="https://picsum.photos/500/300?random=1" alt="" class="img-fluid">
+                    <img src="" alt="" class="img-fluid">
                 </div>
                 <strong><i class="fas fa-check-circle mr-1"></i> Title</strong>
                 <p class="text-muted">
                     <span class="details_title"></span>
                 </p>
                 <hr>
-                <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
-                <p class="text-muted">Malibu, California</p>
-                <hr>
-                <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
+                <strong><i class="fa fa-window-restore mr-1"></i>
+                Description</strong>
                 <p class="text-muted">
-                    <span class="tag tag-danger">UI Design</span>
-                    <span class="tag tag-success">Coding</span>
-                    <span class="tag tag-info">Javascript</span>
-                    <span class="tag tag-warning">PHP</span>
-                    <span class="tag tag-primary">Node.js</span>
+                    <span class="details_description"></span>
                 </p>
-                <hr>
-                <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
-                         
+
             </div>
         </div>
 

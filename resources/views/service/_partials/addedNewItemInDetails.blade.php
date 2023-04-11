@@ -10,10 +10,11 @@
                 </button>
             </div>
             <div class="modal-body">
+                {{$service}}
                 <form action="{{ route('user.service.store_details') }}" class="" method="POST"
                     enctype="multipart/form-data">
                     @csrf
-                    <input type="hidden" name="service_id" value="{{ $service->id }}">
+                    <input type="hidden" name="service_id" value="{{ $serviceID }}">
                     <div class="form-group row">
                         <label for="service_item" class="col-sm-2 col-form-label required">
                             Service item
