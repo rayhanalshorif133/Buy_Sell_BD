@@ -59,6 +59,9 @@
                                     <a href="/#contactUs">
                                         <span class="btn btn-md btn-buy-sell">Contact Us</span>
                                     </a>
+                                    <a href="/#contactUs">
+                                        <span class="btn btn-md btn-buy-sell"><i class="fa-brands fa-whatsapp fa-beat"></i></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>

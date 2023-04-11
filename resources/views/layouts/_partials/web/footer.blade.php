@@ -4,105 +4,21 @@
             <div class="row footer-top">
                 <div class="col-md-4 col-sm-6" data-sal="slide-left" data-sal-delay="200" data-sal-duration="800"
                     data-sal-easing="ease">
-                    <div class=" footer_item_1">
-                        <h5>যোগাযোগ</h5>
+                    <div class="footer_item_1">
+                        <h5>Contact Information</h5>
                         <ul>
                             <li>
-                                <div class="footer_icon">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot"
-                                        class="svg-inline--fa fa-location-dot " role="img" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 384 512">
-                                        <path fill="currentColor"
-                                            d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="footer_text">
-                                    হেড অফিস :<br>
-                                    মমতাজ প্লাজা (৫ম তলা)<br>
-                                    বাড়ি # ০৭, রোড # ০৪<br>
-                                    ধানমন্ডি, ঢাকা-১২০৫
+                                <div class="footer_text" style="
+                                    margin: auto;
+                                    text-align: left;
+                                ">
+                                    B2M Technologies Ltd. :<br>
+                                    House #75A, Road 5/A, 4th floor<br>
+                                    Dhanmondi, Dhaka 1209, <br>Bangladesh.<br>
+                                    Tel : (+880) 2 9128356-8<br>
+                                    Fax : (+880) 2 9128359<br>
                                 </div>
                             </li>
-                            <li>
-                                <div class="footer_icon"><svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                        data-icon="phone-flip" class="svg-inline--fa fa-phone-flip " role="img"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path fill="currentColor"
-                                            d="M18.92 351.2l108.5-46.52c12.78-5.531 27.77-1.801 36.45 8.98l44.09 53.82c69.25-34 125.5-90.31 159.5-159.5l-53.81-44.04c-10.75-8.781-14.41-23.69-8.974-36.47l46.51-108.5c6.094-13.91 21.1-21.52 35.79-18.11l100.8 23.25c14.25 3.25 24.22 15.8 24.22 30.46c0 252.3-205.2 457.5-457.5 457.5c-14.67 0-27.18-9.968-30.45-24.22l-23.25-100.8C-2.571 372.4 5.018 357.2 18.92 351.2z">
-                                        </path>
-                                    </svg></div>
-                                <div class="footer_text">+৮৮০ ১৭৭৭৩০৮৭৭৭<br>
-                                    +৮৮০ ১৬২৪৬৬৬০০০<br>
-                                    +৮৮০ ১৬২৪৮৮৮৪৪৪<br>
-                                    +৮৮০ ১৯৬৬১৭৭১৭৭<br>
-                                    +৮৮০ ১৬২৫৫৫৫৪৪৪<br>
-                                    +৮৮০ ১৯৯০৭৭৯৯০০</div>
-                            </li>
-                            <li>
-                                <div class="footer_icon"><svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                        data-icon="envelope-open" class="svg-inline--fa fa-envelope-open " role="img"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path fill="currentColor"
-                                            d="M493.6 163c-24.88-19.62-45.5-35.37-164.3-121.6C312.7 29.21 279.7 0 256.4 0H255.6C232.3 0 199.3 29.21 182.6 41.38c-118.8 86.25-139.4 101.1-164.3 121.6C6.75 172 0 186 0 200.8v263.2C0 490.5 21.49 512 48 512h416c26.51 0 48-21.49 48-47.1V200.8C512 186 505.3 172 493.6 163zM303.2 367.5C289.1 378.5 272.5 384 256 384s-33.06-5.484-47.16-16.47L64 254.9V208.5c21.16-16.59 46.48-35.66 156.4-115.5c3.18-2.328 6.891-5.187 10.98-8.353C236.9 80.44 247.8 71.97 256 66.84c8.207 5.131 19.14 13.6 24.61 17.84c4.09 3.166 7.801 6.027 11.15 8.478C400.9 172.5 426.6 191.7 448 208.5v46.32L303.2 367.5z">
-                                        </path>
-                                    </svg></div>
-                                <div class="footer_text"><span><a
-                                            href="mailto: info@creativeitinstitute.com">info@creativeitinstitute.com</a></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6" data-sal="slide-left" data-sal-delay="300" data-sal-duration="800"
-                    data-sal-easing="ease">
-                    <div class="footer_item footer_item_2">
-                        <h5>কুইক লিংক</h5>
-                        <ul>
-                            <li><a href="https://www.creativeitinstitute.com/free-seminar">ফ্রি সেমিনারের সময়সূচি</a>
-                            </li>
-                            <li><a href="https://www.creativeitinstitute.com/instructors-teachers">মেন্টরস</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/success-story">সাফল্যের গল্প</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/gallery">আমাদের গ্যালারী</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/faq">আপনার প্রশ্নসমূহ</a></li>
-                            <li><a href="https://www.blog.creativeitinstitute.com/" target="_blank">ব্লগ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6" data-sal="slide-left" data-sal-delay="400" data-sal-duration="800"
-                    data-sal-easing="ease">
-                    <div class="footer_item footer_item_2">
-                        <h5>কোর্স</h5>
-                        <ul>
-                            <li><a href="https://www.creativeitinstitute.com/courses/web-development">ওয়েব
-                                    ডেভেলপমেন্ট</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/courses/professional-graphics-design">প্রফেশনাল
-                                    গ্রাফিক ডিজাইন</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/courses/digital-marketing">ডিজিটাল
-                                    মার্কেটিং</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/courses/motion-graphics">মোশন গ্রাফিক্স</a>
-                            </li>
-                            <li><a href="https://www.creativeitinstitute.com/courses/mern-stack-development">মার্ন
-                                    স্ট্যাক ডেভেলপমেন্ট</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/courses/professional-3d-animation">প্রফেশনাল
-                                    3D অ্যানিমেশন</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6" data-sal="slide-left" data-sal-delay="500" data-sal-duration="800"
-                    data-sal-easing="ease">
-                    <div class="footer_item footer_item_2">
-                        <h5>অন্যান্য</h5>
-                        <ul>
-                            <li><a href="https://www.creativeitinstitute.com/about-us">আমাদের সম্পর্কে</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/our-facilities">আমাদের সুবিধাদি</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/our-achievements">আমাদের অর্জন</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/job-placement">ক্যারিয়ার প্লেসমেন্ট</a>
-                            </li>
-                            <li><a href="https://www.creativeitinstitute.com/freelancing">ফ্রিল্যান্সিং</a></li>
-                            <li><a href="https://www.creativeitinstitute.com/student-feedback">স্টুডেন্ট ফিডব্যাক</a>
-                            </li>
-                            <li><a href="https://www.creativeitinstitute.com/contact-us">যোগাযোগ</a></li>
                         </ul>
                     </div>
                 </div>
