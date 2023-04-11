@@ -14,18 +14,34 @@
         font-size: 13px;
     }
     .loading{
+        color: #fff;
         transition: all 0.5s ease;
-        animation: dot-pulse linear infinite 1s;
+    }
+    .loading span{
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        display: inline-block;
+        background: #ffffff;
+    }
+    .loading span:nth-child(1){
+        animation: loading 1s ease-in-out infinite;
+    }
+    .loading span:nth-child(2){
+        animation: loading 1s ease-in-out 0.2s infinite;
+    }
+    .loading span:nth-child(3){
+        animation: loading 1s ease-in-out 0.4s infinite;
     }
 
-    @keyframes dot-pulse {
-        0% {
+    @keyframes loading{
+        0%{
             opacity: 0;
         }
-        50% {
+        50%{
             opacity: 1;
         }
-        100% {
+        100%{
             opacity: 0;
         }
     }
@@ -70,7 +86,9 @@
                             <a href="{{route('privacy-policy.index')}}">
                                 <span class="see_more">See More</span>
                                 <span class="loading">
-                                    <span>.</span><span>.</span><span>.</span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </span>
                             </a>
                         </div>

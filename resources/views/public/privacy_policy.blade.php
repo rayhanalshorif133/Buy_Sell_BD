@@ -5,10 +5,28 @@
 <link rel="stylesheet" href="{{asset('web/assets/lightbox/dist/css/lightbox.min.css')}}">
 <style>
     .title{
-        font-size: 20px;
-        font-weight:600;
+        font-size: 24px;
+        font-weight:700;
         color: #000;
         margin-bottom: 10px;
+        /* Hind Siliguri */
+        font-family: 'Hind Siliguri', sans-serif;
+    }
+    .subtitle{
+        font-size: 18px;
+        font-weight:500;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    .description{
+        font-family: 'Noto Sans Bengali', sans-serif;
+        font-size: 15px;
+        line-height: 28px;
+        font-weight:400;
+        color: #605f62;
+        margin: 10px;
+        text-align: justify;
     }
 </style>
 @endsection
@@ -22,11 +40,88 @@
         </h3>
     </div>
     <div style="margin: 10px;">
-        <div class="row g-0 align-items-center">
+        <div class="row align-items-center">
             <div class="title">
                 General
             </div>
-        </div>
+            <p class="description">
+                Buysellbd values your privacy. This Privacy Policy describes how we (Buysellbd or “the product” or its developer “B2M
+                Technologies Ltd” Join venture company with “Zing mobile” or “B2M”) handle user data (e.g., information provided by a
+                user, collected about a user, and collected about a user’s use of the games or Site), including by disclosing the
+                collection, use, and sharing of the data, as it occurs since/during your use of the app.
+            </p>
+            <div class="subtitle">
+                How Buysellbd Handles User Data <br>Information you provide:
+            </div>We may collect and store any information you provide through our web or other related services.
+            <span class="subtitle">Information collected automatically:</span> <p>
+                We receive and store certain types of information whenever you interact with us.
+                For example, we obtain certain types of information as Internet protocol (IP) address used to connect your computer to
+                the Internet; login; e-mail address; password; computer and connection information such as browser type, version, and
+                time zone setting, browser plug-in types and versions, operating system, and platform; purchase history, full Uniform
+                Resource Locator (URL) clickstream, including date and time; cookie number; products you viewed/searched; and the phone
+                number you used, session information, including page response times, download errors, length of visits to certain pages,
+                page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the
+                page.
+                We may also collect technical information to help us identify your device for diagnostic purposes. When you install or
+                use our app in any mobile device we may receive information about your location and your mobile device, including time
+                of use and unique identifier for your device. We may use this information to provide you with location-based services,
+                such as pricing, advertising, search results, and other personalized content
+            </p>
+            <span class="subtitle">Tracking Technology:</span>
+            <p>
+                BuySellBD analyzes information that is tracked each time you use our Services.We may use Google
+                Analytics, including the Google Analytics Demographics and Interest Reporting feature, and other software to track usage
+                of its Services.
+            </p>
+            <span class="subtitle">Use of “Cookies” To Collect Information</span>
+            <p>
+            Cookies are small data files that a website you visit may save on your computer or handheld device that usually includes
+            an anonymous unique identifier. Our Websites and those of our Products may use cookies for user authentication, keeping
+            track of your preferences, promotional campaigns, tracking our audience size and traffic patterns, and in certain other
+            cases. We may include small graphic images in our email messages and newsletters to determine whether the messages were
+            opened and the links were viewed.
+            Third-party advertisers may also create and access cookies, which will be subject to their privacy policies – we accept
+            no responsibility or liability for the use of such third parties’ cookies. If you do not wish cookies to be placed on
+            your PC or handheld device, then they can be disabled in your web browser. The option to do so is normally found in your
+            browser’s “security settings” section. Please note that permanently disabling cookies in your browser may hinder your
+            use of our Websites as well as other websites and interactive services.
+            Security
+            All security on our Websites is treated seriously. Where applicable, we undertake security steps, including use of SSL
+            technology, on our back-end systems that store customer account information and to protect data transmissions. However,
+            this is not a guarantee that such data transmissions cannot be accessed, altered or deleted due to firewall or other
+            security software failures.
+            If you have any further concerns about security, please email our Customer Support Team at cservice@b2m-tech.com or
+            write to the following address:
+            B2M Technologies Ltd.,
+            75A Dhanmondi 5/A ,
+            Dhaka 1209,
+            </p>
+
+            Disclosure of User Data
+            BUYSELLBD collects Personal Information and other information from you in order to but are not limited to:
+            • Support user authentication/security and content recommendation;
+            • Determine your current geographic location/language for localized content/services;
+            • Comply with the requirements of our games developer, partners, and Distributors;
+            • Notify you of changes to this Privacy Policy and other policies;
+            • Integrate with additional service providers for use of the Services;
+            • Personalize our Services to better reflect particular interests and preferences;
+            • Generally improve your experience.
+            Additionally, we may use anonymous Personal Information and share it in an aggregated form with third parties,
+            advertisers and/or business partners in order to analyze Service usage, improve the Services and your experience, or for
+            other similar purposes. Such (anonymous) use of information is not subject to any restrictions under this Privacy
+            Policy.
+            Furthermore, Should you breach our terms and conditions or terms of use or if we are under a duty to disclose or share
+            your personal data in order to comply with any legal obligation, we may disclose your information to a relevant
+            authority. This may include exchanging information with other companies and organizations for the purposes of fraud
+            protection and credit risk reduction. Any disclosure of personal information will be strictly controlled and made fully
+            in accordance with current international law or the law of the area of the concerned case of business.
+
+            POLICY CHANGES
+            Changes in this policy will occur from time to time in response to changing legal, regulatory or operational
+            requirements. We will provide notice of any such changes (including when they will take effect) in accordance with law.
+            Your continued use of the services or products after any such updates take effect will constitute acceptance of those
+            changes. If you do not accept any updates to this Privacy Statement, you may cancel your use of our services or
+            products. To see when this Privacy Statement was last updated, please see the "Last Updated" section below.
     </div>
 </div>
 </section>
