@@ -165,7 +165,6 @@
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
-    <script src="{{ asset('adminlte/dist/js/pages/dashboard.js') }}"></script>
     <script src="{{ mix('js/app.js') }}"></script>
     @stack('js');
     <script>

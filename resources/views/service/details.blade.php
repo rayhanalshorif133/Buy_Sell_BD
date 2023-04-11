@@ -97,9 +97,17 @@
     $(function() {
         handleShowBtn();
         handleDeleteBtn();
+        assingDescription();
     });
 
-    
+
+    assingDescription = () => {
+        $('#description').summernote({
+            placeholder: 'Write description here...',
+            tabsize: 2,
+            height: 100});
+    }
+
     handleShowBtn = () => {
         $('.showInDetails').on('click', function() {
             let id = $(this).closest('tr').attr('id');
