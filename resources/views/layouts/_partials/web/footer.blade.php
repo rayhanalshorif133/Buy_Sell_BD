@@ -1,27 +1,77 @@
+<style>
+    .see_more{
+        color: #fff;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .see_more:hover{
+        color: #08AED7;
+        font-size: 13px;
+    }
+    .loading{
+        transition: all 0.5s ease;
+        animation: dot-pulse linear infinite 1s;
+    }
+
+    @keyframes dot-pulse {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+</style>
 <footer>
     <section id="footer">
         <div class="container">
-            <div class="row footer-top">
-                <div class="col-md-4 col-sm-6" data-sal="slide-left" data-sal-delay="200" data-sal-duration="800"
+            <div class="row footer-top" style="color:#CFCFCF">
+                <div class="col-md-6 col-sm-6" data-sal="slide-left" data-sal-delay="200" data-sal-duration="800"
                     data-sal-easing="ease">
-                    <div class="footer_item_1">
-                        <h5>Contact Information</h5>
-                        <ul>
-                            <li>
-                                <div class="footer_text" style="
+                    <div class="footer_item_1" style="
                                     margin: auto;
                                     text-align: left;
                                 ">
-                                    B2M Technologies Ltd. :<br>
-                                    House #75A, Road 5/A, 4th floor<br>
-                                    Dhanmondi, Dhaka 1209, <br>Bangladesh.<br>
-                                    <i class="fa fa-phone"></i> <a href="tel:+8801732701937" class="text-white">(+880) 1732701937</a><br>
-                                    <i class="fa fa-envelope"></i> <a href="mailto:admin@gmail.com" class="text-white">admin@gmail.com</a><br>
-                                    <i class="fa fa-globe"></i> <a href="http://b2m-tech.com/" target="_blank" class="text-white">http://b2m-tech.com/</a><br>
-                                    <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/01732701937" class="text-white" target="_blank">(+880) 1732701937</a>
-                                </div>
-                            </li>
-                        </ul>
+                        <h5>Contact Information</h5>
+                        <div class="footer_text" style="
+                            margin: auto;
+                            text-align: left;
+                        ">
+                            B2M Technologies Ltd. :<br>
+                            House #75A, Road 5/A, 4th floor<br>
+                            Dhanmondi, Dhaka 1209, <br>Bangladesh.<br>
+                            <i class="fa fa-phone"></i> <a href="tel:+8801732701937" style="color:#CFCFCF">(+880) 1732701937</a><br>
+                            <i class="fa fa-envelope"></i> <a href="mailto:admin@gmail.com" style="color:#CFCFCF">admin@gmail.com</a><br>
+                            <i class="fa fa-globe"></i> <a href="http://b2m-tech.com/" target="_blank" style="color:#CFCFCF">http://b2m-tech.com/</a><br>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <a href="https://api.whatsapp.com/send/?phone=01732701937&text=hello&type=phone_number&app_absent=0"
+                            style="color:#CFCFCF" target="_blank">(+880) 1732701937</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-sal="slide-left" data-sal-delay="200" data-sal-duration="800"
+                    data-sal-easing="ease">
+                    <div class="footer_item_1" style="margin: auto;text-align: left;">
+                        <h5>Privacy Policy</h5>
+                        <div class="footer_text" style="margin: auto;text-align: justify;">
+                            Buysellbd values your privacy. This Privacy Policy describes how we (Buysellbd or “the product” or its developer “B2M
+                            Technologies Ltd” Join venture company with “Zing mobile” or “B2M”) handle user data
+                            <br>
+                            <span class="see_more">See More</span>
+                            <span class="loading">
+                                <span>.</span><span>.</span><span>.</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,4 +138,9 @@
             </div>
         </div>
     </section>
+    <script>
+        $(function(){
+            console.log($);
+        });
+    </script>
 </footer>

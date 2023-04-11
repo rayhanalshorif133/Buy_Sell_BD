@@ -5,9 +5,9 @@
                 <div class="col-lg-12">
                     <div class="topbar_text">
                         <a data-sal="slide-left" data-sal-delay="200" data-sal-duration="800" data-sal-easing="ease"
-                            href="tel:01923988380">
+                            href="tel:017000000000">
                             <span><img src="{{asset('web/assets/images/call.png')}}" alt="icon" /></span>
-                            01923988380</a>
+                            017000000000</a>
                         <a data-sal="slide-left" data-sal-delay="300" data-sal-duration="800" data-sal-easing="ease"
                             href="mailto:admin@gmail.com" class="sal-animate"><span>
                                 <img src="{{asset('web/assets/images/top-mail.png')}}" alt="icon"></span>
