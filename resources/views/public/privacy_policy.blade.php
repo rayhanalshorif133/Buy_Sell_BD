@@ -105,7 +105,7 @@
         </span>
     </div>
 
-    <p class="subtitle">Use of “Cookies” To Collect Information</p>
+    <p class="title">Use of “Cookies” To Collect Information</p>
     <p class="description">
         Cookies are small data files that a website you visit may save on your computer or handheld device that usually includes
         an anonymous unique identifier. Our Websites and those of our Products may use cookies for user authentication, keeping
@@ -118,7 +118,7 @@
         browser’s “security settings” section. Please note that permanently disabling cookies in your browser may hinder your
         use of our Websites as well as other websites and interactive services.
     </p>
-    <p class="subtitle">Security</p>
+    <p class="title">Security</p>
     <p class="description">
         All security on our Websites is treated seriously. Where applicable, we undertake security steps, including use of SSL
         technology, on our back-end systems that store customer account information and to protect data transmissions. However,
@@ -130,7 +130,7 @@
         75A Dhanmondi 5/A , <br>
         Dhaka 1209,
     </p>
-    <p class="subtitle">Disclosure of User Data</p>
+    <p class="title">Disclosure of User Data</p>
     <p class="description">
         BUYSELLBD collects Personal Information and other information from you in order to but are not limited to:
     </p>
@@ -154,7 +154,7 @@
         protection and credit risk reduction. Any disclosure of personal information will be strictly controlled and made fully
         in accordance with current international law or the law of the area of the concerned case of business.
     </p>
-    <p class="subtitle">POLICY CHANGES</p>
+    <p class="title">Policy Changes</p>
     <p class="description">
         Changes in this policy will occur from time to time in response to changing legal, regulatory or operational
         requirements. We will provide notice of any such changes (including when they will take effect) in accordance with law.

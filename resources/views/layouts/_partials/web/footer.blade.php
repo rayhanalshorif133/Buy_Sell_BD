@@ -16,12 +16,13 @@
     .loading{
         color: #fff;
         transition: all 0.5s ease;
+        display: none;
     }
+
     .loading span{
         height: 4px;
         width: 4px;
         border-radius: 50%;
-        display: inline-block;
         background: #ffffff;
     }
     .loading span:nth-child(1){
@@ -158,4 +159,14 @@
             </div>
         </div>
     </section>
+    <script>
+        $(function(){
+            $('.see_more').hover(function(){
+                $(".loading").show();
+            });
+            $('.see_more').mouseleave(function(){
+                $(".loading").hide();
+            });
+        });
+    </script>
 </footer>
