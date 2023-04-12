@@ -7,6 +7,7 @@ use App\Models\Service_Details;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 
 class ServiceController extends Controller
 {
@@ -119,10 +120,7 @@ class ServiceController extends Controller
 
         if ($request->image) {
             $oldImage = public_path($service_details->image);
-            if (file_exists($oldImage)) {
-                unlink($oldImage);
-            }
-
+            Storage::delete($oldImage);
             $imageName = time() . '.' . $request->image->extension();
             $request->image->move(public_path('storage/images/service_details'), $imageName);
             $imageName = '/storage/images/service_details/' . $imageName;
