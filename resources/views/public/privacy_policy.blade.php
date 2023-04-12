@@ -65,12 +65,14 @@
                 user, collected about a user, and collected about a user’s use of the games or Site), including by disclosing the
                 collection, use, and sharing of the data, as it occurs since/during your use of the app.
     </p>
-    <span class="subtitle">
-        How Buysellbd Handles User Data <br><span class="child-subtitle">Information you provide:</span> <br>
+    <div class="subtitle">
+        How Buysellbd Handles User Data
+    </div>
+    <div class="child-subtitle" style="margin-top: 0;">Information you provide: <br>
         <span class="description">
             We may collect and store any information you provide through our web or other related services.
         </span>
-    </span> <br>
+    </div>
     <div class="child-subtitle">
         Information collected automatically:
         <span class="description">
