@@ -48,7 +48,10 @@
                         <tr id="{{$service->id}}">
                             <td>{{$loop->index+1}}</td>
                             <td class="image">
-                                <img src="{{asset($service->image)}}" alt="" width="100px">
+                                @php
+                                $image = $service->image? $service->image : '/images/no-image.jpg';
+                                @endphp
+                                <img src="{{asset($image)}}" alt="" width="100px">
                             </td>
                             <td class="title">
                                 {{$service->title}}

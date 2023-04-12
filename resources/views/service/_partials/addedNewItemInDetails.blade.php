@@ -10,7 +10,6 @@
                 </button>
             </div>
             <div class="modal-body">
-                {{$service}}
                 <form action="{{ route('user.service.store_details') }}" class="" method="POST"
                     enctype="multipart/form-data">
                     @csrf
@@ -21,7 +20,7 @@
                         </label>
                         <div class="col-sm-10">
                             {{-- option --}}
-                            <select name="service_name_item" id="service_item" class="form-control">
+                            <select name="service_name_item" id="service_item" class="form-control" required>
                                 <option value="" selected disabled>Select Service Item</option>
                                 @foreach ($serviceItems as $item)
                                 <option value="{{ $item }}" class="text-capitalize">
@@ -34,7 +33,7 @@
                     <div class="form-group row">
                         <label for="title" class="col-sm-2 col-form-label required">Title</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="title" placeholder="Enter title" name="title">
+                            <input type="text" class="form-control" id="title" placeholder="Enter title" name="title" required>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -46,7 +45,7 @@
                     <div class="form-group row">
                         <label for="description" class="col-sm-2 col-form-label required">Description</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" id="description" name="description"
+                            <textarea class="form-control" id="description" name="description" required
                                 placeholder="Description"></textarea>
                         </div>
                     </div>
