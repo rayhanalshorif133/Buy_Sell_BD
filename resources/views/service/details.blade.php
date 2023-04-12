@@ -2,7 +2,9 @@
 
 @section('head')
 <style>
-
+    .badge{
+        text-transform: capitalize;
+    }
 </style>
 @endsection
 
@@ -35,6 +37,9 @@
                             <th style="width: 10%">
                                 Title
                             </th>
+                            <th style="width: 10%">
+                                Sub Property
+                            </th>
                             <th style="width: 45%">
                                 Description
                             </th>
@@ -56,10 +61,19 @@
                             <td class="title">
                                 {{$service->title}}
                             </td>
+                            <td class="sub_property">
+                                @php
+                                $collectionOfBadges = ['primary','secondary','success','danger','warning','info','dark'];
+                                $base = count($collectionOfBadges);
+                                $random = rand(0,$base-1);
+                                $badge = $collectionOfBadges[$random];
+                                $badge = 'badge-'.$badge;
+                                @endphp
+                                <span class="badge {{$badge}}">{{$service->service_name_item}}</span>
+                            </td>
                             <td>
                                 {{-- show 150 word --}}
                                 <span class="descriptionLess">{!! Str::limit($service->info,150) !!}</span>
-                                {{-- <span class="d-none getDescription">{!! $service->info !!}</span> --}}
                                 @if (strlen($service->description) > 150)
                                 <span style="color: blue" class="readMore btn">Read More</span>
                                 <span style="color: red" class="readLess btn d-none">Read Less</span>
@@ -112,16 +126,13 @@
             let id = $(this).closest('tr').attr('id');
             axios.get(`/user/service/fetch-details/${id}`)
             .then(function (response) {
-                console.log(response.data.data);
-                let {title, image, info} = response.data.data;
-                $(".details_title").text(title);
-                if(image == null) {
-                    image = "/images/no-image.jpg";
-                }
-                $(".details_image").find('img').attr('src', image);
-                $(".details_description").html(info);
-                })
+                let data = response.data.data;
+                $("#update_service_item").val(data.service_name_item);
+                $("#update_title").val(data.title);
+                $("#update_description").summernote('code', data.info);
+                $("#service_details_id").val(data.id);
         });
+    });
     };
     handleShowBtn = () => {
         $('.showInDetails').on('click', function() {
