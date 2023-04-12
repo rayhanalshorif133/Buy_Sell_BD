@@ -4,19 +4,23 @@
 @section('head')
 <link rel="stylesheet" href="{{asset('web/assets/lightbox/dist/css/lightbox.min.css')}}">
 <style>
+    .title, .subtitle,.child-subtitle{
+        font-family: 'Hind Siliguri', sans-serif;
+        color: #000;
+        margin-bottom: 10px;
+    }
     .title{
         font-size: 24px;
         font-weight:700;
-        color: #000;
-        margin-bottom: 10px;
-        /* Hind Siliguri */
-        font-family: 'Hind Siliguri', sans-serif;
     }
     .subtitle{
-        font-size: 18px;
+        font-size: 20px;
         font-weight:500;
-        color: #000;
-        margin-bottom: 10px;
+    }
+    .child-subtitle{
+        font-size: 18px;
+        font-weight:700;
+        margin-bottom: 5px;
     }
 
     .description{
@@ -25,7 +29,6 @@
         line-height: 28px;
         font-weight:400;
         color: #605f62;
-        margin: 10px;
         text-align: justify;
     }
 </style>
@@ -39,21 +42,23 @@
             Privacy Policy
         </h3>
     </div>
-    <div style="margin: 10px;">
-        <div class="row align-items-center">
-            <div class="title">
-                General
-            </div>
-            <p class="description">
+    <div class="title">
+       General
+    </div>
+    <p class="description">
                 Buysellbd values your privacy. This Privacy Policy describes how we (Buysellbd or “the product” or its developer “B2M
                 Technologies Ltd” Join venture company with “Zing mobile” or “B2M”) handle user data (e.g., information provided by a
                 user, collected about a user, and collected about a user’s use of the games or Site), including by disclosing the
                 collection, use, and sharing of the data, as it occurs since/during your use of the app.
-            </p>
-            <div class="subtitle">
-                How Buysellbd Handles User Data <br>Information you provide:
-            </div>We may collect and store any information you provide through our web or other related services.
-            <span class="subtitle">Information collected automatically:</span> <p class="description">
+    </p>
+    <div class="child-subtitle">
+        How Buysellbd Handles User Data <br>Information you provide:
+    </div>
+    <div class="description">
+        We may collect and store any information you provide through our web or other related services.
+    </div>
+    <span class="subtitle">Information collected automatically:</span>
+    <p class="description">
                 We receive and store certain types of information whenever you interact with us.
                 For example, we obtain certain types of information as Internet protocol (IP) address used to connect your computer to
                 the Internet; login; e-mail address; password; computer and connection information such as browser type, version, and
@@ -66,38 +71,37 @@
                 use our app in any mobile device we may receive information about your location and your mobile device, including time
                 of use and unique identifier for your device. We may use this information to provide you with location-based services,
                 such as pricing, advertising, search results, and other personalized content
-            </p>
-            <span class="subtitle">Tracking Technology:</span>
-            <p class="description">
+    </p>
+    <span class="subtitle">Tracking Technology:</span>
+    <p class="description">
                 BuySellBD analyzes information that is tracked each time you use our Services.We may use Google
                 Analytics, including the Google Analytics Demographics and Interest Reporting feature, and other software to track usage
                 of its Services.
-            </p>
-            <span class="subtitle">Use of “Cookies” To Collect Information</span>
-            <p class="description">
-            Cookies are small data files that a website you visit may save on your computer or handheld device that usually includes
-            an anonymous unique identifier. Our Websites and those of our Products may use cookies for user authentication, keeping
-            track of your preferences, promotional campaigns, tracking our audience size and traffic patterns, and in certain other
-            cases. We may include small graphic images in our email messages and newsletters to determine whether the messages were
-            opened and the links were viewed.
-            Third-party advertisers may also create and access cookies, which will be subject to their privacy policies – we accept
-            no responsibility or liability for the use of such third parties’ cookies. If you do not wish cookies to be placed on
-            your PC or handheld device, then they can be disabled in your web browser. The option to do so is normally found in your
-            browser’s “security settings” section. Please note that permanently disabling cookies in your browser may hinder your
-            use of our Websites as well as other websites and interactive services.
-            Security
-            All security on our Websites is treated seriously. Where applicable, we undertake security steps, including use of SSL
-            technology, on our back-end systems that store customer account information and to protect data transmissions. However,
-            this is not a guarantee that such data transmissions cannot be accessed, altered or deleted due to firewall or other
-            security software failures.
-            If you have any further concerns about security, please email our Customer Support Team at cservice@b2m-tech.com or
-            write to the following address:
-            B2M Technologies Ltd.,
-            75A Dhanmondi 5/A ,
-            Dhaka 1209,
-            </p>
-
-            <p class="description">
+    </p>
+    <span class="subtitle">Use of “Cookies” To Collect Information</span>
+    <p class="description">
+                Cookies are small data files that a website you visit may save on your computer or handheld device that usually includes
+                an anonymous unique identifier. Our Websites and those of our Products may use cookies for user authentication, keeping
+                track of your preferences, promotional campaigns, tracking our audience size and traffic patterns, and in certain other
+                cases. We may include small graphic images in our email messages and newsletters to determine whether the messages were
+                opened and the links were viewed.
+                Third-party advertisers may also create and access cookies, which will be subject to their privacy policies – we accept
+                no responsibility or liability for the use of such third parties’ cookies. If you do not wish cookies to be placed on
+                your PC or handheld device, then they can be disabled in your web browser. The option to do so is normally found in your
+                browser’s “security settings” section. Please note that permanently disabling cookies in your browser may hinder your
+                use of our Websites as well as other websites and interactive services.
+                Security
+                All security on our Websites is treated seriously. Where applicable, we undertake security steps, including use of SSL
+                technology, on our back-end systems that store customer account information and to protect data transmissions. However,
+                this is not a guarantee that such data transmissions cannot be accessed, altered or deleted due to firewall or other
+                security software failures.
+                If you have any further concerns about security, please email our Customer Support Team at cservice@b2m-tech.com or
+                write to the following address:
+                B2M Technologies Ltd.,
+                75A Dhanmondi 5/A ,
+                Dhaka 1209,
+    </p>
+    <p class="description">
                 Disclosure of User Data
                 BUYSELLBD collects Personal Information and other information from you in order to but are not limited to:
                 • Support user authentication/security and content recommendation;
@@ -116,20 +120,15 @@
                 authority. This may include exchanging information with other companies and organizations for the purposes of fraud
                 protection and credit risk reduction. Any disclosure of personal information will be strictly controlled and made fully
                 in accordance with current international law or the law of the area of the concerned case of business.
-            </p>
-            <p class="subtitle">POLICY CHANGES</p>
-            <p class="description">
-                Changes in this policy will occur from time to time in response to changing legal, regulatory or operational
-                requirements. We will provide notice of any such changes (including when they will take effect) in accordance with law.
-                Your continued use of the services or products after any such updates take effect will constitute acceptance of those
-                changes. If you do not accept any updates to this Privacy Statement, you may cancel your use of our services or
-                products. To see when this Privacy Statement was last updated, please see the "Last Updated" section below.
-            </p>
-
-
-
-
-    </div>
+    </p>
+    <p class="subtitle">POLICY CHANGES</p>
+    <p class="description">
+        Changes in this policy will occur from time to time in response to changing legal, regulatory or operational
+        requirements. We will provide notice of any such changes (including when they will take effect) in accordance with law.
+        Your continued use of the services or products after any such updates take effect will constitute acceptance of those
+        changes. If you do not accept any updates to this Privacy Statement, you may cancel your use of our services or
+        products. To see when this Privacy Statement was last updated, please see the "Last Updated" section below.
+    </p>
 </div>
 </section>
 @endsection
