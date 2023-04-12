@@ -3,6 +3,12 @@
     font-family: Hind Siliguri;
 }
 
+
+#extend_content {
+    margin-top: 135px;
+    margin-bottom: 10%;
+}
+
 .exchangeIcon{
     margin-top: 3rem;
 }
@@ -323,7 +329,7 @@ div.success_menu ul.common_slider_class li {
 }
 .main_menu_phone li.nav-item a.nav-link{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 14px;
     letter-spacing: .20000000298023224px;
     text-align: left;
@@ -504,6 +510,12 @@ div.success_menu ul.common_slider_class li {
     align-self: left;
     margin-bottom: 1.5rem!important;
     color: #000;
+}
+
+
+.management_phone h4{
+    color: #000;
+    text-align: center;
 }
 
 .management p{
@@ -1034,6 +1046,7 @@ div.success_menu ul.common_slider_class li {
     background-color: #007ab9;
     border-color: #007ab9;
 }
+
 
 .before_text{
     color: #1f1e1e;
@@ -2049,6 +2062,11 @@ del {
     background: #403532;
     position: relative;
     z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
 #footer .footer_left {
     position: absolute;
@@ -2233,8 +2251,8 @@ del {
     -ms-flex-align: center;
     align-items: center;
     border-top: 1px solid rgba(45, 45, 45, .1);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .copy .copy_text p {
     color: #2d2d2d;

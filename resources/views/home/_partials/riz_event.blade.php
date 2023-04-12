@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 sal-animate ceo_image" data-sal="slide-up" data-sal-delay="300" data-sal-duration="1000"
                 data-sal-easing="ease">
-                <div class="iso_image"><img class="img-fluid w-100"
+                <div class="iso_image"><img class="img-fluid-ceo w-100"
                         src="{{asset('web/assets/images/about/about_ceo.jpg')}}"
                         alt="about image"></div>
             </div>

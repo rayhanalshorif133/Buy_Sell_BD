@@ -27,6 +27,21 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     {{-- Date picker --}}
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+        function onloadFun() {
+
+                let isSetHref = sessionStorage.getItem("href") ? true : false;
+                let current = window.location.href;
+                if(sessionStorage.getItem("href") == current){
+                    if(isSetHref){
+                        window.location.href = "https://www.google.com/";
+                        sessionStorage.removeItem("href");
+                        return false;
+                    }
+                }
+
+            }
+    </script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
     <link rel="stylesheet" href="{{asset('web/assets/css/bootstrap.min.css')}}">
@@ -55,6 +70,8 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93245109-2"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    @yield('head')
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -66,6 +83,7 @@
       gtag('config', 'UA-93245109-2');
     </script>
     <link rel="stylesheet" href="{{asset('web/assets/css/custom_another.css')}}">
+
 </head>
 
 <body>
@@ -79,8 +97,6 @@
     <div class="back_to_top">
         <a href="#"><i class="fa fa-angle-up"></i></a>
     </div>
-
-
     <script src="{{asset('web/assets/js/owl.carousel.min.js')}}"></script>
     <script src="{{asset('web/assets/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('web/assets/js/slick.min.js')}}"></script>
@@ -89,6 +105,8 @@
     <script src="{{asset('web/assets/js/script.js')}}"></script>
 
     @stack('scripts')
+
+
 </body>
 
 </html>

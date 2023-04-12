@@ -89,7 +89,7 @@
                     class="nav-link @if (request()->is('user/slider*')) active @endif">
                     <i class="nav-icon fas fa-code"></i>
                     <p>
-                        Slider
+                        Banner
                     </p>
                 </a>
             </li>

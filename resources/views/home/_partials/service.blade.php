@@ -25,11 +25,11 @@
                             role="tab" aria-controls="License" aria-selected="false">License</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="Property-tab" data-bs-toggle="tab" data-bs-target="#property" type="button"
+                        <button class="nav-link active" id="Property-tab" data-bs-toggle="tab" data-bs-target="#property" type="button"
                             role="tab" aria-controls="Property" aria-selected="false">Property</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="Ticket-tab" data-bs-toggle="tab" data-bs-target="#ticket" type="button"
+                        <button class="nav-link" id="Ticket-tab" data-bs-toggle="tab" data-bs-target="#ticket" type="button"
                             role="tab" aria-controls="Ticket" aria-selected="false">Ticket</button>
                     </li>
                 </ul>
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="property" role="tabpanel" aria-labelledby="Property-tab">
+                    <div class="tab-pane fade show active" id="property" role="tabpanel" aria-labelledby="Property-tab">
                         <div class="row">
                             <div class="col-md-12 py-3 before_text">
                                 <div class="subtitle text-justify">
@@ -131,6 +131,7 @@
                                 <div class="owl-stage-outer">
                                     <div class="owl-stage">
                                         <div class="owl-item">
+                                            <a href="{{route('services.view-details',["property","house"])}}" >
                                             <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
                                                 data-sal-easing="ease">
                                                 <div class="course_single_item what_we_do">
@@ -142,39 +143,44 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            </a>
                                         </div>
                                         <div class="owl-item">
-                                            <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
-                                                data-sal-easing="ease">
-                                                <div class="course_single_item what_we_do">
-                                                    <div class="card_image"><img class="img-fluid w-100"
-                                                            src="{{asset('web/assets/images/services/property/flat.jpg')}}" alt="image" loading="lazy"></div>
-                                                    <div class="card_text">
-                                                        <h3>Flats</h3>
-                                                        <p></p>
+                                            <a href="{{route("services.view-details",["property","flats"])}}" >
+                                                <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
+                                                    data-sal-easing="ease">
+                                                    <div class="course_single_item what_we_do">
+                                                        <div class="card_image"><img class="img-fluid w-100"
+                                                                src="{{asset('web/assets/images/services/property/flat.jpg')}}" alt="image" loading="lazy"></div>
+                                                        <div class="card_text">
+                                                            <h3>Flats</h3>
+                                                            <p></p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
                                         <div class="owl-item">
-                                            <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
-                                                data-sal-easing="ease">
-                                                <div class="course_single_item what_we_do">
-                                                    <div class="card_image"><img class="img-fluid w-100"
-                                                            src="{{asset('web/assets/images/services/property/land.jpg')}}" alt="image" loading="lazy"></div>
-                                                    <div class="card_text">
-                                                        <h3>Land</h3>
-                                                        <p></p>
+                                            <a href="{{route("services.view-details",["property","land"])}}" >
+                                                <div class="pb-6 course-padding-area sal-animate" data-sal="slide-right" data-sal-duration="800"
+                                                    data-sal-easing="ease">
+                                                    <div class="course_single_item what_we_do">
+                                                        <div class="card_image"><img class="img-fluid w-100"
+                                                                src="{{asset('web/assets/images/services/property/land.jpg')}}" alt="image" loading="lazy"></div>
+                                                        <div class="card_text">
+                                                            <h3>Land</h3>
+                                                            <p></p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade show active" id="ticket" role="tabpanel" aria-labelledby="Ticket-tab">
+                    <div class="tab-pane fade" id="ticket" role="tabpanel" aria-labelledby="Ticket-tab">
                         @include('home._partials._service_ticket')
                     </div>
                 </div>
@@ -190,7 +196,12 @@
     }
 </style>
 
+
 <script>
+
+    function closeWin() {
+        window.close();
+    }
     $(document).ready(function(){
         $(".service_slider_membership").owlCarousel({
             loop:true,
@@ -260,4 +271,5 @@
         });
 
     });
+
 </script>

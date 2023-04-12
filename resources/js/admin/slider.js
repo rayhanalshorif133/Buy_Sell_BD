@@ -4,7 +4,26 @@ $(document).ready(function () {
     handleDeleteBtn();
     handleCheckBtn();
     handleMultiActionsBtn();
+    appendNewLineTitle();
 });
+
+function appendNewLineTitle(){
+    var html = `<div class="input-group mt-2">
+                            <input type="text" class="form-control" name="title[]" id="title" required placeholder="Enter slider title">
+                            <div class="input-group-append" id="removeNewLineTitle">
+                                <span class="input-group-text">-</span>
+                            </div>
+                </div>`;
+    $(".appendNewLineTitle").on("click", function(){
+        $(".appendTitleInput").append(html);
+    });
+}
+$(document).on("click", "#removeNewLineTitle", function(){
+    console.log('remove');
+    $(this).closest('.input-group').remove();
+});
+
+
 function handleAddBtn(){
     $('.addBtn').on('click', function () {
         $('#for_update').html('');

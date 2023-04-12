@@ -50,3 +50,5 @@ foreach (glob(base_path('routes/admin/*.php')) as $route) {
 foreach (glob(base_path('routes/public/*.php')) as $route) {
     require_once $route;
 }
+
+

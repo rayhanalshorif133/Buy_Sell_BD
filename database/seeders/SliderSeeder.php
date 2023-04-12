@@ -14,30 +14,42 @@ class SliderSeeder extends Seeder
      */
     public function run()
     {
-         Slider::create([
-            'title' => '1st',
-            'description' => 'No description',
-            'image' => '/storage/images/slider/1676188405.jpg',
+
+       Slider::create([
+            'slider_category' => 'membership',
+            'title' => json_encode(['Find Your','Best Activities']),
+            'image' => '/web/assets/images/banner_image/membership/GOLF_PLAYER.png',
             'status' => 'active',
         ]);
+
         Slider::create([
-            'title' => '2nd',
-            'description' => 'No description',
-            'image' => '/storage/images/slider/1676188417.jpg',
+            'slider_category' => 'membership',
+            'title' => json_encode(['WANT TO JOIN','YOUR DESIRE CLUB']),
+            'image' => '/web/assets/images/banner_image/membership/club.png',
             'status' => 'active',
         ]);
+
         Slider::create([
-            'title' => '3rd',
-            'description' => 'No description',
-            'image' => '/storage/images/slider/1676188424.jpg',
+            'slider_category' => 'service',
+            'title' => json_encode(['Want to hassle free license service']),
+            'image' => '/web/assets/images/banner_image/line_for_license.png',
             'status' => 'active',
         ]);
+
         Slider::create([
-            'title' => '4th',
-            'description' => 'No description',
-            'image' => '/storage/images/slider/1676188430.png',
+            'slider_category' => 'property',
+            'title' => json_encode(['Want to buy, sell and rent land, property']),
+            'image' => '/web/assets/images/banner_image/home.png',
             'status' => 'active',
         ]);
+
+        Slider::create([
+            'slider_category' => 'ticket',
+            'title' => json_encode(['Want to Booking','Air Ticket']),
+            'image' => '/web/assets/images/banner_image/ticket.png',
+            'status' => 'active',
+        ]);
+
 
     }
 }

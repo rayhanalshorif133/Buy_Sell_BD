@@ -54,6 +54,11 @@
                             @endif
                         </td>
                         <td class="w-20">
+                            <a href="{{route('user.service.detailsView',$service->id)}}">
+                                <span class="btn btn-success btn-sm" title="View">
+                                    <i class="fas fa-eye"></i>
+                                </span>
+                            </a>                            
                             <span class="btn btn-info btn-sm editBtn" data-toggle="modal"
                                 data-target="#modal-add-and-update-service">
                                 <i class="fas fa-pencil-alt"></i>

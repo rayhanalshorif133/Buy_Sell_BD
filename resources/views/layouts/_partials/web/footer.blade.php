@@ -1,5 +1,102 @@
+<style>
+    .see_more{
+        color: #fff;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .see_more:hover{
+        color: #08AED7;
+        font-size: 13px;
+    }
+    .loading{
+        color: #fff;
+        transition: all 0.5s ease;
+        display: none;
+    }
+
+    .loading span{
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        background: #ffffff;
+    }
+    .loading span:nth-child(1){
+        animation: loading 1s ease-in-out infinite;
+    }
+    .loading span:nth-child(2){
+        animation: loading 1s ease-in-out 0.2s infinite;
+    }
+    .loading span:nth-child(3){
+        animation: loading 1s ease-in-out 0.4s infinite;
+    }
+
+    @keyframes loading{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+</style>
 <footer>
     <section id="footer">
+        <div class="container">
+            <div class="row footer-top" style="color:#CFCFCF">
+                <div class="col-md-6 col-sm-6" data-sal="slide-left" data-sal-delay="200" data-sal-duration="800"
+                    data-sal-easing="ease">
+                    <div class="footer_item_1" style="
+                                    margin: auto;
+                                    text-align: left;
+                                ">
+                        <h5>Contact Information</h5>
+                        <div class="footer_text" style="
+                            margin: auto;
+                            text-align: left;
+                        ">
+                            B2M Technologies Ltd. :<br>
+                            House #75A, Road 5/A, 4th floor<br>
+                            Dhanmondi, Dhaka 1209, <br>Bangladesh.<br>
+                            <i class="fa fa-phone"></i> <a href="tel:+8801732701937" style="color:#CFCFCF">(+880) 1732701937</a><br>
+                            <i class="fa fa-envelope"></i> <a href="mailto:admin@gmail.com" style="color:#CFCFCF">admin@gmail.com</a><br>
+                            <i class="fa fa-globe"></i> <a href="http://b2m-tech.com/" target="_blank" style="color:#CFCFCF">http://b2m-tech.com/</a><br>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <a href="https://api.whatsapp.com/send/?phone=01732701937&text=hello&type=phone_number&app_absent=0"
+                            style="color:#CFCFCF" target="_blank">(+880) 1732701937</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-sal="slide-left" data-sal-delay="200" data-sal-duration="800"
+                    data-sal-easing="ease">
+                    <div class="footer_item_1" style="margin: auto;text-align: left;">
+                        <h5>Privacy Policy</h5>
+                        <div class="footer_text" style="margin: auto;text-align: justify;">
+                            Buysellbd values your privacy. This Privacy Policy describes how we (Buysellbd or “the product” or its developer “B2M
+                            Technologies Ltd” Join venture company with “Zing mobile” or “B2M”) handle user data
+                            <br>
+                            <a href="{{route('privacy-policy.index')}}">
+                                <span class="see_more">See More</span>
+                                <span class="loading">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer_bottom">
             <div class="container">
                 <div class="row copy">
@@ -62,4 +159,14 @@
             </div>
         </div>
     </section>
+    <script>
+        $(function(){
+            $('.see_more').hover(function(){
+                $(".loading").show();
+            });
+            $('.see_more').mouseleave(function(){
+                $(".loading").hide();
+            });
+        });
+    </script>
 </footer>

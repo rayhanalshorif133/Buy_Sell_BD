@@ -36,20 +36,27 @@ class HomeController extends Controller
     }
     public function welcome()
     {
-        $sliders = Slider::all();
-        $about = About::first();
-        $services = Service::all();
-        $headerAndFooter = HeaderAndFooter::first();
-        $colors = Color::all();
-        $whatWeDos = WhatWeDo::all();
+        $slider_categories = Slider::select('slider_category')->distinct()->get();
 
-        if (!$about) {
-            $about = new About();
-            $about->description = 'No description';
-            $about->image = 'images/no-image.jpg';
-            $about->save();
+        foreach ($slider_categories as $slider_category) {
+            $slider_category->slider = Slider::where('slider_category', $slider_category->slider_category)->first();
+            $slider_category->slider->titles = json_decode($slider_category->slider->title);
         }
-        return view('home.index', compact('headerAndFooter', 'sliders', 'about', 'services', 'colors','whatWeDos'));
+        // $about = About::first();
+        // $services = Service::all();
+        // $headerAndFooter = HeaderAndFooter::first();
+        // $colors = Color::all();
+        // $whatWeDos = WhatWeDo::all();
+
+        // if (!$about) {
+        //     $about = new About();
+        //     $about->description = 'No description';
+        //     $about->image = 'images/no-image.jpg';
+        //     $about->save();
+        // }
+        // dd($slider_categories);
+
+        return view('home.index', compact('slider_categories'));
     }
 
 
