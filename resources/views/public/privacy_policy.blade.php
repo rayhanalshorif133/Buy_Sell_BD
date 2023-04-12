@@ -8,6 +8,7 @@
         font-family: 'Hind Siliguri', sans-serif;
         color: #000;
         margin-bottom: 10px;
+        margin-top: 10px;
     }
     .title{
         font-size: 24px;
