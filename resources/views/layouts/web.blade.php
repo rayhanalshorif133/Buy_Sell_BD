@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link
         href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700|Source+Sans+Pro:300,400,500,600,700|Roboto:300,400,500,700,900&amp;display=swap"
         rel="stylesheet">
@@ -44,21 +45,21 @@
     </script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
-    <link rel="stylesheet" href="{{asset('web/assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('web/assets/css/slick.css')}}">
-    <link rel="stylesheet" href="{{asset('web/assets/css/venobox.min.css')}}">
-    <link rel="stylesheet" href="{{asset('web/assets/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('web/assets/css/responsive.css')}}">
-    <link rel="stylesheet" href="{{asset('web/assets/css/custom.css')}}">
-    <link rel="stylesheet" href="{{asset('web/assets/css/dark-mode.css')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/css/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/css/venobox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/css/responsive.css')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/css/dark-mode.css')}}">
 
     {{-- owl.carousel --}}
-    <link rel="stylesheet" href="{{asset('web/assets/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('web/assets/css/owl.theme.default.min.css')}}">
-    <link rel="stylesheet" href="{{asset('web/assets/css/import.all.css')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/css/import.all.css')}}">
 
-    <link rel="stylesheet" href="{{asset('web/assets/js/custom.js')}}">
-    <link rel="stylesheet" href="{{asset('web/assets/js/CookieManager.js')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/js/custom.js')}}">
+    <link rel="stylesheet" href="{{asset('/web/assets/js/CookieManager.js')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Facebook Pixel Code -->
 
@@ -97,12 +98,12 @@
     <div class="back_to_top">
         <a href="#"><i class="fa fa-angle-up"></i></a>
     </div>
-    <script src="{{asset('web/assets/js/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('web/assets/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('web/assets/js/slick.min.js')}}"></script>
-    <script src="{{asset('web/assets/js/waypoints.min.js')}}"></script>
-    <script src="{{asset('web/assets/js/venobox.min.js')}}"></script>
-    <script src="{{asset('web/assets/js/script.js')}}"></script>
+    <script src="{{asset('/web/assets/js/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('/web/assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('/web/assets/js/slick.min.js')}}"></script>
+    <script src="{{asset('/web/assets/js/waypoints.min.js')}}"></script>
+    <script src="{{asset('/web/assets/js/venobox.min.js')}}"></script>
+    <script src="{{asset('/web/assets/js/script.js')}}"></script>
 
     @stack('scripts')
 
